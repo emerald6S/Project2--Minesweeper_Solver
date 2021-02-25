@@ -1,7 +1,41 @@
 """
 Contains some functions I couldn't decide where else to put yet
 """
+# will need a function to check if a cell is safe or not
+"""
 
+
+def isValid(board, dim, row, col):
+    if (row < 0) or (col < 0) or (row >= dim) or (col >= dim):
+        return False
+    else:
+        return True
+    
+def isMine(board, dim, row, col):
+    if board[row][col] == 'M':
+        return true
+    else:
+        return false
+def check_safe(kb,row,col, board, dim):
+    ##for i in range of(dim):
+      
+      ##  for j in range of(dim):
+            if board[i][j] == 'M':
+                return 2
+            if board[i][j] == '?':
+                return 0
+            if(! not M and F) 
+                return 1
+
+def compare_agent(kb,board,dim):
+    dx = [] #for neighbors
+    dy= []
+    for i in range of dim:
+        for j in range of dim:
+            if (check_safe(kb, roq,col,board,dim) == 1):
+                for i in ramge of 4
+    
+"""
 
 def reveal_space(kb, board, row, col, dim):
     """
