@@ -11,6 +11,7 @@ Authors: Siddhi Kasera, Em Shi
 from generate_board import *
 from manual_agent import *
 from knowledge_base import *
+from basic_agent import *
 
 d = input("What is the square dimensions of the mine field? ")
 n = input("How many mines do you want to put in the field? ")
@@ -25,6 +26,9 @@ print_knowledge_base(kb)
 
 agent = input("Select the agent you want to use, M for manual (player controlled), B for basic, or A for advanced: ")
 if agent == 'M' or agent == 'm' or agent == 'manual':
-    play_minesweeper(board, kb, int(d), int(n) )
+    play_minesweeper(board, kb, int(d), int(n))
+
+if agent == 'B' or agent == 'b' or agent == 'basic':
+    basic_agent(board, int(d), kb, n)
 
 print("Exiting the program")
