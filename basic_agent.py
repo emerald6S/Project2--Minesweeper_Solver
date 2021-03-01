@@ -121,7 +121,7 @@ def basic_agent(arr, dim, kb, n):
                             if arr[newX][newY] == 'M':
                                 num_mines = num_mines + 1
                             if kb[newX][newY] == '?':
-                                hidden = [(newX, newY)]
+                                hidden.appemd((newX, newY))
                                 num_covered = num_covered + 1
                             if arr[newX][newY] != 'M':
                                 num_safe = num_safe + 1
