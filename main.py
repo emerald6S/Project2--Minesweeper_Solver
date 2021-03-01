@@ -5,12 +5,13 @@ Project 2: Minesweeper solver
 Authors: Siddhi Kasera, Em Shi
 """
 
-# TODO: Implement the Basic Agent, Implement the Advanced Agent, set up testing script, set up graphing script
-# I may want to return a tuple for the AI agents (number of unrevealed mines , total number of mines) for graph purposes
+# TODO: Currently implementing the Basic Agent, Implement the Advanced Agent, set up testing script, set up graphing script
+# I may want to return a tuple for the AI agents (number of unrevealed mines , total number of mines) for mathplotlib purposes
 
 from generate_board import *
 from manual_agent import *
 from knowledge_base import *
+from basic_agent import *
 
 d = input("What is the square dimensions of the mine field? ")
 n = input("How many mines do you want to put in the field? ")
@@ -21,10 +22,18 @@ if print_init_mine == 'Y' or print_init_mine == 'y' or print_init_mine == 'Yes':
     print("\n")
 
 kb = generate_knowledge_base(int(d))
-print_knowledge_base(kb)
 
 agent = input("Select the agent you want to use, M for manual (player controlled), B for basic, or A for advanced: ")
 if agent == 'M' or agent == 'm' or agent == 'manual':
-    play_minesweeper(board, kb, int(d), int(n) )
+    play_minesweeper(board, kb, int(d), int(n))
+
+if agent == 'B' or agent == 'b' or agent == 'basic':
+    print_final_kb = input("Would you like to print final knowledge base? Y/N ")
+    if print_final_kb == 'Y' or print_final_kb == 'y' or print_final_kb == 'Yes':
+        high_score = basic_agent(board, kb, int(d), int(n), True)
+        print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
+    else:
+        high_score = basic_agent(board, kb, int(d), int(n))
+        print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
 
 print("Exiting the program")

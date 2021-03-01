@@ -64,3 +64,95 @@ def print_knowledge_base(kb):
         print(row)
 
     return
+
+
+def count_neighbors(kb, d, row, col):
+    """
+    For the selected cell, count all neighbors
+    :param kb: The knowledge base
+    :param d: Dimension of the minefield
+    :param row
+    :param col
+    :return: Number of neighbors I have
+    """
+    count = 0
+    arr = kb
+    neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
+    for i in range(len(neighbors)):
+        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]):
+            count = count + 1
+
+    return count
+
+
+def count_unrevealed_neighbors(kb, d, row, col):
+    """
+    For the selected cell, count valid unrevealed neighbors
+    :param kb: The knowledge base
+    :param d: Dimension of the minefield
+    :param row
+    :param col
+    :return: Number of neighbors I have
+    """
+    count = 0
+    arr = kb
+    neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
+    for i in range(len(neighbors)):
+        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and kb[row + neighbors[i][0]][col + neighbors[i][1]] == '?':
+            count = count + 1
+
+    return count
+
+
+def count_revealed_neighbors(kb, d, row, col):
+    """
+        For the selected cell, count valid revealed neighbors
+        :param kb: The knowledge base
+        :param d: Dimension of the minefield
+        :param row
+        :param col
+        :return: Number of neighbors I have
+        """
+    count = 0
+    arr = kb
+    neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
+    for i in range(len(neighbors)):
+        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and kb[row + neighbors[i][0]][col + neighbors[i][1]] != '?':
+            count = count + 1
+
+    return count
+
+
+def count_safe_revealed_neighbors(kb, d, row, col):
+    """
+            For the selected cell, count valid revealed safe neighbors
+            :param kb: The knowledge base
+            :param d: Dimension of the minefield
+            :param row
+            :param col
+            :return: Number of neighbors I have
+            """
+    count = 0
+    arr = kb
+    neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
+    for i in range(len(neighbors)):
+        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and kb[row + neighbors[i][0]][col + neighbors[i][1]] != '?' and kb[row + neighbors[i][0]][col + neighbors[i][1]] != 'M':
+            count = count + 1
+
+    return count
+
+
+def isValid(arr, dim, row, col):
+    """
+    Check to see if the selected list element is in bounds
+
+    :param arr: The array I want to check
+    :param dim: The square dimensions of the array
+    :param row:
+    :param col:
+    :return: True if in bounds, or False if out of bounds
+    """
+    if (row < 0) or (col < 0) or (row >= dim) or (col >= dim):
+        return False
+    else:
+        return True

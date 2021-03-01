@@ -1,4 +1,7 @@
 from random import randint
+
+from mine_utils import *
+
 """
 Handles functionality related to creating a minefield
 """
@@ -33,16 +36,14 @@ def generate_board(d: int, n: int):
             arr[x][y] = 'M'
             mines_left = mines_left - 1
 
-    arr = count_neighbors(arr, d)
+    arr = count_mine_neighbors(arr, d)
     return arr
 
 
 ##################
 # HELPER FUNCTIONS
 ##################
-
-
-def count_neighbors(board, d):
+def count_mine_neighbors(board, d):
     """
     For the empty cells of the minefield, count number of mines
     :param board: The minefield
@@ -79,20 +80,4 @@ def print_board(board):
         print(row)
 
     return
-
-
-def isValid(arr, dim, row, col):
-    """
-    Check to see if the selected list element is in bounds
-
-    :param arr: The array I want to check
-    :param dim: The square dimensions of the array
-    :param row: X coord
-    :param col: Y coord
-    :return: True if in bounds, or False if out of bounds
-    """
-    if (row < 0) or (col < 0) or (row >= dim) or (col >= dim):
-        return False
-    else:
-        return True
 

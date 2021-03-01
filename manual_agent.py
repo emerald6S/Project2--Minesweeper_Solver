@@ -3,6 +3,7 @@ from mine_utils import *
 
 """
 This file lets you play Minesweeper manually, without the aid of a CPU player
+It's there for testing purposes, both for the logic of the code and also to roleplay the computer doing the search algos
 """
 
 
@@ -13,11 +14,12 @@ def play_minesweeper(board, kb, dim, n):
     :param board: The mine board
     :param kb: The knowledge base
     :param dim: The dimensions of the board/knowledge base
-    :param n: Number of mines
+    :param n: Number of mines, only used to determine when the game ends
     :return: Void, when the only uncovered elements are mines or entire board is searched
     """
     print("\nManually playing Minesweeper")
-    while not is_solved(kb, n, dim):
+    print_knowledge_base(kb)
+    while not isManualSolved(kb, n, dim):
         print("Here are your options")
         print("1 - Check cell for mine")
         print("2 - Mark a cell as dangerous")
@@ -28,7 +30,7 @@ def play_minesweeper(board, kb, dim, n):
         if option == '1':
             row = input("Select the row number, must be a number from 0 to " + str(int(dim) - 1) + " ")
             col = input("Select the col number, must be a number from 0 to " + str(int(dim) - 1) + " ")
-            kb = reveal_space(kb, board, int(row), int(col), dim)
+            kb = reveal_space(kb, board, int(row), int(col), dim, True)
 
         elif option == '2':
             row = input("Select the row number, must be a number from 0 to " + str(int(dim) - 1) + " ")
@@ -52,7 +54,7 @@ def play_minesweeper(board, kb, dim, n):
     return
 
 
-def is_solved(kb, n, dim):
+def isManualSolved(kb, n, dim):
     """
     Check if board has been solved (for manual play)
 
