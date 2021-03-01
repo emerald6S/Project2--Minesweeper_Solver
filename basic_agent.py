@@ -82,7 +82,7 @@ def basic_agent(arr, dim, kb, n):
     print("In the basic agent")
 
     visited = [[False for i in range(dim)] for j in range(dim)]
-    visited[0][0] = True
+    # visited[0][0] = True
 
     num_hidden = dim * dim
     num_mines = 0
