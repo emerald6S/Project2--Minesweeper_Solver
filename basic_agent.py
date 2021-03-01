@@ -115,14 +115,15 @@ def basic_agent(arr, dim, kb, n):
                         newX = dx + neighbors[i][0]
                         newY = dy + neighbors[i][1]
                         if isValid(arr, dim, newX, newY):
-                            random_neighbors = [(newX, newY)]
+                            # random_neighbors = [(newX, newY)]
+                            random_neighbors.append((newX, newY))
                             print("Printing random neighbors:", random_neighbors)
                             if arr[newX][newY] == 'M':
                                 num_mines = num_mines + 1
                             if kb[newX][newY] == '?':
                                 hidden = [(newX, newY)]
                                 num_covered = num_covered + 1
-                            if arr[newX][newY] != 'M' or arr[newX][newY] != '?':
+                            if arr[newX][newY] != 'M':
                                 num_safe = num_safe + 1
 
                     n = arr[dx][dy]
@@ -152,6 +153,12 @@ def basic_agent(arr, dim, kb, n):
                     mark_mine(kb, dx, dy, dim)
                     num_hidden = num_hidden - 1
                     num_revealed_mine = num_revealed_mine + 1
+                    for i in range(len(neighbors)):
+                        newX = dx + neighbors[i][0]
+                        newY = dy + neighbors[i][1]
+                        if isValid(arr, dim, newX, newY):
+                            # random_neighbors = [(newX, newY)]
+                            random_neighbors.append((newX, newY))
 
             # print("Printing the final KB")
             # print_knowledge_base(kb)
@@ -172,13 +179,14 @@ def basic_agent(arr, dim, kb, n):
                         newX = dx + neighbors[i][0]
                         newY = dy + neighbors[i][1]
                         if isValid(arr, dim, newX, newY):
-                            random_neighbors = [(newX, newY)]
+                            # random_neighbors = [(newX, newY)]
+                            random_neighbors.append((newX, newY))
                             if arr[newX][newY] == 'M':
                                 num_mines = num_mines + 1
                             if kb[newX][newY] == '?':
                                 hidden = [(newX, newY)]
                                 num_covered = num_covered + 1
-                            if arr[newX][newY] != 'M' or arr[newX][newY] != '?':
+                            if arr[newX][newY] != 'M':
                                 num_safe = num_safe + 1
 
                     n = arr[dx][dy]
@@ -209,6 +217,12 @@ def basic_agent(arr, dim, kb, n):
                     mark_mine(kb, dx, dy, dim)
                     num_hidden = num_hidden - 1
                     num_revealed_mine = num_revealed_mine + 1
+                    for i in range(len(neighbors)):
+                        newX = dx + neighbors[i][0]
+                        newY = dy + neighbors[i][1]
+                        if isValid(arr, dim, newX, newY):
+                            #random_neighbors = [(newX, newY)]
+                            random_neighbors.append((newX, newY))
 
     print_knowledge_base(kb)
     return
