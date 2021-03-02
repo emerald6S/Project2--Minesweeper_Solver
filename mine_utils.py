@@ -18,17 +18,28 @@ def reveal_space(kb, board, row, col, dim, p=False):
     :param p: whether or not I should print the results, defaults to False
     :return: The new knowledge base, or the original knowledge base if the X or Y coord is out of bounds or space already revealed
     """
+
+    neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
     if p == True and (row >= dim or col >= dim or row < 0 or col < 0):
         print("Out of bounds")
     else:
-        if kb[row][col] == board[row][col] and p == True:
-            print("That space was already revealed!")
+        if kb[row][col] == board[row][col]:
+            if p:
+                print("That space was already revealed!")
         else:
             kb[row][col] = board[row][col]
-            if board[row][col] == 'M' and p == True:
-                print("BOOM! Mine revealed!")
-            elif p == True:
-                print("Mine not detected")
+            if board[row][col] == 'M':
+                if p:
+                    print("BOOM! Mine revealed!")
+            elif board[row][col] != 'M':
+                if p:
+                    print("Mine not detected")
+                for i in range(len(neighbors)):
+                    # reveal all neighbor cells that aren't mines and have no neighboring mines
+                    newRow = row + neighbors[i][0]
+                    newCol = col + neighbors[i][1]
+                    if isValid(board, dim, newRow, newCol) and (board[row][col] == "0" or board[row][col] == 'C') and board[newRow][newCol] != 'M' and kb[row][col] == board[row][col]:
+                        kb = reveal_space(kb, board, newRow, newCol, dim, False)
 
     return kb
 

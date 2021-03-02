@@ -5,7 +5,7 @@ Project 2: Minesweeper solver
 Authors: Siddhi Kasera, Em Shi
 """
 
-# TODO: Currently implementing the Basic Agent, Implement the Advanced Agent, set up testing script, set up graphing script
+# TODO: Implement the Advanced Agent, set up testing script, set up graphing script
 # I may want to return a tuple for the AI agents (number of unrevealed mines , total number of mines) for mathplotlib purposes
 
 from generate_board import *

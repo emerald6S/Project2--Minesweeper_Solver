@@ -10,6 +10,13 @@ Handles functionality related to creating a minefield
 def generate_board(d: int, n: int):
     """
     Randomly generate an empty minefield and populate with mines
+    The legend:
+    M is a mine
+    C is clear
+    a number 0-8 represents how many neighbor mines I have
+    ? is unrevealed
+    D is marked as dangerous
+    S is marked as safe
 
     :param d: The dimension of the array you want to generate, must be a whole number
     :param n: The number of mines, must also be a whole number
