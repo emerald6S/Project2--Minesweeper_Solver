@@ -30,7 +30,7 @@ def play_minesweeper(board, kb, dim, n):
         if option == '1':
             row = input("Select the row number, must be a number from 0 to " + str(int(dim) - 1) + " ")
             col = input("Select the col number, must be a number from 0 to " + str(int(dim) - 1) + " ")
-            kb = reveal_space(kb, board, int(row), int(col), dim, True)
+            kb = reveal_space(kb, board, int(row), int(col), dim, True, True)
 
         elif option == '2':
             row = input("Select the row number, must be a number from 0 to " + str(int(dim) - 1) + " ")

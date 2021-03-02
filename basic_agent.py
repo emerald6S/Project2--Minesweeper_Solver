@@ -41,9 +41,10 @@ def basic_agent(board, kb, dim, n, p=False):
                                                                                   col) == numUnrevealedNeighbors:
                 markAllNeighborsSafe(kb, dim, row, col)
 
-        fringe = addToFringe(kb, dim, row, col, fringe)
-        cleanFringe(check, fringe, kb, board, row, col, dim)
-        updateAllSafe(kb, board, dim)
+            fringe = addToFringe(kb, dim, row, col, fringe)
+            cleanFringe(check, fringe, kb, board, row, col, dim)
+            updateAllSafe(kb, board, dim)
+
         if check:  # there's still a neighbor who I can check
             current = check.popitem()
             row = current[0][0]

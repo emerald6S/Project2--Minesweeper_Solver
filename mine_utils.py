@@ -6,7 +6,7 @@ from knowledge_base import *
 from knowledge_base import print_knowledge_base
 
 
-def reveal_space(kb, board, row, col, dim, p=False):
+def reveal_space(kb, board, row, col, dim, p=False, autoReveal=False):
     """
     Reveal the chosen space on the minefield
 
@@ -16,6 +16,7 @@ def reveal_space(kb, board, row, col, dim, p=False):
     :param col: Col of the point I want to uncover
     :param dim: Dimensions of the board
     :param p: whether or not I should print the results, defaults to False
+    :param autoReveal: Whether or not I reveal all zero neighbors if revealed is 0
     :return: The new knowledge base, or the original knowledge base if the X or Y coord is out of bounds or space already revealed
     """
 
@@ -38,8 +39,8 @@ def reveal_space(kb, board, row, col, dim, p=False):
                     # reveal all neighbor cells that aren't mines and have no neighboring mines
                     newRow = row + neighbors[i][0]
                     newCol = col + neighbors[i][1]
-                    if isValid(board, dim, newRow, newCol) and (board[row][col] == "0" or board[row][col] == 'C') and board[newRow][newCol] != 'M' and kb[row][col] == board[row][col]:
-                        kb = reveal_space(kb, board, newRow, newCol, dim, False)
+                    if isValid(board, dim, newRow, newCol) and (board[row][col] == "0" or board[row][col] == 'C') and board[newRow][newCol] != 'M' and kb[row][col] == board[row][col] and autoReveal:
+                        kb = reveal_space(kb, board, newRow, newCol, dim, False, True)
 
     return kb
 
