@@ -60,8 +60,9 @@ def automate_test():
             elif strategy == "Advanced":
                 print("Advanced agent attempt ", i)
                 print("Whoops, advanced agent not implemented yet :(\n")  # TODO
+
+            j = j + 1
             if j < int(num_attempts):
-                j = j+1
                 i = i + 1
             else:
                 a = a + 1
