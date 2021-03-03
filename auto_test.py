@@ -96,7 +96,7 @@ def automate_test():
             plt.scatter(xBasic, yBasic, label="density_vs_highScore", color='red')
             plt.xlabel("Mine density")
             plt.ylabel("High score")
-            plt.title(strategy + " Agent(s)")
+            plt.title(strategy + " Agent")
             plt.show()
 
     return
