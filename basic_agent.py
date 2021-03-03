@@ -25,7 +25,6 @@ def basic_agent(board, kb, dim, n, p=False):
 
     while not isAutoSolved(kb, n, dim):
         # print("Current element: (" + str(row) + ", " + str(col) + ")")
-        neighborMineCount = 0
         numUnrevealedNeighbors = count_unrevealed_neighbors(kb, dim, row, col)
         numRevealedNeighbors = count_revealed_neighbors(kb, dim, row, col)
         numNeighbors = count_neighbors(kb, dim, row, col)
@@ -40,7 +39,7 @@ def basic_agent(board, kb, dim, n, p=False):
             elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kb, dim, row,
                                                                                   col) == numUnrevealedNeighbors:
                 markAllNeighborsSafe(kb, dim, row, col)
-
+            # what if I don't add the mine's neighbors to fringe?
             fringe = addToFringe(kb, dim, row, col, fringe)
             cleanFringe(check, fringe, kb, board, row, col, dim)
             updateAllSafe(kb, board, dim)
