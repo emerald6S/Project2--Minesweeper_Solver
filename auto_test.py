@@ -34,6 +34,7 @@ def automate_test():
         yAdv = []  # This stores high score of advanced
         a = int(min_density)
         i = 1
+        j = 1
 
         orig_stdout = sys.stdout
         f = open(file_name, "w")
@@ -46,7 +47,6 @@ def automate_test():
         print("----------------------------")
 
         while a <= int(max_density):
-            j = 1
             board = generate_board(int(d), a)
             kb = generate_knowledge_base(int(d))
             if strategy == "Basic":
@@ -62,9 +62,9 @@ def automate_test():
                 print("Whoops, advanced agent not implemented yet :(\n")  # TODO
 
             j = j + 1
-            if j < int(num_attempts):
-                i = i + 1
-            else:
+            i = i + 1
+            if j > int(num_attempts):
+                j = 1
                 a = a + 1
 
         if yBasic:
