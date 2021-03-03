@@ -46,6 +46,7 @@ def automate_test():
         print("----------------------------")
 
         while a <= int(max_density):
+            j = 1
             board = generate_board(int(d), a)
             kb = generate_knowledge_base(int(d))
             if strategy == "Basic":
@@ -59,9 +60,11 @@ def automate_test():
             elif strategy == "Advanced":
                 print("Advanced agent attempt ", i)
                 print("Whoops, advanced agent not implemented yet :(\n")  # TODO
-
-            a = a + 1
-            i = i + 1
+            if j < int(num_attempts):
+                j = j+1
+                i = i + 1
+            else:
+                a = a + 1
 
         if yBasic:
             print("xBasic = ", xBasic)
