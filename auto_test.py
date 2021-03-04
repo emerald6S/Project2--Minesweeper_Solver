@@ -27,11 +27,13 @@ def automate_test():
         file_name = input("Input the name of the file you want to store the raw output, and remember extensions:\n")
         print("Starting tests...")
 
+        scoresBasic = []  # This stores high score of basic
         xBasic = []  # This stores mine density of basic
-        yBasic = []  # This stores high score of basic
+        yBasic = []  # This stores high score of basic in fraction form
 
+        scoresAdv = [] # This scores high score of advanced
         xAdv = []  # This stores mine density of advanced
-        yAdv = []  # This stores high score of advanced
+        yAdv = []  # This stores high score of advanced in fraction form
         a = int(min_density)
         i = 1
         j = 1
@@ -54,8 +56,9 @@ def automate_test():
                 print("Basic agent attempt ", i)
                 print("Density ", a)
                 print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged\n")
+                scoresBasic.append(high_score[0])
                 xBasic.append(high_score[1])
-                yBasic.append(high_score[0])
+                yBasic.append(high_score[0] / high_score[1])
 
             elif strategy == "Advanced":
                 print("Advanced agent attempt ", i)
@@ -68,24 +71,26 @@ def automate_test():
                 a = a + 1
 
         if yBasic:
+            print("scoresBasic: ", scoresBasic)
             print("xBasic = ", xBasic)
             print("yBasic = ", yBasic)
             print("\n")
         if yAdv:
+            print(("scoresAdv: ", scoresAdv))
             print("xAdv = ", xAdv)
             print("yAdv = ", yAdv)
             print("\n")
         print("End of raw data")
 
         if yBasic:
-            maxB = max(yBasic)
-            print("Best score for basic agent: ", maxB)
-            max_indexB = yBasic.index(maxB)
+            maxB = max(scoresBasic)
+            print("Most mines dodged for basic agent: ", maxB)
+            max_indexB = scoresBasic.index(maxB)
             print("This happened at density ", xBasic[max_indexB])
         if yAdv:
-            maxA = max(yAdv)
-            print("Best score for advanced agent: ", maxA)
-            max_indexA = yAdv.index(maxA)
+            maxA = max(scoresAdv)
+            print("Most mines dodged for advanced agent: ", maxA)
+            max_indexA = scoresAdv.index(maxA)
             print("This happened at density ", xAdv[max_indexA])
 
         sys.stdout = orig_stdout
@@ -95,7 +100,7 @@ def automate_test():
             print("Now creating a scatter plot for the basic agent:")
             plt.scatter(xBasic, yBasic, label="density_vs_highScore", color='red')
             plt.xlabel("Mine density")
-            plt.ylabel("High score")
+            plt.ylabel("Fraction of dodged mines")
             plt.title(strategy + " Agent")
             plt.show()
 

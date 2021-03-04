@@ -24,7 +24,8 @@ def basic_agent(board, kb, dim, n, p=False):
     kb = reveal_space(kb, board, row, col, dim)
 
     while not isAutoSolved(kb, n, dim):
-        # print("Current element: (" + str(row) + ", " + str(col) + ")")
+        if p:
+            print("Current element: (" + str(row) + ", " + str(col) + ")")
         numUnrevealedNeighbors = count_unrevealed_neighbors(kb, dim, row, col)
         numRevealedNeighbors = count_revealed_neighbors(kb, dim, row, col)
         numNeighbors = count_neighbors(kb, dim, row, col)
@@ -49,7 +50,7 @@ def basic_agent(board, kb, dim, n, p=False):
             row = current[0][0]
             col = current[0][1]
         else:  # Must now randomly choose something from fringe, as I've exhausted all the conclusive elements
-            # The trouble starts here
+            # The trouble starts here, as the basic agent has zero way of figuring out probability
             keys = list(fringe.keys())
             if keys:
                 randomKey = random.choice(keys)
