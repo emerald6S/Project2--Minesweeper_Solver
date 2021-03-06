@@ -7,6 +7,7 @@ Authors: Siddhi Kasera, Em Shi
 
 # TODO: Implement the Advanced Agent, set up testing script, set up graphing script
 # I may want to return a tuple for the AI agents (number of unrevealed mines , total number of mines) for mathplotlib purposes
+from adv_agent import *
 from auto_test import automate_test
 from generate_board import *
 from manual_agent import *
@@ -43,6 +44,12 @@ else:
             high_score = basic_agent(board, kb, int(d), int(n))
             print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
     elif agent == "A" or agent == 'a' or agent == 'advanced':
-        print("I didn't implement this yet :(")  # TODO
+        print_final_kb = input("Would you like to print output? Y/N ")
+        if print_final_kb == 'Y' or print_final_kb == 'y' or print_final_kb == 'Yes':
+            high_score = adv_agent(board, kb, int(d), int(n), True)
+            print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
+        else:
+            high_score = adv_agent(board, kb, int(d), int(n))
+            print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
 
 print("Exiting the program")

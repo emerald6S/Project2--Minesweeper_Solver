@@ -87,7 +87,7 @@ def count_neighbors(kb, d, row, col):
 
 def count_unrevealed_neighbors(kb, d, row, col):
     """
-    For the selected cell, count valid unrevealed neighbors
+    For the selected cell, count valid unrevealed neighbors that are NOT marked
     :param kb: The knowledge base
     :param d: Dimension of the minefield
     :param row
@@ -98,15 +98,15 @@ def count_unrevealed_neighbors(kb, d, row, col):
     arr = kb
     neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
     for i in range(len(neighbors)):
-        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and kb[row + neighbors[i][0]][col + neighbors[i][1]] == '?':
+        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and (kb[row + neighbors[i][0]][col + neighbors[i][1]] == '?' or kb[row + neighbors[i][0]][col + neighbors[i][1]] == 'D' or kb[row + neighbors[i][0]][col + neighbors[i][1]] == 'S'):
             count = count + 1
 
     return count
 
 
-def count_revealed_neighbors(kb, d, row, col):
+def count_revealed_mine_neighbors(kb, d, row, col):
     """
-        For the selected cell, count valid revealed neighbors
+        For the selected cell, count valid mine neighbors
         :param kb: The knowledge base
         :param d: Dimension of the minefield
         :param row
@@ -117,7 +117,7 @@ def count_revealed_neighbors(kb, d, row, col):
     arr = kb
     neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
     for i in range(len(neighbors)):
-        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and kb[row + neighbors[i][0]][col + neighbors[i][1]] != '?':
+        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and (kb[row + neighbors[i][0]][col + neighbors[i][1]] == 'M' or kb[row + neighbors[i][0]][col + neighbors[i][1]] == 'D'):
             count = count + 1
 
     return count

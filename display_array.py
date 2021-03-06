@@ -13,9 +13,10 @@ def display_array(arr, dim, r=-1, c=-1):
     BLACK = (0, 0, 0)
     WHITE = (255, 255, 255)
     GRAY = (90, 90, 90)
-    GREEN = (0, 255, 0)
     RED = (255, 0, 0)
+    GREEN = (0, 255, 0)
     BLUE = (0, 0, 255)
+    ORANGE = (255, 178, 102)
 
     WIDTH = 20
     HEIGHT = 20
@@ -49,6 +50,10 @@ def display_array(arr, dim, r=-1, c=-1):
                     color = GRAY
                 elif arr[row][column] == 'M':
                     color = RED
+                elif arr[row][column] == 'D':
+                    color = ORANGE
+                elif arr[row][column] == "S":
+                    color = GREEN
                 else:
                     color = WHITE
                 if row == r and column == c:
@@ -62,7 +67,6 @@ def display_array(arr, dim, r=-1, c=-1):
                     return
                 if event.type == pygame.QUIT:
                     sys.exit()
-
 
         # --- Go ahead and update the screen with what we've drawn.
         pygame.display.flip()
