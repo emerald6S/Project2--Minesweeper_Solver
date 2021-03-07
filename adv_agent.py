@@ -49,9 +49,10 @@ def adv_agent(board, kb, dim, n, p=False):
                 else:
                     neighborMineCount = int(kb[row][col])
 
-                if neighborMineCount-numRevealedMineNeighbors == numUnrevealedNeighbors:
+                if neighborMineCount - numRevealedMineNeighbors == numUnrevealedNeighbors:
                     markAllNeighborsDangerous(kb, dim, row, col)
-                elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kb, dim, row, col) == numUnrevealedNeighbors:
+                elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kb, dim, row,
+                                                                                      col) == numUnrevealedNeighbors:
                     markAllNeighborsSafe(kb, dim, row, col)
 
                 fringe = addNeighborsToFringe(kb, dim, row, col, fringe)
@@ -63,6 +64,7 @@ def adv_agent(board, kb, dim, n, p=False):
                 display_array(kb, dim, row, col)
 
         cleanFringe(check, fringe, kb, board, row, col, dim)
+        check = cleanCheck(check, kb, dim)
         safe = hasSafe(kb, dim)
         #########
         if safe:  # there's safe cells I can reveal
@@ -100,7 +102,7 @@ def adv_agent(board, kb, dim, n, p=False):
                 kb = reveal_space(kb, board, row, col, dim, False, True)
                 if p:
                     print("-----------------")
-                    print("Current element: (" + str(row) + ", " + str(col) + ")")
+                    print("Randomly chosen element: (" + str(row) + ", " + str(col) + ")")
                     print("Contents are: " + kb[row][col])
                     display_array(kb, dim, row, col)
 
@@ -115,7 +117,7 @@ def adv_agent(board, kb, dim, n, p=False):
 #################################################
 
 
-def proofByContradiction(kb, dim, check: dict, key):
+def proofByContradiction(kb, dim, check: dict, k):
     """
     Performs a proof by contradiction on the selected fringe key (doesn't accept fringe as input)
     This function will assume that the key is a mine, and create a copy of the kb except update the key so that it's a mine
@@ -125,34 +127,33 @@ def proofByContradiction(kb, dim, check: dict, key):
     :param kb:
     :param dim:
     :param check:
-    :param key: A tuple, the key of the cell I want to see if is mine or not
+    :param k: A tuple, the key of the cell I want to see if is mine or not
     :return: boolean, true if proven to be safe and false otherwise
     """
     kbCopy = deepcopy(kb)  # I only should edit this one
-    kbCopy[key[0]][key[1]] = 'D'
+    kbCopy[k[0]][k[1]] = 'D'
     checkCopy = {}
 
-    row = key[0]
-    col = key[1]
-    numUnrevealedNeighbors = count_unrevealed_neighbors(kbCopy, dim, row, col)
-    numRevealedNeighbors = count_revealed_mine_neighbors(kbCopy, dim, row, col)
-    numNeighbors = count_neighbors(kbCopy, dim, row, col)
     # Change the copy of the knowledge base to reflect the assumption
     for key in list(check):
-        thisRow = key[0]
-        thisCol = key[1]
-        if kbCopy[thisRow][thisCol] != 'M' or kbCopy[thisRow][thisCol] != 'D':
-            if kbCopy[thisRow][thisCol] == 'C':
+        row = key[0]
+        col = key[1]
+        if kbCopy[row][col] != 'M' or kbCopy[row][col] != 'D':
+            numUnrevealedNeighbors = count_unrevealed_neighbors(kbCopy, dim, row, col)
+            numRevealedMineNeighbors = count_revealed_mine_neighbors(kbCopy, dim, row, col)
+            numNeighbors = count_neighbors(kbCopy, dim, row, col)
+            if kbCopy[row][col] == 'C':
                 neighborMineCount = 0
             else:
-                neighborMineCount = int(kb[thisRow][thisCol])
+                neighborMineCount = int(kbCopy[row][col])
 
-            if neighborMineCount - numRevealedNeighbors == numUnrevealedNeighbors:
-                markAllNeighborsDangerous(kbCopy, dim, thisRow, thisCol)
-            elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kbCopy, dim, thisRow,
-                                                                                  thisCol) == numUnrevealedNeighbors:
-                markAllNeighborsSafe(kbCopy, dim, thisRow, thisCol)
+            if neighborMineCount - numRevealedMineNeighbors == numUnrevealedNeighbors:
+                markAllNeighborsDangerous(kbCopy, dim, row, col)
+            elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kbCopy, dim, row,
+                                                                                  col) == numUnrevealedNeighbors:
+                markAllNeighborsSafe(kbCopy, dim, row, col)
 
+    kbCopy = updateMineNeighbors(kbCopy, dim)
     for key in list(check):
         checkCopy[key] = kbCopy[key[0]][key[1]]
     if check == checkCopy:
@@ -160,3 +161,30 @@ def proofByContradiction(kb, dim, check: dict, key):
     else:
         return True
 
+
+def updateMineNeighbors(kb, dim):
+    """
+    Update mine neighbors based on what has been revealed
+
+    :param kb:
+    :param dim:
+    :return: the updated kb
+    """
+    for row in range(dim):
+        for col in range(dim):
+            if kb[row][col] != "?" and kb[row][col] != 'D' and kb[row][col] != 'M' and kb[row][col] != 'S':
+                neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
+                mineCount = 0
+                hasChanged = True
+                for i in range(len(neighbors)):
+                    if isValid(kb, dim, row + neighbors[i][0], col + neighbors[i][1]):
+                        if kb[row + neighbors[i][0]][col + neighbors[i][1]] == '?':
+                            hasChanged = False
+                            break
+                        elif kb[row + neighbors[i][0]][col + neighbors[i][1]] == 'M' or kb[row + neighbors[i][0]][
+                            col + neighbors[i][1]] == 'D':
+                            mineCount = mineCount + 1
+                if hasChanged:
+                    kb[row][col] = str(mineCount)
+
+    return kb

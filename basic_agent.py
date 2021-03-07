@@ -10,7 +10,6 @@ from mine_utils import *
 def basic_agent(board, kb, dim, n, p=False):
     """
         Automatically solve Minesweeper using the most basic way described by Dr Cowan
-
         :param board: The mine board
         :param kb: The knowledge base
         :param dim: The dimensions of the board/knowledge base
@@ -18,57 +17,41 @@ def basic_agent(board, kb, dim, n, p=False):
         :param p: If I want to print the final knowledge base, defaults to False
         :return: A tuple of the format (number unrevealed mines, number total mines)
         """
+    check = {}  # these are the REVEALED cells I have to check neighbors of
+    fringe = {}  # these are UNREVEALED neighbors of cells I revealed
     # It's necessary to generate random coords the first time around
     row = randint(0, dim - 1)
     col = randint(0, dim - 1)
-    kb = reveal_space(kb, board, row, col, dim, False, True)
-    if p:
-        print("-----------------")
-        print("Current element: (" + str(row) + ", " + str(col) + ")")
-        print("Contents are: " + kb[row][col])
-        display_array(kb, dim, row, col)
+    kb = reveal_space(kb, board, row, col, dim)
 
     while not isAutoSolved(kb, n):
-        check = getAllCheck(kb, dim)
-        fringe = {}  # these are UNREVEALED neighbors of cells I revealed
-        # Check all cells in check
-        for key in list(check):
-            row = key[0]
-            col = key[1]
-            if kb[row][col] != 'M' or kb[row][col] != 'D':
-                numUnrevealedNeighbors = count_unrevealed_neighbors(kb, dim, row, col)
-                numRevealedMineNeighbors = count_revealed_mine_neighbors(kb, dim, row, col)
-                numNeighbors = count_neighbors(kb, dim, row, col)
-                if kb[row][col] == 'C':
-                    neighborMineCount = 0
-                else:
-                    neighborMineCount = int(kb[row][col])
+        # print("Current element: (" + str(row) + ", " + str(col) + ")")
+        neighborMineCount = 0
+        numUnrevealedNeighbors = count_unrevealed_neighbors(kb, dim, row, col)
+        numRevealedNeighbors = count_revealed_mine_neighbors(kb, dim, row, col)
+        numNeighbors = count_neighbors(kb, dim, row, col)
+        if kb[row][col] != 'M' and kb[row][col] != 'D':
+            if kb[row][col] == 'C':
+                neighborMineCount = 0
+            else:
+                neighborMineCount = int(kb[row][col])
 
-                if neighborMineCount - numRevealedMineNeighbors == numUnrevealedNeighbors:
-                    markAllNeighborsDangerous(kb, dim, row, col)
-                elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kb, dim, row,
-                                                                                      col) == numUnrevealedNeighbors:
-                    markAllNeighborsSafe(kb, dim, row, col)
+            if neighborMineCount - numRevealedNeighbors == numUnrevealedNeighbors:
+                markAllNeighborsDangerous(kb, dim, row, col)
+            elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kb, dim, row,
+                                                                                  col) == numUnrevealedNeighbors:
+                markAllNeighborsSafe(kb, dim, row, col)
 
-                fringe = addNeighborsToFringe(kb, dim, row, col, fringe)
+            fringe = addNeighborsToFringe(kb, dim, row, col, fringe)
+            cleanFringe(check, fringe, kb, board, row, col, dim)
+            revealAllSafe(kb, board, dim, fringe, check)
 
-            if p:
-                print("-----------------")
-                print("Current element: (" + str(row) + ", " + str(col) + ")")
-                print("Contents are: " + kb[row][col])
-                display_array(kb, dim, row, col)
-
-        cleanFringe(check, fringe, kb, board, row, col, dim)
-        safe = hasSafe(kb, dim)
-        #########
-        if safe:  # there's safe cells I can reveal
-            if p:
-                print("There's still cells that can be conclusively id'd")
-            revealAllSafe(kb, board, dim, fringe, check, True)
+        if check:  # there's still a neighbor who I can check
+            current = check.popitem()
+            row = current[0][0]
+            col = current[0][1]
         else:  # Must now randomly choose something from fringe, as I've exhausted all the conclusive elements
-            # The trouble starts here, as the basic agent has zero way of figuring out probability
-            if p:
-                print("No known cells left, choosing randomly")
+            # The trouble starts here
             keys = list(fringe.keys())
             if keys:
                 randomKey = random.choice(keys)
@@ -82,9 +65,9 @@ def basic_agent(board, kb, dim, n, p=False):
             col = randomKey[1]
             kb = reveal_space(kb, board, row, col, dim)
     if p:
-        print("-----------------")
         print_knowledge_base(kb)
     return isAutoSolved(kb, n)
+
 
 
 #################################################
@@ -114,7 +97,7 @@ def addNeighborsToFringe(kb, dim, row, col, fringe: dict):
 
 def cleanFringe(check: dict, fringe: dict, kb, board, row, col, dim):
     """
-        Removes revealed safe and marked mine cells from fringe
+        Removes revealed safe and marked mine cells from fringe, and updates check
 
         :param check: The dict that stores all cells I must check later
         :param fringe: The fringe, where I store all cells that are unrevealed and border cells I checked
@@ -153,9 +136,9 @@ def getAllCheck(kb, dim):
     return newCheck
 
 
-def cleanCheck(check: dict, kb, row, col, dim):
+def cleanCheck(check: dict, kb, dim):
     """
-        Removes cells in check that lack hidden neighbors
+        Removes cells in check that lack hidden neighbors, and "D" or "M" cells in check
 
         :param check: The dict that stores all cells I must check later
         :param kb
@@ -165,14 +148,20 @@ def cleanCheck(check: dict, kb, row, col, dim):
         :return: dict, which is the updated fringe
         """
     for key in list(check):
-        neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
+        row = key[0]
+        col = key[1]
+        mineCell = False
         numHidden = 0
-        for i in range(len(neighbors)):
-            if isValid(kb, dim, row + neighbors[i][0], col + neighbors[i][1]) and (
-                    kb[row + neighbors[i][0]][col + neighbors[i][1]] == '?'):
-                numHidden = numHidden + 1
-                break
-        if numHidden == 0:
+        if kb[row][col] == 'M' or kb[row][col] == 'D':
+            mineCell = True
+        if not mineCell:
+            neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
+            for i in range(len(neighbors)):
+                if isValid(kb, dim, row + neighbors[i][0], col + neighbors[i][1]) and (
+                        kb[row + neighbors[i][0]][col + neighbors[i][1]] == '?'):
+                    numHidden = numHidden + 1
+                    break
+        if numHidden == 0 or mineCell == True:
             del check[key]
 
     return check

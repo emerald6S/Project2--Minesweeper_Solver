@@ -98,7 +98,7 @@ def count_unrevealed_neighbors(kb, d, row, col):
     arr = kb
     neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
     for i in range(len(neighbors)):
-        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and (kb[row + neighbors[i][0]][col + neighbors[i][1]] == '?' or kb[row + neighbors[i][0]][col + neighbors[i][1]] == 'D' or kb[row + neighbors[i][0]][col + neighbors[i][1]] == 'S'):
+        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and kb[row + neighbors[i][0]][col + neighbors[i][1]] == '?':
             count = count + 1
 
     return count
@@ -136,7 +136,7 @@ def count_safe_revealed_neighbors(kb, d, row, col):
     arr = kb
     neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
     for i in range(len(neighbors)):
-        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and kb[row + neighbors[i][0]][col + neighbors[i][1]] != '?' and kb[row + neighbors[i][0]][col + neighbors[i][1]] != 'M':
+        if isValid(kb, d, row + neighbors[i][0], col + neighbors[i][1]) and kb[row + neighbors[i][0]][col + neighbors[i][1]] != '?' and kb[row + neighbors[i][0]][col + neighbors[i][1]] != 'M' and kb[row + neighbors[i][0]][col + neighbors[i][1]] != 'D':
             count = count + 1
 
     return count
