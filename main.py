@@ -7,6 +7,8 @@ Authors: Siddhi Kasera, Em Shi
 
 # TODO: Implement the Advanced Agent, set up testing script, set up graphing script
 # I may want to return a tuple for the AI agents (number of unrevealed mines , total number of mines) for mathplotlib purposes
+import gc
+
 from adv_agent import *
 from auto_test import automate_test
 from generate_board import *
@@ -52,4 +54,5 @@ else:
             high_score = adv_agent(board, kb, int(d), int(n))
             print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
 
+print("Garbage collected ", gc.collect(), " objects")
 print("Exiting the program")

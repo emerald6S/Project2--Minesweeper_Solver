@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from adv_agent import adv_agent
 from basic_agent import *
 from generate_board import generate_board
+import gc
 
 
 # TODO: After advanced agent is implemented, give option to print both agents' data on the same plot
@@ -62,6 +63,7 @@ def automate_test():
                 scoresBasic.append(high_score[0])
                 xBasic.append(high_score[1])
                 yBasic.append(high_score[0] / high_score[1])
+                gc.collect()
 
             elif strategy == "Advanced":
                 high_score = adv_agent(board, kb, int(d), a)
@@ -71,6 +73,7 @@ def automate_test():
                 scoresAdv.append(high_score[0])
                 xAdv.append(high_score[1])
                 yAdv.append(high_score[0] / high_score[1])
+                gc.collect()
 
             j = j + 1
             i = i + 1
