@@ -12,18 +12,16 @@ from generate_board import generate_board
 def automate_test():
     print("AUTOMATED TESTING SCRIPT")
 
-    agent = input("Select the agent you want to use: B for basic, A for advanced, or All for both: ")
+    agent = input("Select the agent you want to use: B for basic, or A for advanced: ")
     strategy = ""
     if agent == 'B' or agent == 'b' or agent == 'basic':
         strategy = "Basic"
     elif agent == "A" or agent == 'a' or agent == 'advanced':
         strategy = "Advanced"
-    elif agent == "All" or agent == 'all' or agent == 'Both' or agent == 'both':
-        strategy = "All"
     else:
         print("Invalid strategy")
 
-    if strategy == 'Basic' or strategy == 'Advanced' or strategy == 'All':
+    if strategy == 'Basic' or strategy == 'Advanced':
         d = input("What is the square dimensions of the mine field? ")
         print("There's " + str(int(d)*int(d) ) + " spaces total")
         min_density = input("What is the LOWEST number of mines you want to put in the field? ")
@@ -74,23 +72,6 @@ def automate_test():
                 xAdv.append(high_score[1])
                 yAdv.append(high_score[0] / high_score[1])
 
-            elif strategy == "All":
-                high_score = basic_agent(board, kb, int(d), a)
-                print("Basic agent attempt ", i)
-                print("Density ", a)
-                print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged\n")
-                scoresBasic.append(high_score[0])
-                xBasic.append(high_score[1])
-                yBasic.append(high_score[0] / high_score[1])
-
-                high_score2 = adv_agent(board, kb, int(d), a)
-                print("Advanced agent attempt ", i)
-                print("Density ", a)
-                print("High score: " + str(high_score2[0]) + " / " + str(high_score2[1]) + " mines dodged\n")
-                scoresAdv.append(high_score2[0])
-                xAdv.append(high_score2[1])
-                yAdv.append(high_score2[0] / high_score2[1])
-
             j = j + 1
             i = i + 1
             if j > int(num_attempts):
@@ -132,23 +113,13 @@ def automate_test():
             plt.legend(["Basic agent"], loc = "best")
             plt.show()
 
-        if strategy == "Advanced":
+        if strategy == "Advanced" and yAdv:
             print("Now creating a scatter plot for the advanced agent:")
             plt.scatter(xAdv, yAdv, label="density_vs_highScore", color='green', alpha=0.5)
             plt.xlabel("Mine density")
             plt.ylabel("Fraction of dodged mines")
             plt.title(strategy + " Agent")
             plt.legend(["Advanced agent"], loc="best")
-            plt.show()
-
-        if strategy == "All":
-            print("Now creating a scatter plot for both agents:")
-            plt.scatter(xBasic, yBasic, label="density_vs_highScore", color='red', alpha=0.5)
-            plt.scatter(xAdv, yAdv, label="density_vs_highScore", color='green', alpha=0.5)
-            plt.xlabel("Mine density")
-            plt.ylabel("Fraction of dodged mines")
-            plt.title("All Agents")
-            plt.legend(["Basic", "Advanced"], loc="best")
             plt.show()
 
     return

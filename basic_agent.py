@@ -25,7 +25,11 @@ def basic_agent(board, kb, dim, n, p=False):
     kb = reveal_space(kb, board, row, col, dim)
 
     while not isAutoSolved(kb, n):
-        # print("Current element: (" + str(row) + ", " + str(col) + ")")
+        if p:
+            print("-----------------")
+            print("Checking element: (" + str(row) + ", " + str(col) + ")")
+            print("Contents are: " + kb[row][col])
+            display_array(kb, dim, row, col)
         neighborMineCount = 0
         numUnrevealedNeighbors = count_unrevealed_neighbors(kb, dim, row, col)
         numRevealedNeighbors = count_revealed_mine_neighbors(kb, dim, row, col)
@@ -47,11 +51,13 @@ def basic_agent(board, kb, dim, n, p=False):
             revealAllSafe(kb, board, dim, fringe, check)
 
         if check:  # there's still a neighbor who I can check
+            if p:
+                print("-----------------")
+                print("There's still cells that can be conclusively id'd")
             current = check.popitem()
             row = current[0][0]
             col = current[0][1]
         else:  # Must now randomly choose something from fringe, as I've exhausted all the conclusive elements
-            # The trouble starts here
             keys = list(fringe.keys())
             if keys:
                 randomKey = random.choice(keys)
@@ -61,13 +67,17 @@ def basic_agent(board, kb, dim, n, p=False):
                 keys = list(unrevealed.keys())
                 randomKey = random.choice(keys)
                 unrevealed.pop(randomKey)
+            if p:
+                print("-----------------")
+                print("Randomly chosen element: (" + str(row) + ", " + str(col) + ")")
+                print("Contents are: " + kb[row][col])
+
             row = randomKey[0]
             col = randomKey[1]
             kb = reveal_space(kb, board, row, col, dim)
     if p:
         print_knowledge_base(kb)
     return isAutoSolved(kb, n)
-
 
 
 #################################################
@@ -130,7 +140,8 @@ def getAllCheck(kb, dim):
         for j in range(dim):
 
             for k in range(len(neighbors)):
-                if isValid(kb, dim, i + neighbors[k][0], j + neighbors[k][1]) and kb[i][j] != "?" and kb[i][j] != "M" and kb[i][j] != 'D' and kb[i + neighbors[k][0]][j + neighbors[k][1]] == '?':
+                if isValid(kb, dim, i + neighbors[k][0], j + neighbors[k][1]) and kb[i][j] != "?" and kb[i][
+                    j] != "M" and kb[i][j] != 'D' and kb[i + neighbors[k][0]][j + neighbors[k][1]] == '?':
                     newCheck[(i, j)] = kb[i][j]
 
     return newCheck
@@ -197,7 +208,8 @@ def markAllNeighborsDangerous(kb, dim, row, col):
     """
     neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
     for i in range(len(neighbors)):
-        if isValid(kb, dim, row + neighbors[i][0], col + neighbors[i][1]) and kb[row + neighbors[i][0]][col + neighbors[i][1]] == '?':
+        if isValid(kb, dim, row + neighbors[i][0], col + neighbors[i][1]) and kb[row + neighbors[i][0]][
+            col + neighbors[i][1]] == '?':
             mark_mine(kb, row + neighbors[i][0], col + neighbors[i][1], dim)
     return kb
 
@@ -253,8 +265,8 @@ def isAutoSolved(kb, n):
     spaces_left = 0
     for row in kb:
         for i in row:
-            if i == '?' or i == 'D' or i == "S":
-                # if space is revealed to be safe
+            if i == '?' or i == "S":
+                # if space is not revealed
                 spaces_left = spaces_left + 1
             elif i == 'M':
                 # if space is revealed to be a mine

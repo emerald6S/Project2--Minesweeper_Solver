@@ -6,6 +6,7 @@
 # -- 3. Now compare all the mine position configs. Reveal the space that has the least number of configs that mark it as a mine. In the case of a tie, choose randomly
 #
 # Potential time saver: if the fringe isn't contiguous, then I may split it
+import itertools
 
 from basic_agent import *
 from display_array import *
@@ -29,7 +30,7 @@ def adv_agent(board, kb, dim, n, p=False):
     kb = reveal_space(kb, board, row, col, dim, False, True)
     if p:
         print("-----------------")
-        print("Current element: (" + str(row) + ", " + str(col) + ")")
+        print("Checking element: (" + str(row) + ", " + str(col) + ")")
         print("Contents are: " + kb[row][col])
         display_array(kb, dim, row, col)
 
@@ -69,6 +70,7 @@ def adv_agent(board, kb, dim, n, p=False):
         #########
         if safe:  # there's safe cells I can reveal
             if p:
+                print("-----------------")
                 print("There's still cells that can be conclusively id'd")
             revealAllSafe(kb, board, dim, fringe, check, True)
 
@@ -80,31 +82,55 @@ def adv_agent(board, kb, dim, n, p=False):
                 for key in list(fringe):
                     if proofByContradiction(kb, dim, check, key):
                         if p:
+                            print("-----------------")
                             print("By proof of contradiction, element (" + str(key[0]) + ", " + str(
-                                key[1]) + ") is NOT a mine")
+                                key[1]) + ") should NOT be mine")
                         kb = reveal_space(kb, board, key[0], key[1], False, False)
                         flag_proof = True
                         break
-            if not flag_proof:
+            if not flag_proof:  # Failed proof by contradiction, do probability
                 keys = list(fringe.keys())
-                if p:
-                    print("Choosing randomly now")
                 if keys:
-                    randomKey = random.choice(keys)
-                    fringe.pop(randomKey)
+                    x = len(keys)
+                    permutations = generateAllBinaryStrings(x)
+                    fringeCopies = []
+                    for permutation in permutations:
+                        fringeCopies = generateMineFromPermutation(kb, dim, check, fringe, permutation, fringeCopies)
+                    fringeSpaceCount = getLeastMines(fringe, fringeCopies)
+                    leastMines = min(fringeSpaceCount.values())
+                    leastKeys = [key for key in fringeSpaceCount if fringeSpaceCount[key] == leastMines]
+                    if len(leastKeys) == 1:
+                        if p:
+                            print("-----------------")
+                            print("Element (" + str(leastKeys[0][0]) + ", " + str(
+                                leastKeys[0][1]) + ") has lowest chance of being a mine")
+                            print("Contents are actually: " + kb[row][col])
+                        reveal_space(kb, board, leastKeys[0][0], leastKeys[0][1], dim, False, True)
+                    elif len(leastKeys) > 1:
+                        randomKey = random.choice(leastKeys)
+                        row = randomKey[0]
+                        col = randomKey[1]
+                        kb = reveal_space(kb, board, row, col, dim, False, True)
+                        if p:
+                            print("-----------------")
+                            print("Probability, chose: (" + str(row) + ", " + str(col) + ")")
+                            print("Contents are actually: " + kb[row][col])
+
                 else:
+                    if p:
+                        print("No fringe left, choosing randomly now")
                     unrevealed = getAllUnrevealedInKB(kb, dim)
                     keys = list(unrevealed.keys())
                     randomKey = random.choice(keys)
                     unrevealed.pop(randomKey)
-                row = randomKey[0]
-                col = randomKey[1]
-                kb = reveal_space(kb, board, row, col, dim, False, True)
-                if p:
-                    print("-----------------")
-                    print("Randomly chosen element: (" + str(row) + ", " + str(col) + ")")
-                    print("Contents are: " + kb[row][col])
-                    display_array(kb, dim, row, col)
+                    row = randomKey[0]
+                    col = randomKey[1]
+                    kb = reveal_space(kb, board, row, col, dim, False, True)
+                    if p:
+                        print("-----------------")
+                        print("Randomly chosen element: (" + str(row) + ", " + str(col) + ")")
+                        print("Contents are: " + kb[row][col])
+
 
     if p:
         print("-----------------")
@@ -130,33 +156,33 @@ def proofByContradiction(kb, dim, check: dict, k):
     :param k: A tuple, the key of the cell I want to see if is mine or not
     :return: boolean, true if proven to be safe and false otherwise
     """
-    kbCopy = deepcopy(kb)  # I only should edit this one
-    kbCopy[k[0]][k[1]] = 'D'
-    checkCopy = {}
+    kbClone = deepcopy(kb)  # I only should edit this one
+    kbClone[k[0]][k[1]] = 'D'
+    checkClone = {}
 
     # Change the copy of the knowledge base to reflect the assumption
     for key in list(check):
         row = key[0]
         col = key[1]
-        if kbCopy[row][col] != 'M' or kbCopy[row][col] != 'D':
-            numUnrevealedNeighbors = count_unrevealed_neighbors(kbCopy, dim, row, col)
-            numRevealedMineNeighbors = count_revealed_mine_neighbors(kbCopy, dim, row, col)
-            numNeighbors = count_neighbors(kbCopy, dim, row, col)
-            if kbCopy[row][col] == 'C':
+        if kbClone[row][col] != 'M' or kbClone[row][col] != 'D':
+            numUnrevealedNeighbors = count_unrevealed_neighbors(kbClone, dim, row, col)
+            numRevealedMineNeighbors = count_revealed_mine_neighbors(kbClone, dim, row, col)
+            numNeighbors = count_neighbors(kbClone, dim, row, col)
+            if kbClone[row][col] == 'C':
                 neighborMineCount = 0
             else:
-                neighborMineCount = int(kbCopy[row][col])
+                neighborMineCount = int(kbClone[row][col])
 
             if neighborMineCount - numRevealedMineNeighbors == numUnrevealedNeighbors:
-                markAllNeighborsDangerous(kbCopy, dim, row, col)
-            elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kbCopy, dim, row,
+                markAllNeighborsDangerous(kbClone, dim, row, col)
+            elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kbClone, dim, row,
                                                                                   col) == numUnrevealedNeighbors:
-                markAllNeighborsSafe(kbCopy, dim, row, col)
+                markAllNeighborsSafe(kbClone, dim, row, col)
 
-    kbCopy = updateMineNeighbors(kbCopy, dim)
+    kbClone = updateMineNeighbors(kbClone, dim)
     for key in list(check):
-        checkCopy[key] = kbCopy[key[0]][key[1]]
-    if check == checkCopy:
+        checkClone[key] = kbClone[key[0]][key[1]]
+    if check == checkClone:
         return False
     else:
         return True
@@ -164,7 +190,7 @@ def proofByContradiction(kb, dim, check: dict, k):
 
 def updateMineNeighbors(kb, dim):
     """
-    Update mine neighbors based on what has been revealed
+    Update mine neighbors based on what has been revealed. If a neighbor is hidden, do not change what has been revealed
 
     :param kb:
     :param dim:
@@ -188,3 +214,77 @@ def updateMineNeighbors(kb, dim):
                     kb[row][col] = str(mineCount)
 
     return kb
+
+
+def generateAllBinaryStrings(n):
+    """
+    Generate all binary strings up to length n
+
+    :param n:
+    :return:
+    """
+    result = []
+    k = 0
+    while k <= n:
+        for bits in itertools.combinations(range(n), k):
+            s = ['0'] * n
+            for b in bits:
+                s[b] = '1'
+            result.append("".join(s))
+        k = k + 1
+    return result
+
+
+def generateMineFromPermutation(kb, dim, check, fringe, permutation, fringeCopies):
+    """
+    From given permutations, update a copy of kb: 0 is safe and 1 is mine
+    Generate a new fringe and check based off this information
+    If check == checkClone, add new fringe to fringeCopies
+
+    :param kb:
+    :param dim:
+    :param check:
+    :param fringe:
+    :param permutation:
+    :param fringeCopies:
+    :return: Update fringeCopies
+    """
+    kbClone = deepcopy(kb)
+    checkClone = {}
+    fringeClone = {}
+    i = 0
+    for key in fringe:
+        if permutation[i] == '1':
+            fringeClone[key] = 'D'
+        else:
+            fringeClone[key] = 'S'
+        kbClone[key[0]][key[1]] = fringeClone[key]
+
+    kbClone = updateMineNeighbors(kbClone, dim)
+
+    for key in list(check):
+        checkClone[key] = kbClone[key[0]][key[1]]
+
+    if check == checkClone: # If checkClone is wrong, throw it away
+        fringeCopies.append(checkClone)
+
+    return fringeCopies
+
+
+def getLeastMines(fringe, fringeCopies):
+    """
+    From fringe copies, select the spaces that have the least amount of mines in them
+
+    :param fringe
+    :param fringeCopies:
+    :return: A dict of spaces
+    """
+    fringeSpaces = deepcopy(fringe)
+    for space in fringeSpaces:
+        mineCount = 0
+        for i in fringeCopies:
+            if fringeCopies[i][space] == 'D':
+                mineCount = mineCount + 1
+        fringeSpaces[space] = mineCount
+
+    return fringeSpaces
