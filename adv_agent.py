@@ -6,6 +6,7 @@
 # -- 3. Now compare all the mine position configs. Reveal the space that has the least number of configs that mark it as a mine. In the case of a tie, choose randomly
 #
 # Potential time saver: if the fringe isn't contiguous, then I may split it
+import gc
 import itertools
 
 from basic_agent import *
@@ -67,6 +68,7 @@ def adv_agent(board, kb, dim, n, p=False):
         cleanFringe(check, fringe, kb, board, row, col, dim)
         check = cleanCheck(check, kb, dim)
         safe = hasSafe(kb, dim)
+
         #########
         if safe:  # there's safe cells I can reveal
             if p:
@@ -135,7 +137,9 @@ def adv_agent(board, kb, dim, n, p=False):
     if p:
         print("-----------------")
         print_knowledge_base(kb)
-    return isAutoSolved(kb, n)
+    sol = isAutoSolved(kb, n)
+    gc.collect()
+    return sol
 
 
 #################################################

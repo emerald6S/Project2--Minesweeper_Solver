@@ -54,5 +54,5 @@ else:
             high_score = adv_agent(board, kb, int(d), int(n))
             print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
 
-print("Garbage collected ", gc.collect(), " objects")
+gc.collect()
 print("Exiting the program")
