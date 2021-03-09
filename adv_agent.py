@@ -146,7 +146,6 @@ def adv_agent(board, kb, dim, n, p=False):
 # HELPER FUNCTIONS
 #################################################
 
-
 def proofByContradiction(kb, dim, check: dict, k):
     """
     Performs a proof by contradiction on the selected fringe key (doesn't accept fringe as input)
@@ -186,6 +185,7 @@ def proofByContradiction(kb, dim, check: dict, k):
     kbClone = updateMineNeighbors(kbClone, dim)
     for key in list(check):
         checkClone[key] = kbClone[key[0]][key[1]]
+    del kbClone
     if check == checkClone:
         return False
     else:
@@ -235,6 +235,7 @@ def generateAllBinaryStrings(n):
             for b in bits:
                 s[b] = '1'
             result.append("".join(s))
+            del s
         k = k + 1
     return result
 
@@ -271,7 +272,7 @@ def generateMineFromPermutation(kb, dim, check, fringe, permutation, fringeCopie
 
     if check == checkClone: # If checkClone is wrong, throw it away
         fringeCopies.append(checkClone)
-
+    del kbClone
     return fringeCopies
 
 
