@@ -78,60 +78,71 @@ def adv_agent(board, kb, dim, n, p=False):
 
         else:  # Must now randomly choose something from fringe, as I've exhausted all the conclusive elements
             # The trouble starts here, as the basic agent has zero way of figuring out probability
-            keys = list(fringe.keys())
-            flag_proof = False
-            if keys:
-                for key in list(fringe):
-                    if proofByContradiction(kb, dim, check, key):
-                        if p:
-                            print("-----------------")
-                            print("By proof of contradiction, element (" + str(key[0]) + ", " + str(
-                                key[1]) + ") should NOT be mine")
-                        kb = reveal_space(kb, board, key[0], key[1], False, False)
-                        flag_proof = True
+            if fringe:
+                fringeFrags = splitFringe(fringe)
+                for frag in fringeFrags:
+                    keys = list(frag.keys())
+                    flag_proof = False
+                    if keys:
+                        for key in list(frag):
+                            if proofByContradiction(kb, dim, check, key):
+                                if p:
+                                    print("-----------------")
+                                    print("By proof of contradiction, element (" + str(key[0]) + ", " + str(
+                                        key[1]) + ") should NOT be mine")
+                                mark_safe(kb, key[0], key[1], dim)
+                                cleanFringe(check, frag, kb, board, key[0], key[1], dim)
+                                cleanCheck(check, kb, dim)
+                                flag_proof = True
+                                break
+                    if flag_proof:
                         break
-            if not flag_proof:  # Failed proof by contradiction, do probability
-                keys = list(fringe.keys())
-                if keys:
-                    x = len(keys)
-                    permutations = generateAllBinaryStrings(x)
-                    fringeCopies = []
-                    for permutation in permutations:
-                        fringeCopies = generateMineFromPermutation(kb, dim, check, fringe, permutation, fringeCopies)
-                    fringeSpaceCount = getLeastMines(fringe, fringeCopies)
-                    leastMines = min(fringeSpaceCount.values())
-                    leastKeys = [key for key in fringeSpaceCount if fringeSpaceCount[key] == leastMines]
-                    if len(leastKeys) == 1:
-                        if p:
-                            print("-----------------")
-                            print("Element (" + str(leastKeys[0][0]) + ", " + str(
-                                leastKeys[0][1]) + ") has lowest chance of being a mine")
-                            print("Contents are actually: " + kb[row][col])
-                        reveal_space(kb, board, leastKeys[0][0], leastKeys[0][1], dim, False, True)
-                    elif len(leastKeys) > 1:
-                        randomKey = random.choice(leastKeys)
-                        row = randomKey[0]
-                        col = randomKey[1]
-                        kb = reveal_space(kb, board, row, col, dim, False, True)
-                        if p:
-                            print("-----------------")
-                            print("Probability, chose: (" + str(row) + ", " + str(col) + ")")
-                            print("Contents are actually: " + kb[row][col])
+                    if not flag_proof:  # Failed proof by contradiction, do probability
+                        keys = list(frag.keys())
+                        if keys:
+                            x = len(keys)
+                            permutations = generateAllBinaryStrings(x)
+                            fringeCopies = []
+                            for permutation in permutations:
+                                fringeCopies = generateMineFromPermutation(kb, dim, check, frag, permutation,
+                                                                           fringeCopies)
+                            fringeSpaceCount = getLeastMines(frag, fringeCopies)
+                            leastMines = min(fringeSpaceCount.values())
+                            leastKeys = [key for key in fringeSpaceCount if fringeSpaceCount[key] == leastMines]
+                            if len(leastKeys) == 1:
+                                if p:
+                                    print("-----------------")
+                                    print("Element (" + str(leastKeys[0][0]) + ", " + str(
+                                        leastKeys[0][1]) + ") has lowest chance of being a mine")
+                                mark_safe(kb, leastKeys[0][0], leastKeys[0][1], dim)
+                                cleanFringe(check, frag, kb, board, leastKeys[0][0], leastKeys[0][1], dim)
+                                cleanCheck(check, kb, dim)
+                            elif len(leastKeys) > 1:
+                                randomKey = random.choice(leastKeys)
+                                row = randomKey[0]
+                                col = randomKey[1]
+                                mark_safe(kb, row, col, dim)
+                                if p:
+                                    print("-----------------")
+                                    print("Probability, chose: (" + str(row) + ", " + str(col) + ")")
+                                    print("Contents are actually: " + kb[row][col])
+                        break
+                revealAllSafe(kb, board, dim, fringe, check, True)
 
-                else:
-                    if p:
-                        print("No fringe left, choosing randomly now")
-                    unrevealed = getAllUnrevealedInKB(kb, dim)
-                    keys = list(unrevealed.keys())
-                    randomKey = random.choice(keys)
-                    unrevealed.pop(randomKey)
-                    row = randomKey[0]
-                    col = randomKey[1]
-                    kb = reveal_space(kb, board, row, col, dim, False, True)
-                    if p:
-                        print("-----------------")
-                        print("Randomly chosen element: (" + str(row) + ", " + str(col) + ")")
-                        print("Contents are: " + kb[row][col])
+            else:
+                if p:
+                    print("No fringe left, choosing randomly now")
+                unrevealed = getAllUnrevealedInKB(kb, dim)
+                keys = list(unrevealed.keys())
+                randomKey = random.choice(keys)
+                unrevealed.pop(randomKey)
+                row = randomKey[0]
+                col = randomKey[1]
+                kb = reveal_space(kb, board, row, col, dim, False, True)
+                if p:
+                    print("-----------------")
+                    print("Randomly chosen element: (" + str(row) + ", " + str(col) + ")")
+                    print("Contents are: " + kb[row][col])
 
 
     if p:
@@ -220,6 +231,35 @@ def updateMineNeighbors(kb, dim):
     return kb
 
 
+def splitFringe(fringe: dict):
+    """
+    Split fringe into contiguous regions in case the entire fringe isn't contiguous
+
+    :param fringe:
+    :return: List containing fringe fragments. If entire fringe is contiguous, then there's only 1 fragment
+    """
+    fringeFrags = []
+    fringeClone = deepcopy(fringe)
+    while fringeClone:
+        frag = {}
+        element = fringeClone.popitem()  # Should be a key value pair
+        key = element[0]
+        contents = element[1]
+        frag[key] = contents
+        for k in list(fringe):
+            if k != key and k in fringeClone:
+                for i in frag:
+                    if k[0] == i[0] or k[1] == i[1]:
+                        x = fringeClone.pop(k)
+                        frag[k] = x
+                        break
+        if frag:
+            fringeFrags.append(frag)
+
+    del fringeClone
+    return fringeFrags
+
+
 def generateAllBinaryStrings(n):
     """
     Generate all binary strings up to length n
@@ -271,7 +311,7 @@ def generateMineFromPermutation(kb, dim, check, fringe, permutation, fringeCopie
         checkClone[key] = kbClone[key[0]][key[1]]
 
     if check == checkClone: # If checkClone is wrong, throw it away
-        fringeCopies.append(checkClone)
+        fringeCopies.append(fringeClone)
     del kbClone
     return fringeCopies
 
@@ -288,7 +328,7 @@ def getLeastMines(fringe, fringeCopies):
     for space in fringeSpaces:
         mineCount = 0
         for i in fringeCopies:
-            if fringeCopies[i][space] == 'D':
+            if i[space] == 'D':
                 mineCount = mineCount + 1
         fringeSpaces[space] = mineCount
 
