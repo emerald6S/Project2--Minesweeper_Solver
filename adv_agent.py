@@ -143,7 +143,7 @@ def adv_agent(board, kb, dim, n, p=False):
                     print("-----------------")
                     print("Randomly chosen element: (" + str(row) + ", " + str(col) + ")")
                     print("Contents are: " + kb[row][col])
-
+        gc.collect()
 
     if p:
         print("-----------------")
@@ -257,6 +257,7 @@ def splitFringe(fringe: dict):
             fringeFrags.append(frag)
 
     del fringeClone
+    gc.collect()
     return fringeFrags
 
 

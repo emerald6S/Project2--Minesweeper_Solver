@@ -2,7 +2,7 @@ import sys
 
 import matplotlib.pyplot as plt
 
-from adv_agent import adv_agent
+from adv_agent import *
 from basic_agent import *
 from generate_board import generate_board
 import gc
