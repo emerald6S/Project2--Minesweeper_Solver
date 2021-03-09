@@ -33,8 +33,11 @@ class RunWithTimeout(object):  # Run the agent with a time limit
 
 
 def adv_agent(board, kb, dim, n, p=False):
-    x = RunWithTimeout(do_adv_agent, (board, kb, dim, n, p))
-    x.run(5)  # time limit of 5 seconds
+    if not p:
+        x = RunWithTimeout(do_adv_agent, (board, kb, dim, n, p))
+        x.run(5)  # time limit of 5 seconds
+    else:
+        do_adv_agent(board, kb, dim, n, p)
     return getSolution(kb, n)
 
 
