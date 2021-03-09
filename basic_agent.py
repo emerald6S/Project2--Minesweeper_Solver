@@ -76,7 +76,9 @@ def basic_agent(board, kb, dim, n, p=False):
             col = randomKey[1]
             kb = reveal_space(kb, board, row, col, dim)
     if p:
+        print("-----------------")
         print_knowledge_base(kb)
+        display_array(kb, dim, row, col)
     return isAutoSolved(kb, n)
 
 
@@ -263,19 +265,23 @@ def isAutoSolved(kb, n):
     """
     mines_left = n
     spaces_left = 0
+    mines_tripped = 0
     for row in kb:
         for i in row:
             if i == '?' or i == "S":
                 # if space is not revealed
                 spaces_left = spaces_left + 1
-            elif i == 'M':
-                # if space is revealed to be a mine
+            elif i == 'M' or i == 'D':
+                # if space is supposed to be a mine
                 mines_left = mines_left - 1
 
+            if i == 'M':
+                mines_tripped = mines_tripped + 1
+
     if mines_left == 0:
-        return mines_left, n
+        return n-mines_tripped, n
     elif spaces_left <= mines_left:
-        return mines_left, n
+        return n-mines_tripped, n
 
     else:
         return

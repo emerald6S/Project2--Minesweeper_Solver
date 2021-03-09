@@ -148,6 +148,7 @@ def adv_agent(board, kb, dim, n, p=False):
     if p:
         print("-----------------")
         print_knowledge_base(kb)
+        display_array(kb, dim, row, col)
     sol = isAutoSolved(kb, n)
     gc.collect()
     return sol
