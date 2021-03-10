@@ -8,6 +8,7 @@ Authors: Siddhi Kasera, Em Shi
 # Return a tuple for the AI agents (number of unrevealed mines , total number of mines) for mathplotlib purposes
 import gc
 import time
+import sys
 
 from adv_agent import *
 from auto_test import automate_test
