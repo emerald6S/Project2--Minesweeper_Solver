@@ -196,15 +196,24 @@ def proofByContradiction(kb, dim, check: dict, k):
             elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kbClone, dim, row,
                                                                                   col) == numUnrevealedNeighbors:
                 markAllNeighborsSafe(kbClone, dim, row, col)
-
-    kbClone = updateMineNeighbors(kbClone, dim)
-    for key in list(check):
-        checkClone[key] = kbClone[key[0]][key[1]]
+            kbClone = updateMineNeighbors(kbClone, dim)
+            # The backtracking approach:
+            for k in list(check):
+                if check[k] != kbClone[k[0]][k[1]]:
+                    del kbClone
+                    return False
+    # This was the naive approach, which wasted a bit of time
+    # By a bit of time, I meant about a few seconds, which is significant when I run 1000+ cases
+    # kbClone = updateMineNeighbors(kbClone, dim)
+    # for key in list(check):
+        # checkClone[key] = kbClone[key[0]][key[1]]
+    # del kbClone
+    # if check == checkClone:
+    #    return False
+    # else:
+    #    return True
     del kbClone
-    if check == checkClone:
-        return False
-    else:
-        return True
+    return True
 
 
 def updateMineNeighbors(kb, dim):

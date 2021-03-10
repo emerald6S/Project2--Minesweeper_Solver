@@ -5,9 +5,9 @@ Project 2: Minesweeper solver
 Authors: Siddhi Kasera, Em Shi
 """
 
-# TODO: Implement the Advanced Agent, set up testing script, set up graphing script
-# I may want to return a tuple for the AI agents (number of unrevealed mines , total number of mines) for mathplotlib purposes
+# Return a tuple for the AI agents (number of unrevealed mines , total number of mines) for mathplotlib purposes
 import gc
+import time
 
 from adv_agent import *
 from auto_test import automate_test
@@ -43,16 +43,23 @@ else:
             high_score = basic_agent(board, kb, int(d), int(n), True)
             print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
         else:
+            start = time.time()
             high_score = basic_agent(board, kb, int(d), int(n))
+            end = time.time()
             print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
+            print("Elapsed time: ", end-start, " s")
+
     elif agent == "A" or agent == 'a' or agent == 'advanced':
         print_final_kb = input("Would you like to print output? Y/N ")
         if print_final_kb == 'Y' or print_final_kb == 'y' or print_final_kb == 'Yes':
             high_score = adv_agent(board, kb, int(d), int(n), True)
             print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
         else:
+            start = time.time()
             high_score = adv_agent(board, kb, int(d), int(n))
+            end = time.time()
             print("High score: " + str(high_score[0]) + " / " + str(high_score[1]) + " mines dodged")
+            print("Elapsed time: ", end - start, " s")
 
-gc.collect()
 print("Exiting the program")
+sys.exit()
