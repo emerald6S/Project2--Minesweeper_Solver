@@ -1,11 +1,14 @@
-# TODO:
+# The algorithm:
 # -- Do basic agent up to the point where I must randomly choose a new point
 # -- The fun starts when I have run out of things in check (no cells where, taken alone, I can conclusively decide is safe or not).
-# -- 1. Do a proof by contradiction foe each cell in fringe where I assume that the unrevealed space is a mine. If the board's information becomes incorrect, then that space must be safe safe
+# -- 1. Do a proof by contradiction foe each cell in fringe where I assume that the unrevealed space is a mine. If the board's information becomes incorrect, then that space must be safe
 # -- 2. If the attempted proofs by contradiction fails to detect a safe cell, then create all possible mine configs. Obviously throw away any solution that makes the board incorrect
 # -- 3. Now compare all the mine position configs. Reveal the space that has the least number of configs that mark it as a mine. In the case of a tie, choose randomly
 #
-# Potential time saver: if the fringe isn't contiguous, then I may split it
+# Optimizations (that reduce time complexity):
+# 1. Split the fringe into contiguous regions
+# 2. Backtracking in proof by contradiction
+
 import gc
 import itertools
 import threading
@@ -202,8 +205,9 @@ def proofByContradiction(kb, dim, check: dict, k):
                 if check[k] != kbClone[k[0]][k[1]]:
                     del kbClone
                     return False
-    # This was the naive approach, which wasted a bit of time
-    # By a bit of time, I meant about a few seconds, which is significant when I run 1000+ cases
+
+    # Below was the naive approach, which wasted a bit of time
+    # By a bit of time, I meant about a few seconds, which is actually pretty significant when I run 1000+ cases
     # kbClone = updateMineNeighbors(kbClone, dim)
     # for key in list(check):
         # checkClone[key] = kbClone[key[0]][key[1]]
@@ -351,7 +355,7 @@ def getLeastMines(fringe, fringeCopies):
 
 def getSolution(kb, n):
     """
-    Check if board has been solved (for auto play)
+    Extract solution from knowledge base
 
     :param kb: Knowledge base
     :param n: Number of mines
