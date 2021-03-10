@@ -1,1654 +1,2334 @@
 AUTOMATED TEST RESULT DATA
 Credits: Siddhi Kasera and Em Shi
 Dimension of: 16
-Min density:  20
-Max density:  60
+Min density:  13
+Max density:  128
 ----------------------------
 Basic agent attempt  1
-Density  20
-High score: 12 / 20 mines dodged
+Density  13
+High score: 10 / 13 mines dodged
 
 Basic agent attempt  2
+Density  13
+High score: 6 / 13 mines dodged
+
+Basic agent attempt  3
+Density  13
+High score: 13 / 13 mines dodged
+
+Basic agent attempt  4
+Density  13
+High score: 11 / 13 mines dodged
+
+Basic agent attempt  5
+Density  13
+High score: 10 / 13 mines dodged
+
+Basic agent attempt  6
+Density  14
+High score: 8 / 14 mines dodged
+
+Basic agent attempt  7
+Density  14
+High score: 10 / 14 mines dodged
+
+Basic agent attempt  8
+Density  14
+High score: 10 / 14 mines dodged
+
+Basic agent attempt  9
+Density  14
+High score: 10 / 14 mines dodged
+
+Basic agent attempt  10
+Density  14
+High score: 10 / 14 mines dodged
+
+Basic agent attempt  11
+Density  15
+High score: 13 / 15 mines dodged
+
+Basic agent attempt  12
+Density  15
+High score: 12 / 15 mines dodged
+
+Basic agent attempt  13
+Density  15
+High score: 8 / 15 mines dodged
+
+Basic agent attempt  14
+Density  15
+High score: 13 / 15 mines dodged
+
+Basic agent attempt  15
+Density  15
+High score: 10 / 15 mines dodged
+
+Basic agent attempt  16
+Density  16
+High score: 13 / 16 mines dodged
+
+Basic agent attempt  17
+Density  16
+High score: 14 / 16 mines dodged
+
+Basic agent attempt  18
+Density  16
+High score: 13 / 16 mines dodged
+
+Basic agent attempt  19
+Density  16
+High score: 14 / 16 mines dodged
+
+Basic agent attempt  20
+Density  16
+High score: 14 / 16 mines dodged
+
+Basic agent attempt  21
+Density  17
+High score: 14 / 17 mines dodged
+
+Basic agent attempt  22
+Density  17
+High score: 9 / 17 mines dodged
+
+Basic agent attempt  23
+Density  17
+High score: 12 / 17 mines dodged
+
+Basic agent attempt  24
+Density  17
+High score: 10 / 17 mines dodged
+
+Basic agent attempt  25
+Density  17
+High score: 13 / 17 mines dodged
+
+Basic agent attempt  26
+Density  18
+High score: 12 / 18 mines dodged
+
+Basic agent attempt  27
+Density  18
+High score: 14 / 18 mines dodged
+
+Basic agent attempt  28
+Density  18
+High score: 12 / 18 mines dodged
+
+Basic agent attempt  29
+Density  18
+High score: 13 / 18 mines dodged
+
+Basic agent attempt  30
+Density  18
+High score: 16 / 18 mines dodged
+
+Basic agent attempt  31
+Density  19
+High score: 12 / 19 mines dodged
+
+Basic agent attempt  32
+Density  19
+High score: 12 / 19 mines dodged
+
+Basic agent attempt  33
+Density  19
+High score: 11 / 19 mines dodged
+
+Basic agent attempt  34
+Density  19
+High score: 18 / 19 mines dodged
+
+Basic agent attempt  35
+Density  19
+High score: 12 / 19 mines dodged
+
+Basic agent attempt  36
+Density  20
+High score: 14 / 20 mines dodged
+
+Basic agent attempt  37
+Density  20
+High score: 18 / 20 mines dodged
+
+Basic agent attempt  38
 Density  20
 High score: 11 / 20 mines dodged
 
-Basic agent attempt  3
+Basic agent attempt  39
 Density  20
 High score: 16 / 20 mines dodged
 
-Basic agent attempt  4
+Basic agent attempt  40
 Density  20
-High score: 16 / 20 mines dodged
+High score: 19 / 20 mines dodged
 
-Basic agent attempt  5
-Density  20
-High score: 14 / 20 mines dodged
-
-Basic agent attempt  6
-Density  20
-High score: 14 / 20 mines dodged
-
-Basic agent attempt  7
-Density  20
-High score: 17 / 20 mines dodged
-
-Basic agent attempt  8
-Density  20
-High score: 17 / 20 mines dodged
-
-Basic agent attempt  9
-Density  20
-High score: 9 / 20 mines dodged
-
-Basic agent attempt  10
-Density  20
-High score: 14 / 20 mines dodged
-
-Basic agent attempt  11
+Basic agent attempt  41
 Density  21
-High score: 15 / 21 mines dodged
+High score: 18 / 21 mines dodged
 
-Basic agent attempt  12
-Density  21
-High score: 11 / 21 mines dodged
-
-Basic agent attempt  13
-Density  21
-High score: 14 / 21 mines dodged
-
-Basic agent attempt  14
+Basic agent attempt  42
 Density  21
 High score: 13 / 21 mines dodged
 
-Basic agent attempt  15
+Basic agent attempt  43
 Density  21
 High score: 12 / 21 mines dodged
 
-Basic agent attempt  16
+Basic agent attempt  44
 Density  21
-High score: 10 / 21 mines dodged
+High score: 19 / 21 mines dodged
 
-Basic agent attempt  17
+Basic agent attempt  45
 Density  21
-High score: 16 / 21 mines dodged
+High score: 13 / 21 mines dodged
 
-Basic agent attempt  18
-Density  21
-High score: 17 / 21 mines dodged
-
-Basic agent attempt  19
-Density  21
-High score: 15 / 21 mines dodged
-
-Basic agent attempt  20
-Density  21
-High score: 16 / 21 mines dodged
-
-Basic agent attempt  21
-Density  22
-High score: 14 / 22 mines dodged
-
-Basic agent attempt  22
+Basic agent attempt  46
 Density  22
 High score: 18 / 22 mines dodged
 
-Basic agent attempt  23
+Basic agent attempt  47
 Density  22
-High score: 12 / 22 mines dodged
+High score: 13 / 22 mines dodged
 
-Basic agent attempt  24
+Basic agent attempt  48
 Density  22
-High score: 16 / 22 mines dodged
+High score: 19 / 22 mines dodged
 
-Basic agent attempt  25
-Density  22
-High score: 15 / 22 mines dodged
-
-Basic agent attempt  26
-Density  22
-High score: 12 / 22 mines dodged
-
-Basic agent attempt  27
-Density  22
-High score: 10 / 22 mines dodged
-
-Basic agent attempt  28
-Density  22
-High score: 11 / 22 mines dodged
-
-Basic agent attempt  29
+Basic agent attempt  49
 Density  22
 High score: 20 / 22 mines dodged
 
-Basic agent attempt  30
+Basic agent attempt  50
 Density  22
-High score: 12 / 22 mines dodged
+High score: 13 / 22 mines dodged
 
-Basic agent attempt  31
-Density  23
-High score: 18 / 23 mines dodged
-
-Basic agent attempt  32
-Density  23
-High score: 22 / 23 mines dodged
-
-Basic agent attempt  33
-Density  23
-High score: 17 / 23 mines dodged
-
-Basic agent attempt  34
-Density  23
-High score: 18 / 23 mines dodged
-
-Basic agent attempt  35
-Density  23
-High score: 13 / 23 mines dodged
-
-Basic agent attempt  36
-Density  23
-High score: 18 / 23 mines dodged
-
-Basic agent attempt  37
-Density  23
-High score: 16 / 23 mines dodged
-
-Basic agent attempt  38
-Density  23
-High score: 19 / 23 mines dodged
-
-Basic agent attempt  39
+Basic agent attempt  51
 Density  23
 High score: 20 / 23 mines dodged
 
-Basic agent attempt  40
+Basic agent attempt  52
 Density  23
-High score: 15 / 23 mines dodged
+High score: 13 / 23 mines dodged
 
-Basic agent attempt  41
-Density  24
-High score: 16 / 24 mines dodged
+Basic agent attempt  53
+Density  23
+High score: 17 / 23 mines dodged
 
-Basic agent attempt  42
-Density  24
-High score: 13 / 24 mines dodged
+Basic agent attempt  54
+Density  23
+High score: 17 / 23 mines dodged
 
-Basic agent attempt  43
-Density  24
-High score: 17 / 24 mines dodged
+Basic agent attempt  55
+Density  23
+High score: 14 / 23 mines dodged
 
-Basic agent attempt  44
-Density  24
-High score: 14 / 24 mines dodged
-
-Basic agent attempt  45
-Density  24
-High score: 16 / 24 mines dodged
-
-Basic agent attempt  46
+Basic agent attempt  56
 Density  24
 High score: 15 / 24 mines dodged
 
-Basic agent attempt  47
+Basic agent attempt  57
 Density  24
-High score: 16 / 24 mines dodged
+High score: 13 / 24 mines dodged
 
-Basic agent attempt  48
+Basic agent attempt  58
 Density  24
-High score: 9 / 24 mines dodged
+High score: 15 / 24 mines dodged
 
-Basic agent attempt  49
+Basic agent attempt  59
 Density  24
-High score: 19 / 24 mines dodged
+High score: 15 / 24 mines dodged
 
-Basic agent attempt  50
+Basic agent attempt  60
 Density  24
-High score: 16 / 24 mines dodged
+High score: 18 / 24 mines dodged
 
-Basic agent attempt  51
-Density  25
-High score: 17 / 25 mines dodged
-
-Basic agent attempt  52
-Density  25
-High score: 17 / 25 mines dodged
-
-Basic agent attempt  53
+Basic agent attempt  61
 Density  25
 High score: 11 / 25 mines dodged
 
-Basic agent attempt  54
-Density  25
-High score: 17 / 25 mines dodged
-
-Basic agent attempt  55
-Density  25
-High score: 12 / 25 mines dodged
-
-Basic agent attempt  56
-Density  25
-High score: 13 / 25 mines dodged
-
-Basic agent attempt  57
-Density  25
-High score: 18 / 25 mines dodged
-
-Basic agent attempt  58
+Basic agent attempt  62
 Density  25
 High score: 14 / 25 mines dodged
 
-Basic agent attempt  59
+Basic agent attempt  63
+Density  25
+High score: 19 / 25 mines dodged
+
+Basic agent attempt  64
+Density  25
+High score: 21 / 25 mines dodged
+
+Basic agent attempt  65
 Density  25
 High score: 15 / 25 mines dodged
 
-Basic agent attempt  60
-Density  25
-High score: 9 / 25 mines dodged
-
-Basic agent attempt  61
-Density  26
-High score: 14 / 26 mines dodged
-
-Basic agent attempt  62
-Density  26
-High score: 13 / 26 mines dodged
-
-Basic agent attempt  63
-Density  26
-High score: 21 / 26 mines dodged
-
-Basic agent attempt  64
-Density  26
-High score: 15 / 26 mines dodged
-
-Basic agent attempt  65
-Density  26
-High score: 14 / 26 mines dodged
-
 Basic agent attempt  66
 Density  26
-High score: 15 / 26 mines dodged
+High score: 14 / 26 mines dodged
 
 Basic agent attempt  67
 Density  26
-High score: 16 / 26 mines dodged
+High score: 21 / 26 mines dodged
 
 Basic agent attempt  68
 Density  26
-High score: 22 / 26 mines dodged
+High score: 17 / 26 mines dodged
 
 Basic agent attempt  69
 Density  26
-High score: 10 / 26 mines dodged
+High score: 17 / 26 mines dodged
 
 Basic agent attempt  70
 Density  26
-High score: 23 / 26 mines dodged
+High score: 17 / 26 mines dodged
 
 Basic agent attempt  71
 Density  27
-High score: 14 / 27 mines dodged
+High score: 20 / 27 mines dodged
 
 Basic agent attempt  72
 Density  27
-High score: 7 / 27 mines dodged
+High score: 18 / 27 mines dodged
 
 Basic agent attempt  73
 Density  27
-High score: 22 / 27 mines dodged
+High score: 12 / 27 mines dodged
 
 Basic agent attempt  74
 Density  27
-High score: 15 / 27 mines dodged
+High score: 18 / 27 mines dodged
 
 Basic agent attempt  75
 Density  27
-High score: 14 / 27 mines dodged
-
-Basic agent attempt  76
-Density  27
-High score: 18 / 27 mines dodged
-
-Basic agent attempt  77
-Density  27
 High score: 17 / 27 mines dodged
 
+Basic agent attempt  76
+Density  28
+High score: 20 / 28 mines dodged
+
+Basic agent attempt  77
+Density  28
+High score: 14 / 28 mines dodged
+
 Basic agent attempt  78
-Density  27
-High score: 21 / 27 mines dodged
+Density  28
+High score: 18 / 28 mines dodged
 
 Basic agent attempt  79
-Density  27
-High score: 21 / 27 mines dodged
+Density  28
+High score: 17 / 28 mines dodged
 
 Basic agent attempt  80
-Density  27
-High score: 12 / 27 mines dodged
+Density  28
+High score: 16 / 28 mines dodged
 
 Basic agent attempt  81
-Density  28
-High score: 21 / 28 mines dodged
-
-Basic agent attempt  82
-Density  28
-High score: 21 / 28 mines dodged
-
-Basic agent attempt  83
-Density  28
-High score: 15 / 28 mines dodged
-
-Basic agent attempt  84
-Density  28
-High score: 20 / 28 mines dodged
-
-Basic agent attempt  85
-Density  28
-High score: 13 / 28 mines dodged
-
-Basic agent attempt  86
-Density  28
-High score: 11 / 28 mines dodged
-
-Basic agent attempt  87
-Density  28
-High score: 22 / 28 mines dodged
-
-Basic agent attempt  88
-Density  28
-High score: 22 / 28 mines dodged
-
-Basic agent attempt  89
-Density  28
-High score: 20 / 28 mines dodged
-
-Basic agent attempt  90
-Density  28
-High score: 20 / 28 mines dodged
-
-Basic agent attempt  91
-Density  29
-High score: 19 / 29 mines dodged
-
-Basic agent attempt  92
-Density  29
-High score: 20 / 29 mines dodged
-
-Basic agent attempt  93
-Density  29
-High score: 17 / 29 mines dodged
-
-Basic agent attempt  94
-Density  29
-High score: 22 / 29 mines dodged
-
-Basic agent attempt  95
-Density  29
-High score: 25 / 29 mines dodged
-
-Basic agent attempt  96
-Density  29
-High score: 15 / 29 mines dodged
-
-Basic agent attempt  97
-Density  29
-High score: 15 / 29 mines dodged
-
-Basic agent attempt  98
-Density  29
-High score: 19 / 29 mines dodged
-
-Basic agent attempt  99
 Density  29
 High score: 13 / 29 mines dodged
 
-Basic agent attempt  100
+Basic agent attempt  82
 Density  29
-High score: 18 / 29 mines dodged
+High score: 28 / 29 mines dodged
 
-Basic agent attempt  101
-Density  30
-High score: 23 / 30 mines dodged
+Basic agent attempt  83
+Density  29
+High score: 22 / 29 mines dodged
 
-Basic agent attempt  102
-Density  30
-High score: 13 / 30 mines dodged
+Basic agent attempt  84
+Density  29
+High score: 14 / 29 mines dodged
 
-Basic agent attempt  103
-Density  30
-High score: 15 / 30 mines dodged
+Basic agent attempt  85
+Density  29
+High score: 21 / 29 mines dodged
 
-Basic agent attempt  104
-Density  30
-High score: 16 / 30 mines dodged
-
-Basic agent attempt  105
+Basic agent attempt  86
 Density  30
 High score: 20 / 30 mines dodged
 
-Basic agent attempt  106
-Density  30
-High score: 19 / 30 mines dodged
-
-Basic agent attempt  107
-Density  30
-High score: 20 / 30 mines dodged
-
-Basic agent attempt  108
-Density  30
-High score: 22 / 30 mines dodged
-
-Basic agent attempt  109
-Density  30
-High score: 20 / 30 mines dodged
-
-Basic agent attempt  110
+Basic agent attempt  87
 Density  30
 High score: 17 / 30 mines dodged
 
-Basic agent attempt  111
-Density  31
-High score: 14 / 31 mines dodged
+Basic agent attempt  88
+Density  30
+High score: 17 / 30 mines dodged
 
-Basic agent attempt  112
-Density  31
-High score: 23 / 31 mines dodged
+Basic agent attempt  89
+Density  30
+High score: 17 / 30 mines dodged
 
-Basic agent attempt  113
-Density  31
-High score: 14 / 31 mines dodged
+Basic agent attempt  90
+Density  30
+High score: 12 / 30 mines dodged
 
-Basic agent attempt  114
-Density  31
-High score: 14 / 31 mines dodged
-
-Basic agent attempt  115
-Density  31
-High score: 15 / 31 mines dodged
-
-Basic agent attempt  116
-Density  31
-High score: 17 / 31 mines dodged
-
-Basic agent attempt  117
-Density  31
-High score: 20 / 31 mines dodged
-
-Basic agent attempt  118
+Basic agent attempt  91
 Density  31
 High score: 18 / 31 mines dodged
 
-Basic agent attempt  119
+Basic agent attempt  92
 Density  31
-High score: 13 / 31 mines dodged
+High score: 16 / 31 mines dodged
 
-Basic agent attempt  120
+Basic agent attempt  93
 Density  31
-High score: 11 / 31 mines dodged
+High score: 15 / 31 mines dodged
 
-Basic agent attempt  121
+Basic agent attempt  94
+Density  31
+High score: 18 / 31 mines dodged
+
+Basic agent attempt  95
+Density  31
+High score: 20 / 31 mines dodged
+
+Basic agent attempt  96
+Density  32
+High score: 20 / 32 mines dodged
+
+Basic agent attempt  97
 Density  32
 High score: 13 / 32 mines dodged
 
-Basic agent attempt  122
-Density  32
-High score: 16 / 32 mines dodged
-
-Basic agent attempt  123
-Density  32
-High score: 14 / 32 mines dodged
-
-Basic agent attempt  124
-Density  32
-High score: 17 / 32 mines dodged
-
-Basic agent attempt  125
-Density  32
-High score: 17 / 32 mines dodged
-
-Basic agent attempt  126
-Density  32
-High score: 17 / 32 mines dodged
-
-Basic agent attempt  127
-Density  32
-High score: 18 / 32 mines dodged
-
-Basic agent attempt  128
+Basic agent attempt  98
 Density  32
 High score: 13 / 32 mines dodged
 
-Basic agent attempt  129
+Basic agent attempt  99
 Density  32
-High score: 22 / 32 mines dodged
+High score: 15 / 32 mines dodged
 
-Basic agent attempt  130
+Basic agent attempt  100
 Density  32
-High score: 14 / 32 mines dodged
+High score: 20 / 32 mines dodged
 
-Basic agent attempt  131
+Basic agent attempt  101
 Density  33
-High score: 21 / 33 mines dodged
+High score: 25 / 33 mines dodged
 
-Basic agent attempt  132
+Basic agent attempt  102
 Density  33
-High score: 24 / 33 mines dodged
+High score: 16 / 33 mines dodged
 
-Basic agent attempt  133
+Basic agent attempt  103
+Density  33
+High score: 19 / 33 mines dodged
+
+Basic agent attempt  104
 Density  33
 High score: 17 / 33 mines dodged
 
-Basic agent attempt  134
+Basic agent attempt  105
 Density  33
-High score: 15 / 33 mines dodged
+High score: 22 / 33 mines dodged
 
-Basic agent attempt  135
-Density  33
-High score: 23 / 33 mines dodged
-
-Basic agent attempt  136
-Density  33
-High score: 20 / 33 mines dodged
-
-Basic agent attempt  137
-Density  33
-High score: 16 / 33 mines dodged
-
-Basic agent attempt  138
-Density  33
-High score: 16 / 33 mines dodged
-
-Basic agent attempt  139
-Density  33
-High score: 23 / 33 mines dodged
-
-Basic agent attempt  140
-Density  33
-High score: 23 / 33 mines dodged
-
-Basic agent attempt  141
-Density  34
-High score: 18 / 34 mines dodged
-
-Basic agent attempt  142
-Density  34
-High score: 17 / 34 mines dodged
-
-Basic agent attempt  143
-Density  34
-High score: 21 / 34 mines dodged
-
-Basic agent attempt  144
-Density  34
-High score: 16 / 34 mines dodged
-
-Basic agent attempt  145
+Basic agent attempt  106
 Density  34
 High score: 19 / 34 mines dodged
 
-Basic agent attempt  146
-Density  34
-High score: 16 / 34 mines dodged
-
-Basic agent attempt  147
-Density  34
-High score: 12 / 34 mines dodged
-
-Basic agent attempt  148
+Basic agent attempt  107
 Density  34
 High score: 20 / 34 mines dodged
 
-Basic agent attempt  149
+Basic agent attempt  108
 Density  34
-High score: 15 / 34 mines dodged
+High score: 21 / 34 mines dodged
 
-Basic agent attempt  150
+Basic agent attempt  109
 Density  34
-High score: 12 / 34 mines dodged
+High score: 16 / 34 mines dodged
 
-Basic agent attempt  151
+Basic agent attempt  110
+Density  34
+High score: 23 / 34 mines dodged
+
+Basic agent attempt  111
 Density  35
-High score: 18 / 35 mines dodged
+High score: 16 / 35 mines dodged
 
-Basic agent attempt  152
+Basic agent attempt  112
 Density  35
-High score: 21 / 35 mines dodged
+High score: 27 / 35 mines dodged
 
-Basic agent attempt  153
-Density  35
-High score: 13 / 35 mines dodged
-
-Basic agent attempt  154
+Basic agent attempt  113
 Density  35
 High score: 24 / 35 mines dodged
 
-Basic agent attempt  155
+Basic agent attempt  114
 Density  35
-High score: 17 / 35 mines dodged
+High score: 22 / 35 mines dodged
 
-Basic agent attempt  156
+Basic agent attempt  115
 Density  35
-High score: 21 / 35 mines dodged
+High score: 15 / 35 mines dodged
 
-Basic agent attempt  157
-Density  35
-High score: 18 / 35 mines dodged
-
-Basic agent attempt  158
-Density  35
-High score: 17 / 35 mines dodged
-
-Basic agent attempt  159
-Density  35
-High score: 19 / 35 mines dodged
-
-Basic agent attempt  160
-Density  35
-High score: 20 / 35 mines dodged
-
-Basic agent attempt  161
-Density  36
-High score: 9 / 36 mines dodged
-
-Basic agent attempt  162
+Basic agent attempt  116
 Density  36
 High score: 17 / 36 mines dodged
 
-Basic agent attempt  163
+Basic agent attempt  117
 Density  36
 High score: 21 / 36 mines dodged
 
-Basic agent attempt  164
+Basic agent attempt  118
 Density  36
-High score: 21 / 36 mines dodged
+High score: 23 / 36 mines dodged
 
-Basic agent attempt  165
-Density  36
-High score: 11 / 36 mines dodged
-
-Basic agent attempt  166
-Density  36
-High score: 18 / 36 mines dodged
-
-Basic agent attempt  167
-Density  36
-High score: 16 / 36 mines dodged
-
-Basic agent attempt  168
+Basic agent attempt  119
 Density  36
 High score: 22 / 36 mines dodged
 
-Basic agent attempt  169
+Basic agent attempt  120
 Density  36
-High score: 18 / 36 mines dodged
+High score: 13 / 36 mines dodged
 
-Basic agent attempt  170
-Density  36
-High score: 22 / 36 mines dodged
-
-Basic agent attempt  171
+Basic agent attempt  121
 Density  37
-High score: 23 / 37 mines dodged
+High score: 15 / 37 mines dodged
 
-Basic agent attempt  172
-Density  37
-High score: 17 / 37 mines dodged
-
-Basic agent attempt  173
-Density  37
-High score: 25 / 37 mines dodged
-
-Basic agent attempt  174
-Density  37
-High score: 16 / 37 mines dodged
-
-Basic agent attempt  175
-Density  37
-High score: 24 / 37 mines dodged
-
-Basic agent attempt  176
-Density  37
-High score: 20 / 37 mines dodged
-
-Basic agent attempt  177
-Density  37
-High score: 20 / 37 mines dodged
-
-Basic agent attempt  178
+Basic agent attempt  122
 Density  37
 High score: 22 / 37 mines dodged
 
-Basic agent attempt  179
+Basic agent attempt  123
 Density  37
-High score: 23 / 37 mines dodged
+High score: 13 / 37 mines dodged
 
-Basic agent attempt  180
+Basic agent attempt  124
 Density  37
-High score: 16 / 37 mines dodged
+High score: 18 / 37 mines dodged
 
-Basic agent attempt  181
-Density  38
-High score: 14 / 38 mines dodged
+Basic agent attempt  125
+Density  37
+High score: 15 / 37 mines dodged
 
-Basic agent attempt  182
-Density  38
-High score: 14 / 38 mines dodged
-
-Basic agent attempt  183
+Basic agent attempt  126
 Density  38
 High score: 19 / 38 mines dodged
 
-Basic agent attempt  184
-Density  38
-High score: 28 / 38 mines dodged
-
-Basic agent attempt  185
-Density  38
-High score: 25 / 38 mines dodged
-
-Basic agent attempt  186
-Density  38
-High score: 20 / 38 mines dodged
-
-Basic agent attempt  187
-Density  38
-High score: 12 / 38 mines dodged
-
-Basic agent attempt  188
-Density  38
-High score: 16 / 38 mines dodged
-
-Basic agent attempt  189
+Basic agent attempt  127
 Density  38
 High score: 19 / 38 mines dodged
 
-Basic agent attempt  190
+Basic agent attempt  128
 Density  38
-High score: 13 / 38 mines dodged
+High score: 26 / 38 mines dodged
 
-Basic agent attempt  191
+Basic agent attempt  129
+Density  38
+High score: 17 / 38 mines dodged
+
+Basic agent attempt  130
+Density  38
+High score: 22 / 38 mines dodged
+
+Basic agent attempt  131
 Density  39
-High score: 16 / 39 mines dodged
+High score: 19 / 39 mines dodged
 
-Basic agent attempt  192
+Basic agent attempt  132
 Density  39
-High score: 18 / 39 mines dodged
+High score: 14 / 39 mines dodged
 
-Basic agent attempt  193
-Density  39
-High score: 17 / 39 mines dodged
-
-Basic agent attempt  194
-Density  39
-High score: 10 / 39 mines dodged
-
-Basic agent attempt  195
-Density  39
-High score: 17 / 39 mines dodged
-
-Basic agent attempt  196
-Density  39
-High score: 18 / 39 mines dodged
-
-Basic agent attempt  197
+Basic agent attempt  133
 Density  39
 High score: 23 / 39 mines dodged
 
-Basic agent attempt  198
-Density  39
-High score: 24 / 39 mines dodged
-
-Basic agent attempt  199
+Basic agent attempt  134
 Density  39
 High score: 21 / 39 mines dodged
 
-Basic agent attempt  200
+Basic agent attempt  135
 Density  39
-High score: 24 / 39 mines dodged
+High score: 17 / 39 mines dodged
 
-Basic agent attempt  201
-Density  40
-High score: 11 / 40 mines dodged
-
-Basic agent attempt  202
-Density  40
-High score: 15 / 40 mines dodged
-
-Basic agent attempt  203
+Basic agent attempt  136
 Density  40
 High score: 19 / 40 mines dodged
 
-Basic agent attempt  204
+Basic agent attempt  137
 Density  40
-High score: 25 / 40 mines dodged
+High score: 17 / 40 mines dodged
 
-Basic agent attempt  205
+Basic agent attempt  138
 Density  40
-High score: 18 / 40 mines dodged
+High score: 11 / 40 mines dodged
 
-Basic agent attempt  206
+Basic agent attempt  139
 Density  40
-High score: 20 / 40 mines dodged
+High score: 22 / 40 mines dodged
 
-Basic agent attempt  207
-Density  40
-High score: 25 / 40 mines dodged
-
-Basic agent attempt  208
-Density  40
-High score: 21 / 40 mines dodged
-
-Basic agent attempt  209
-Density  40
-High score: 24 / 40 mines dodged
-
-Basic agent attempt  210
+Basic agent attempt  140
 Density  40
 High score: 18 / 40 mines dodged
 
-Basic agent attempt  211
-Density  41
-High score: 18 / 41 mines dodged
-
-Basic agent attempt  212
-Density  41
-High score: 18 / 41 mines dodged
-
-Basic agent attempt  213
-Density  41
-High score: 21 / 41 mines dodged
-
-Basic agent attempt  214
-Density  41
-High score: 18 / 41 mines dodged
-
-Basic agent attempt  215
-Density  41
-High score: 20 / 41 mines dodged
-
-Basic agent attempt  216
-Density  41
-High score: 23 / 41 mines dodged
-
-Basic agent attempt  217
+Basic agent attempt  141
 Density  41
 High score: 19 / 41 mines dodged
 
-Basic agent attempt  218
+Basic agent attempt  142
 Density  41
-High score: 27 / 41 mines dodged
+High score: 21 / 41 mines dodged
 
-Basic agent attempt  219
+Basic agent attempt  143
 Density  41
-High score: 15 / 41 mines dodged
+High score: 22 / 41 mines dodged
 
-Basic agent attempt  220
+Basic agent attempt  144
 Density  41
-High score: 26 / 41 mines dodged
+High score: 20 / 41 mines dodged
 
-Basic agent attempt  221
+Basic agent attempt  145
+Density  41
+High score: 19 / 41 mines dodged
+
+Basic agent attempt  146
 Density  42
-High score: 28 / 42 mines dodged
+High score: 19 / 42 mines dodged
 
-Basic agent attempt  222
+Basic agent attempt  147
+Density  42
+High score: 24 / 42 mines dodged
+
+Basic agent attempt  148
 Density  42
 High score: 17 / 42 mines dodged
 
-Basic agent attempt  223
-Density  42
-High score: 16 / 42 mines dodged
-
-Basic agent attempt  224
-Density  42
-High score: 25 / 42 mines dodged
-
-Basic agent attempt  225
+Basic agent attempt  149
 Density  42
 High score: 22 / 42 mines dodged
 
-Basic agent attempt  226
+Basic agent attempt  150
 Density  42
-High score: 26 / 42 mines dodged
+High score: 17 / 42 mines dodged
 
-Basic agent attempt  227
-Density  42
-High score: 21 / 42 mines dodged
-
-Basic agent attempt  228
-Density  42
-High score: 23 / 42 mines dodged
-
-Basic agent attempt  229
-Density  42
-High score: 21 / 42 mines dodged
-
-Basic agent attempt  230
-Density  42
-High score: 18 / 42 mines dodged
-
-Basic agent attempt  231
+Basic agent attempt  151
 Density  43
-High score: 22 / 43 mines dodged
+High score: 17 / 43 mines dodged
 
-Basic agent attempt  232
+Basic agent attempt  152
 Density  43
-High score: 19 / 43 mines dodged
+High score: 26 / 43 mines dodged
 
-Basic agent attempt  233
-Density  43
-High score: 25 / 43 mines dodged
-
-Basic agent attempt  234
-Density  43
-High score: 27 / 43 mines dodged
-
-Basic agent attempt  235
-Density  43
-High score: 21 / 43 mines dodged
-
-Basic agent attempt  236
-Density  43
-High score: 23 / 43 mines dodged
-
-Basic agent attempt  237
-Density  43
-High score: 23 / 43 mines dodged
-
-Basic agent attempt  238
-Density  43
-High score: 14 / 43 mines dodged
-
-Basic agent attempt  239
-Density  43
-High score: 21 / 43 mines dodged
-
-Basic agent attempt  240
+Basic agent attempt  153
 Density  43
 High score: 20 / 43 mines dodged
 
-Basic agent attempt  241
-Density  44
-High score: 26 / 44 mines dodged
+Basic agent attempt  154
+Density  43
+High score: 20 / 43 mines dodged
 
-Basic agent attempt  242
-Density  44
-High score: 22 / 44 mines dodged
+Basic agent attempt  155
+Density  43
+High score: 19 / 43 mines dodged
 
-Basic agent attempt  243
+Basic agent attempt  156
 Density  44
-High score: 21 / 44 mines dodged
+High score: 23 / 44 mines dodged
 
-Basic agent attempt  244
-Density  44
-High score: 16 / 44 mines dodged
-
-Basic agent attempt  245
+Basic agent attempt  157
 Density  44
 High score: 30 / 44 mines dodged
 
-Basic agent attempt  246
+Basic agent attempt  158
 Density  44
-High score: 24 / 44 mines dodged
+High score: 19 / 44 mines dodged
 
-Basic agent attempt  247
+Basic agent attempt  159
 Density  44
-High score: 17 / 44 mines dodged
+High score: 25 / 44 mines dodged
 
-Basic agent attempt  248
+Basic agent attempt  160
 Density  44
-High score: 13 / 44 mines dodged
+High score: 14 / 44 mines dodged
 
-Basic agent attempt  249
-Density  44
-High score: 18 / 44 mines dodged
-
-Basic agent attempt  250
-Density  44
-High score: 12 / 44 mines dodged
-
-Basic agent attempt  251
-Density  45
-High score: 10 / 45 mines dodged
-
-Basic agent attempt  252
-Density  45
-High score: 21 / 45 mines dodged
-
-Basic agent attempt  253
-Density  45
-High score: 19 / 45 mines dodged
-
-Basic agent attempt  254
-Density  45
-High score: 27 / 45 mines dodged
-
-Basic agent attempt  255
-Density  45
-High score: 29 / 45 mines dodged
-
-Basic agent attempt  256
-Density  45
-High score: 21 / 45 mines dodged
-
-Basic agent attempt  257
+Basic agent attempt  161
 Density  45
 High score: 18 / 45 mines dodged
 
-Basic agent attempt  258
+Basic agent attempt  162
+Density  45
+High score: 17 / 45 mines dodged
+
+Basic agent attempt  163
 Density  45
 High score: 16 / 45 mines dodged
 
-Basic agent attempt  259
+Basic agent attempt  164
 Density  45
-High score: 21 / 45 mines dodged
+High score: 17 / 45 mines dodged
 
-Basic agent attempt  260
+Basic agent attempt  165
 Density  45
-High score: 23 / 45 mines dodged
+High score: 17 / 45 mines dodged
 
-Basic agent attempt  261
-Density  46
-High score: 20 / 46 mines dodged
-
-Basic agent attempt  262
-Density  46
-High score: 20 / 46 mines dodged
-
-Basic agent attempt  263
-Density  46
-High score: 21 / 46 mines dodged
-
-Basic agent attempt  264
-Density  46
-High score: 18 / 46 mines dodged
-
-Basic agent attempt  265
-Density  46
-High score: 23 / 46 mines dodged
-
-Basic agent attempt  266
-Density  46
-High score: 20 / 46 mines dodged
-
-Basic agent attempt  267
-Density  46
-High score: 19 / 46 mines dodged
-
-Basic agent attempt  268
-Density  46
-High score: 12 / 46 mines dodged
-
-Basic agent attempt  269
-Density  46
-High score: 23 / 46 mines dodged
-
-Basic agent attempt  270
+Basic agent attempt  166
 Density  46
 High score: 22 / 46 mines dodged
 
-Basic agent attempt  271
+Basic agent attempt  167
+Density  46
+High score: 16 / 46 mines dodged
+
+Basic agent attempt  168
+Density  46
+High score: 30 / 46 mines dodged
+
+Basic agent attempt  169
+Density  46
+High score: 17 / 46 mines dodged
+
+Basic agent attempt  170
+Density  46
+High score: 19 / 46 mines dodged
+
+Basic agent attempt  171
 Density  47
 High score: 21 / 47 mines dodged
 
-Basic agent attempt  272
-Density  47
-High score: 31 / 47 mines dodged
-
-Basic agent attempt  273
-Density  47
-High score: 16 / 47 mines dodged
-
-Basic agent attempt  274
-Density  47
-High score: 22 / 47 mines dodged
-
-Basic agent attempt  275
-Density  47
-High score: 19 / 47 mines dodged
-
-Basic agent attempt  276
-Density  47
-High score: 16 / 47 mines dodged
-
-Basic agent attempt  277
-Density  47
-High score: 13 / 47 mines dodged
-
-Basic agent attempt  278
-Density  47
-High score: 22 / 47 mines dodged
-
-Basic agent attempt  279
+Basic agent attempt  172
 Density  47
 High score: 17 / 47 mines dodged
 
-Basic agent attempt  280
+Basic agent attempt  173
 Density  47
-High score: 13 / 47 mines dodged
+High score: 15 / 47 mines dodged
 
-Basic agent attempt  281
-Density  48
-High score: 10 / 48 mines dodged
+Basic agent attempt  174
+Density  47
+High score: 22 / 47 mines dodged
 
-Basic agent attempt  282
-Density  48
-High score: 22 / 48 mines dodged
+Basic agent attempt  175
+Density  47
+High score: 25 / 47 mines dodged
 
-Basic agent attempt  283
-Density  48
-High score: 20 / 48 mines dodged
-
-Basic agent attempt  284
-Density  48
-High score: 28 / 48 mines dodged
-
-Basic agent attempt  285
-Density  48
-High score: 21 / 48 mines dodged
-
-Basic agent attempt  286
-Density  48
-High score: 12 / 48 mines dodged
-
-Basic agent attempt  287
-Density  48
-High score: 28 / 48 mines dodged
-
-Basic agent attempt  288
-Density  48
-High score: 24 / 48 mines dodged
-
-Basic agent attempt  289
+Basic agent attempt  176
 Density  48
 High score: 17 / 48 mines dodged
 
-Basic agent attempt  290
+Basic agent attempt  177
 Density  48
-High score: 24 / 48 mines dodged
+High score: 28 / 48 mines dodged
 
-Basic agent attempt  291
-Density  49
-High score: 28 / 49 mines dodged
+Basic agent attempt  178
+Density  48
+High score: 22 / 48 mines dodged
 
-Basic agent attempt  292
-Density  49
-High score: 24 / 49 mines dodged
+Basic agent attempt  179
+Density  48
+High score: 19 / 48 mines dodged
 
-Basic agent attempt  293
-Density  49
-High score: 28 / 49 mines dodged
+Basic agent attempt  180
+Density  48
+High score: 25 / 48 mines dodged
 
-Basic agent attempt  294
-Density  49
-High score: 18 / 49 mines dodged
-
-Basic agent attempt  295
-Density  49
-High score: 22 / 49 mines dodged
-
-Basic agent attempt  296
+Basic agent attempt  181
 Density  49
 High score: 17 / 49 mines dodged
 
-Basic agent attempt  297
+Basic agent attempt  182
 Density  49
-High score: 22 / 49 mines dodged
+High score: 23 / 49 mines dodged
 
-Basic agent attempt  298
+Basic agent attempt  183
 Density  49
-High score: 22 / 49 mines dodged
+High score: 26 / 49 mines dodged
 
-Basic agent attempt  299
+Basic agent attempt  184
 Density  49
-High score: 15 / 49 mines dodged
+High score: 23 / 49 mines dodged
 
-Basic agent attempt  300
+Basic agent attempt  185
 Density  49
-High score: 15 / 49 mines dodged
+High score: 24 / 49 mines dodged
 
-Basic agent attempt  301
-Density  50
-High score: 22 / 50 mines dodged
-
-Basic agent attempt  302
-Density  50
-High score: 12 / 50 mines dodged
-
-Basic agent attempt  303
-Density  50
-High score: 17 / 50 mines dodged
-
-Basic agent attempt  304
-Density  50
-High score: 16 / 50 mines dodged
-
-Basic agent attempt  305
-Density  50
-High score: 24 / 50 mines dodged
-
-Basic agent attempt  306
-Density  50
-High score: 20 / 50 mines dodged
-
-Basic agent attempt  307
+Basic agent attempt  186
 Density  50
 High score: 23 / 50 mines dodged
 
-Basic agent attempt  308
-Density  50
-High score: 23 / 50 mines dodged
-
-Basic agent attempt  309
-Density  50
-High score: 20 / 50 mines dodged
-
-Basic agent attempt  310
+Basic agent attempt  187
 Density  50
 High score: 18 / 50 mines dodged
 
-Basic agent attempt  311
-Density  51
-High score: 19 / 51 mines dodged
+Basic agent attempt  188
+Density  50
+High score: 17 / 50 mines dodged
 
-Basic agent attempt  312
-Density  51
-High score: 19 / 51 mines dodged
+Basic agent attempt  189
+Density  50
+High score: 18 / 50 mines dodged
 
-Basic agent attempt  313
-Density  51
-High score: 24 / 51 mines dodged
+Basic agent attempt  190
+Density  50
+High score: 25 / 50 mines dodged
 
-Basic agent attempt  314
+Basic agent attempt  191
 Density  51
-High score: 19 / 51 mines dodged
+High score: 18 / 51 mines dodged
 
-Basic agent attempt  315
+Basic agent attempt  192
 Density  51
-High score: 24 / 51 mines dodged
+High score: 26 / 51 mines dodged
 
-Basic agent attempt  316
+Basic agent attempt  193
 Density  51
-High score: 22 / 51 mines dodged
+High score: 25 / 51 mines dodged
 
-Basic agent attempt  317
-Density  51
-High score: 19 / 51 mines dodged
-
-Basic agent attempt  318
-Density  51
-High score: 22 / 51 mines dodged
-
-Basic agent attempt  319
-Density  51
-High score: 19 / 51 mines dodged
-
-Basic agent attempt  320
+Basic agent attempt  194
 Density  51
 High score: 24 / 51 mines dodged
 
-Basic agent attempt  321
-Density  52
-High score: 17 / 52 mines dodged
+Basic agent attempt  195
+Density  51
+High score: 33 / 51 mines dodged
 
-Basic agent attempt  322
-Density  52
-High score: 24 / 52 mines dodged
-
-Basic agent attempt  323
-Density  52
-High score: 20 / 52 mines dodged
-
-Basic agent attempt  324
-Density  52
-High score: 13 / 52 mines dodged
-
-Basic agent attempt  325
-Density  52
-High score: 19 / 52 mines dodged
-
-Basic agent attempt  326
-Density  52
-High score: 23 / 52 mines dodged
-
-Basic agent attempt  327
-Density  52
-High score: 16 / 52 mines dodged
-
-Basic agent attempt  328
+Basic agent attempt  196
 Density  52
 High score: 26 / 52 mines dodged
 
-Basic agent attempt  329
+Basic agent attempt  197
 Density  52
-High score: 18 / 52 mines dodged
+High score: 17 / 52 mines dodged
 
-Basic agent attempt  330
+Basic agent attempt  198
 Density  52
-High score: 22 / 52 mines dodged
+High score: 24 / 52 mines dodged
 
-Basic agent attempt  331
+Basic agent attempt  199
+Density  52
+High score: 24 / 52 mines dodged
+
+Basic agent attempt  200
+Density  52
+High score: 9 / 52 mines dodged
+
+Basic agent attempt  201
 Density  53
-High score: 14 / 53 mines dodged
+High score: 23 / 53 mines dodged
 
-Basic agent attempt  332
+Basic agent attempt  202
 Density  53
-High score: 20 / 53 mines dodged
+High score: 27 / 53 mines dodged
 
-Basic agent attempt  333
-Density  53
-High score: 26 / 53 mines dodged
-
-Basic agent attempt  334
-Density  53
-High score: 14 / 53 mines dodged
-
-Basic agent attempt  335
-Density  53
-High score: 22 / 53 mines dodged
-
-Basic agent attempt  336
+Basic agent attempt  203
 Density  53
 High score: 19 / 53 mines dodged
 
-Basic agent attempt  337
+Basic agent attempt  204
+Density  53
+High score: 15 / 53 mines dodged
+
+Basic agent attempt  205
 Density  53
 High score: 28 / 53 mines dodged
 
-Basic agent attempt  338
-Density  53
-High score: 26 / 53 mines dodged
-
-Basic agent attempt  339
-Density  53
-High score: 17 / 53 mines dodged
-
-Basic agent attempt  340
-Density  53
-High score: 20 / 53 mines dodged
-
-Basic agent attempt  341
+Basic agent attempt  206
 Density  54
-High score: 26 / 54 mines dodged
+High score: 14 / 54 mines dodged
 
-Basic agent attempt  342
-Density  54
-High score: 22 / 54 mines dodged
-
-Basic agent attempt  343
-Density  54
-High score: 27 / 54 mines dodged
-
-Basic agent attempt  344
-Density  54
-High score: 23 / 54 mines dodged
-
-Basic agent attempt  345
-Density  54
-High score: 11 / 54 mines dodged
-
-Basic agent attempt  346
-Density  54
-High score: 24 / 54 mines dodged
-
-Basic agent attempt  347
-Density  54
-High score: 22 / 54 mines dodged
-
-Basic agent attempt  348
-Density  54
-High score: 36 / 54 mines dodged
-
-Basic agent attempt  349
+Basic agent attempt  207
 Density  54
 High score: 21 / 54 mines dodged
 
-Basic agent attempt  350
+Basic agent attempt  208
+Density  54
+High score: 20 / 54 mines dodged
+
+Basic agent attempt  209
+Density  54
+High score: 17 / 54 mines dodged
+
+Basic agent attempt  210
 Density  54
 High score: 18 / 54 mines dodged
 
-Basic agent attempt  351
+Basic agent attempt  211
+Density  55
+High score: 17 / 55 mines dodged
+
+Basic agent attempt  212
+Density  55
+High score: 29 / 55 mines dodged
+
+Basic agent attempt  213
+Density  55
+High score: 22 / 55 mines dodged
+
+Basic agent attempt  214
 Density  55
 High score: 18 / 55 mines dodged
 
-Basic agent attempt  352
+Basic agent attempt  215
 Density  55
-High score: 24 / 55 mines dodged
+High score: 17 / 55 mines dodged
 
-Basic agent attempt  353
-Density  55
-High score: 16 / 55 mines dodged
-
-Basic agent attempt  354
-Density  55
-High score: 15 / 55 mines dodged
-
-Basic agent attempt  355
-Density  55
-High score: 22 / 55 mines dodged
-
-Basic agent attempt  356
-Density  55
-High score: 22 / 55 mines dodged
-
-Basic agent attempt  357
-Density  55
-High score: 13 / 55 mines dodged
-
-Basic agent attempt  358
-Density  55
-High score: 15 / 55 mines dodged
-
-Basic agent attempt  359
-Density  55
-High score: 25 / 55 mines dodged
-
-Basic agent attempt  360
-Density  55
-High score: 20 / 55 mines dodged
-
-Basic agent attempt  361
+Basic agent attempt  216
 Density  56
 High score: 18 / 56 mines dodged
 
-Basic agent attempt  362
+Basic agent attempt  217
 Density  56
-High score: 19 / 56 mines dodged
+High score: 30 / 56 mines dodged
 
-Basic agent attempt  363
+Basic agent attempt  218
 Density  56
-High score: 17 / 56 mines dodged
+High score: 22 / 56 mines dodged
 
-Basic agent attempt  364
+Basic agent attempt  219
+Density  56
+High score: 16 / 56 mines dodged
+
+Basic agent attempt  220
 Density  56
 High score: 24 / 56 mines dodged
 
-Basic agent attempt  365
-Density  56
-High score: 21 / 56 mines dodged
-
-Basic agent attempt  366
-Density  56
-High score: 17 / 56 mines dodged
-
-Basic agent attempt  367
-Density  56
-High score: 20 / 56 mines dodged
-
-Basic agent attempt  368
-Density  56
-High score: 13 / 56 mines dodged
-
-Basic agent attempt  369
-Density  56
-High score: 29 / 56 mines dodged
-
-Basic agent attempt  370
-Density  56
-High score: 21 / 56 mines dodged
-
-Basic agent attempt  371
+Basic agent attempt  221
 Density  57
-High score: 22 / 57 mines dodged
+High score: 41 / 57 mines dodged
 
-Basic agent attempt  372
-Density  57
-High score: 15 / 57 mines dodged
-
-Basic agent attempt  373
-Density  57
-High score: 25 / 57 mines dodged
-
-Basic agent attempt  374
-Density  57
-High score: 28 / 57 mines dodged
-
-Basic agent attempt  375
-Density  57
-High score: 21 / 57 mines dodged
-
-Basic agent attempt  376
-Density  57
-High score: 23 / 57 mines dodged
-
-Basic agent attempt  377
-Density  57
-High score: 21 / 57 mines dodged
-
-Basic agent attempt  378
-Density  57
-High score: 28 / 57 mines dodged
-
-Basic agent attempt  379
-Density  57
-High score: 24 / 57 mines dodged
-
-Basic agent attempt  380
+Basic agent attempt  222
 Density  57
 High score: 17 / 57 mines dodged
 
-Basic agent attempt  381
-Density  58
-High score: 24 / 58 mines dodged
+Basic agent attempt  223
+Density  57
+High score: 24 / 57 mines dodged
 
-Basic agent attempt  382
-Density  58
-High score: 22 / 58 mines dodged
+Basic agent attempt  224
+Density  57
+High score: 22 / 57 mines dodged
 
-Basic agent attempt  383
-Density  58
-High score: 12 / 58 mines dodged
+Basic agent attempt  225
+Density  57
+High score: 29 / 57 mines dodged
 
-Basic agent attempt  384
+Basic agent attempt  226
 Density  58
-High score: 26 / 58 mines dodged
+High score: 29 / 58 mines dodged
 
-Basic agent attempt  385
+Basic agent attempt  227
 Density  58
-High score: 27 / 58 mines dodged
+High score: 19 / 58 mines dodged
 
-Basic agent attempt  386
+Basic agent attempt  228
 Density  58
-High score: 20 / 58 mines dodged
+High score: 17 / 58 mines dodged
 
-Basic agent attempt  387
+Basic agent attempt  229
 Density  58
-High score: 18 / 58 mines dodged
+High score: 25 / 58 mines dodged
 
-Basic agent attempt  388
+Basic agent attempt  230
 Density  58
-High score: 13 / 58 mines dodged
+High score: 31 / 58 mines dodged
 
-Basic agent attempt  389
-Density  58
-High score: 24 / 58 mines dodged
-
-Basic agent attempt  390
-Density  58
-High score: 32 / 58 mines dodged
-
-Basic agent attempt  391
+Basic agent attempt  231
 Density  59
-High score: 16 / 59 mines dodged
+High score: 18 / 59 mines dodged
 
-Basic agent attempt  392
+Basic agent attempt  232
 Density  59
-High score: 17 / 59 mines dodged
+High score: 24 / 59 mines dodged
 
-Basic agent attempt  393
+Basic agent attempt  233
+Density  59
+High score: 18 / 59 mines dodged
+
+Basic agent attempt  234
 Density  59
 High score: 31 / 59 mines dodged
 
-Basic agent attempt  394
+Basic agent attempt  235
 Density  59
-High score: 30 / 59 mines dodged
+High score: 23 / 59 mines dodged
 
-Basic agent attempt  395
-Density  59
-High score: 22 / 59 mines dodged
+Basic agent attempt  236
+Density  60
+High score: 22 / 60 mines dodged
 
-Basic agent attempt  396
-Density  59
-High score: 16 / 59 mines dodged
+Basic agent attempt  237
+Density  60
+High score: 14 / 60 mines dodged
 
-Basic agent attempt  397
-Density  59
-High score: 27 / 59 mines dodged
-
-Basic agent attempt  398
-Density  59
-High score: 22 / 59 mines dodged
-
-Basic agent attempt  399
-Density  59
-High score: 14 / 59 mines dodged
-
-Basic agent attempt  400
-Density  59
-High score: 21 / 59 mines dodged
-
-Basic agent attempt  401
+Basic agent attempt  238
 Density  60
 High score: 23 / 60 mines dodged
 
-Basic agent attempt  402
+Basic agent attempt  239
 Density  60
-High score: 23 / 60 mines dodged
+High score: 28 / 60 mines dodged
 
-Basic agent attempt  403
-Density  60
-High score: 15 / 60 mines dodged
-
-Basic agent attempt  404
-Density  60
-High score: 21 / 60 mines dodged
-
-Basic agent attempt  405
-Density  60
-High score: 30 / 60 mines dodged
-
-Basic agent attempt  406
-Density  60
-High score: 16 / 60 mines dodged
-
-Basic agent attempt  407
-Density  60
-High score: 23 / 60 mines dodged
-
-Basic agent attempt  408
+Basic agent attempt  240
 Density  60
 High score: 25 / 60 mines dodged
 
+Basic agent attempt  241
+Density  61
+High score: 23 / 61 mines dodged
+
+Basic agent attempt  242
+Density  61
+High score: 16 / 61 mines dodged
+
+Basic agent attempt  243
+Density  61
+High score: 29 / 61 mines dodged
+
+Basic agent attempt  244
+Density  61
+High score: 20 / 61 mines dodged
+
+Basic agent attempt  245
+Density  61
+High score: 15 / 61 mines dodged
+
+Basic agent attempt  246
+Density  62
+High score: 18 / 62 mines dodged
+
+Basic agent attempt  247
+Density  62
+High score: 11 / 62 mines dodged
+
+Basic agent attempt  248
+Density  62
+High score: 13 / 62 mines dodged
+
+Basic agent attempt  249
+Density  62
+High score: 21 / 62 mines dodged
+
+Basic agent attempt  250
+Density  62
+High score: 28 / 62 mines dodged
+
+Basic agent attempt  251
+Density  63
+High score: 36 / 63 mines dodged
+
+Basic agent attempt  252
+Density  63
+High score: 28 / 63 mines dodged
+
+Basic agent attempt  253
+Density  63
+High score: 28 / 63 mines dodged
+
+Basic agent attempt  254
+Density  63
+High score: 20 / 63 mines dodged
+
+Basic agent attempt  255
+Density  63
+High score: 19 / 63 mines dodged
+
+Basic agent attempt  256
+Density  64
+High score: 25 / 64 mines dodged
+
+Basic agent attempt  257
+Density  64
+High score: 17 / 64 mines dodged
+
+Basic agent attempt  258
+Density  64
+High score: 26 / 64 mines dodged
+
+Basic agent attempt  259
+Density  64
+High score: 24 / 64 mines dodged
+
+Basic agent attempt  260
+Density  64
+High score: 16 / 64 mines dodged
+
+Basic agent attempt  261
+Density  65
+High score: 18 / 65 mines dodged
+
+Basic agent attempt  262
+Density  65
+High score: 33 / 65 mines dodged
+
+Basic agent attempt  263
+Density  65
+High score: 34 / 65 mines dodged
+
+Basic agent attempt  264
+Density  65
+High score: 17 / 65 mines dodged
+
+Basic agent attempt  265
+Density  65
+High score: 16 / 65 mines dodged
+
+Basic agent attempt  266
+Density  66
+High score: 37 / 66 mines dodged
+
+Basic agent attempt  267
+Density  66
+High score: 22 / 66 mines dodged
+
+Basic agent attempt  268
+Density  66
+High score: 27 / 66 mines dodged
+
+Basic agent attempt  269
+Density  66
+High score: 24 / 66 mines dodged
+
+Basic agent attempt  270
+Density  66
+High score: 30 / 66 mines dodged
+
+Basic agent attempt  271
+Density  67
+High score: 20 / 67 mines dodged
+
+Basic agent attempt  272
+Density  67
+High score: 27 / 67 mines dodged
+
+Basic agent attempt  273
+Density  67
+High score: 25 / 67 mines dodged
+
+Basic agent attempt  274
+Density  67
+High score: 15 / 67 mines dodged
+
+Basic agent attempt  275
+Density  67
+High score: 25 / 67 mines dodged
+
+Basic agent attempt  276
+Density  68
+High score: 25 / 68 mines dodged
+
+Basic agent attempt  277
+Density  68
+High score: 25 / 68 mines dodged
+
+Basic agent attempt  278
+Density  68
+High score: 29 / 68 mines dodged
+
+Basic agent attempt  279
+Density  68
+High score: 22 / 68 mines dodged
+
+Basic agent attempt  280
+Density  68
+High score: 11 / 68 mines dodged
+
+Basic agent attempt  281
+Density  69
+High score: 27 / 69 mines dodged
+
+Basic agent attempt  282
+Density  69
+High score: 26 / 69 mines dodged
+
+Basic agent attempt  283
+Density  69
+High score: 28 / 69 mines dodged
+
+Basic agent attempt  284
+Density  69
+High score: 22 / 69 mines dodged
+
+Basic agent attempt  285
+Density  69
+High score: 22 / 69 mines dodged
+
+Basic agent attempt  286
+Density  70
+High score: 23 / 70 mines dodged
+
+Basic agent attempt  287
+Density  70
+High score: 32 / 70 mines dodged
+
+Basic agent attempt  288
+Density  70
+High score: 33 / 70 mines dodged
+
+Basic agent attempt  289
+Density  70
+High score: 14 / 70 mines dodged
+
+Basic agent attempt  290
+Density  70
+High score: 18 / 70 mines dodged
+
+Basic agent attempt  291
+Density  71
+High score: 30 / 71 mines dodged
+
+Basic agent attempt  292
+Density  71
+High score: 28 / 71 mines dodged
+
+Basic agent attempt  293
+Density  71
+High score: 19 / 71 mines dodged
+
+Basic agent attempt  294
+Density  71
+High score: 19 / 71 mines dodged
+
+Basic agent attempt  295
+Density  71
+High score: 19 / 71 mines dodged
+
+Basic agent attempt  296
+Density  72
+High score: 22 / 72 mines dodged
+
+Basic agent attempt  297
+Density  72
+High score: 24 / 72 mines dodged
+
+Basic agent attempt  298
+Density  72
+High score: 24 / 72 mines dodged
+
+Basic agent attempt  299
+Density  72
+High score: 17 / 72 mines dodged
+
+Basic agent attempt  300
+Density  72
+High score: 28 / 72 mines dodged
+
+Basic agent attempt  301
+Density  73
+High score: 27 / 73 mines dodged
+
+Basic agent attempt  302
+Density  73
+High score: 21 / 73 mines dodged
+
+Basic agent attempt  303
+Density  73
+High score: 22 / 73 mines dodged
+
+Basic agent attempt  304
+Density  73
+High score: 24 / 73 mines dodged
+
+Basic agent attempt  305
+Density  73
+High score: 22 / 73 mines dodged
+
+Basic agent attempt  306
+Density  74
+High score: 21 / 74 mines dodged
+
+Basic agent attempt  307
+Density  74
+High score: 22 / 74 mines dodged
+
+Basic agent attempt  308
+Density  74
+High score: 26 / 74 mines dodged
+
+Basic agent attempt  309
+Density  74
+High score: 16 / 74 mines dodged
+
+Basic agent attempt  310
+Density  74
+High score: 20 / 74 mines dodged
+
+Basic agent attempt  311
+Density  75
+High score: 29 / 75 mines dodged
+
+Basic agent attempt  312
+Density  75
+High score: 25 / 75 mines dodged
+
+Basic agent attempt  313
+Density  75
+High score: 22 / 75 mines dodged
+
+Basic agent attempt  314
+Density  75
+High score: 22 / 75 mines dodged
+
+Basic agent attempt  315
+Density  75
+High score: 28 / 75 mines dodged
+
+Basic agent attempt  316
+Density  76
+High score: 20 / 76 mines dodged
+
+Basic agent attempt  317
+Density  76
+High score: 18 / 76 mines dodged
+
+Basic agent attempt  318
+Density  76
+High score: 30 / 76 mines dodged
+
+Basic agent attempt  319
+Density  76
+High score: 18 / 76 mines dodged
+
+Basic agent attempt  320
+Density  76
+High score: 26 / 76 mines dodged
+
+Basic agent attempt  321
+Density  77
+High score: 19 / 77 mines dodged
+
+Basic agent attempt  322
+Density  77
+High score: 13 / 77 mines dodged
+
+Basic agent attempt  323
+Density  77
+High score: 26 / 77 mines dodged
+
+Basic agent attempt  324
+Density  77
+High score: 19 / 77 mines dodged
+
+Basic agent attempt  325
+Density  77
+High score: 21 / 77 mines dodged
+
+Basic agent attempt  326
+Density  78
+High score: 18 / 78 mines dodged
+
+Basic agent attempt  327
+Density  78
+High score: 14 / 78 mines dodged
+
+Basic agent attempt  328
+Density  78
+High score: 13 / 78 mines dodged
+
+Basic agent attempt  329
+Density  78
+High score: 37 / 78 mines dodged
+
+Basic agent attempt  330
+Density  78
+High score: 23 / 78 mines dodged
+
+Basic agent attempt  331
+Density  79
+High score: 22 / 79 mines dodged
+
+Basic agent attempt  332
+Density  79
+High score: 34 / 79 mines dodged
+
+Basic agent attempt  333
+Density  79
+High score: 16 / 79 mines dodged
+
+Basic agent attempt  334
+Density  79
+High score: 22 / 79 mines dodged
+
+Basic agent attempt  335
+Density  79
+High score: 34 / 79 mines dodged
+
+Basic agent attempt  336
+Density  80
+High score: 24 / 80 mines dodged
+
+Basic agent attempt  337
+Density  80
+High score: 16 / 80 mines dodged
+
+Basic agent attempt  338
+Density  80
+High score: 19 / 80 mines dodged
+
+Basic agent attempt  339
+Density  80
+High score: 29 / 80 mines dodged
+
+Basic agent attempt  340
+Density  80
+High score: 23 / 80 mines dodged
+
+Basic agent attempt  341
+Density  81
+High score: 18 / 81 mines dodged
+
+Basic agent attempt  342
+Density  81
+High score: 17 / 81 mines dodged
+
+Basic agent attempt  343
+Density  81
+High score: 22 / 81 mines dodged
+
+Basic agent attempt  344
+Density  81
+High score: 29 / 81 mines dodged
+
+Basic agent attempt  345
+Density  81
+High score: 25 / 81 mines dodged
+
+Basic agent attempt  346
+Density  82
+High score: 20 / 82 mines dodged
+
+Basic agent attempt  347
+Density  82
+High score: 34 / 82 mines dodged
+
+Basic agent attempt  348
+Density  82
+High score: 29 / 82 mines dodged
+
+Basic agent attempt  349
+Density  82
+High score: 29 / 82 mines dodged
+
+Basic agent attempt  350
+Density  82
+High score: 31 / 82 mines dodged
+
+Basic agent attempt  351
+Density  83
+High score: 24 / 83 mines dodged
+
+Basic agent attempt  352
+Density  83
+High score: 25 / 83 mines dodged
+
+Basic agent attempt  353
+Density  83
+High score: 20 / 83 mines dodged
+
+Basic agent attempt  354
+Density  83
+High score: 23 / 83 mines dodged
+
+Basic agent attempt  355
+Density  83
+High score: 31 / 83 mines dodged
+
+Basic agent attempt  356
+Density  84
+High score: 20 / 84 mines dodged
+
+Basic agent attempt  357
+Density  84
+High score: 19 / 84 mines dodged
+
+Basic agent attempt  358
+Density  84
+High score: 18 / 84 mines dodged
+
+Basic agent attempt  359
+Density  84
+High score: 26 / 84 mines dodged
+
+Basic agent attempt  360
+Density  84
+High score: 29 / 84 mines dodged
+
+Basic agent attempt  361
+Density  85
+High score: 22 / 85 mines dodged
+
+Basic agent attempt  362
+Density  85
+High score: 22 / 85 mines dodged
+
+Basic agent attempt  363
+Density  85
+High score: 20 / 85 mines dodged
+
+Basic agent attempt  364
+Density  85
+High score: 28 / 85 mines dodged
+
+Basic agent attempt  365
+Density  85
+High score: 26 / 85 mines dodged
+
+Basic agent attempt  366
+Density  86
+High score: 24 / 86 mines dodged
+
+Basic agent attempt  367
+Density  86
+High score: 17 / 86 mines dodged
+
+Basic agent attempt  368
+Density  86
+High score: 19 / 86 mines dodged
+
+Basic agent attempt  369
+Density  86
+High score: 19 / 86 mines dodged
+
+Basic agent attempt  370
+Density  86
+High score: 26 / 86 mines dodged
+
+Basic agent attempt  371
+Density  87
+High score: 24 / 87 mines dodged
+
+Basic agent attempt  372
+Density  87
+High score: 16 / 87 mines dodged
+
+Basic agent attempt  373
+Density  87
+High score: 34 / 87 mines dodged
+
+Basic agent attempt  374
+Density  87
+High score: 18 / 87 mines dodged
+
+Basic agent attempt  375
+Density  87
+High score: 21 / 87 mines dodged
+
+Basic agent attempt  376
+Density  88
+High score: 22 / 88 mines dodged
+
+Basic agent attempt  377
+Density  88
+High score: 33 / 88 mines dodged
+
+Basic agent attempt  378
+Density  88
+High score: 27 / 88 mines dodged
+
+Basic agent attempt  379
+Density  88
+High score: 32 / 88 mines dodged
+
+Basic agent attempt  380
+Density  88
+High score: 31 / 88 mines dodged
+
+Basic agent attempt  381
+Density  89
+High score: 24 / 89 mines dodged
+
+Basic agent attempt  382
+Density  89
+High score: 33 / 89 mines dodged
+
+Basic agent attempt  383
+Density  89
+High score: 29 / 89 mines dodged
+
+Basic agent attempt  384
+Density  89
+High score: 23 / 89 mines dodged
+
+Basic agent attempt  385
+Density  89
+High score: 24 / 89 mines dodged
+
+Basic agent attempt  386
+Density  90
+High score: 40 / 90 mines dodged
+
+Basic agent attempt  387
+Density  90
+High score: 28 / 90 mines dodged
+
+Basic agent attempt  388
+Density  90
+High score: 25 / 90 mines dodged
+
+Basic agent attempt  389
+Density  90
+High score: 27 / 90 mines dodged
+
+Basic agent attempt  390
+Density  90
+High score: 22 / 90 mines dodged
+
+Basic agent attempt  391
+Density  91
+High score: 12 / 91 mines dodged
+
+Basic agent attempt  392
+Density  91
+High score: 26 / 91 mines dodged
+
+Basic agent attempt  393
+Density  91
+High score: 32 / 91 mines dodged
+
+Basic agent attempt  394
+Density  91
+High score: 17 / 91 mines dodged
+
+Basic agent attempt  395
+Density  91
+High score: 27 / 91 mines dodged
+
+Basic agent attempt  396
+Density  92
+High score: 26 / 92 mines dodged
+
+Basic agent attempt  397
+Density  92
+High score: 23 / 92 mines dodged
+
+Basic agent attempt  398
+Density  92
+High score: 24 / 92 mines dodged
+
+Basic agent attempt  399
+Density  92
+High score: 25 / 92 mines dodged
+
+Basic agent attempt  400
+Density  92
+High score: 25 / 92 mines dodged
+
+Basic agent attempt  401
+Density  93
+High score: 26 / 93 mines dodged
+
+Basic agent attempt  402
+Density  93
+High score: 23 / 93 mines dodged
+
+Basic agent attempt  403
+Density  93
+High score: 28 / 93 mines dodged
+
+Basic agent attempt  404
+Density  93
+High score: 22 / 93 mines dodged
+
+Basic agent attempt  405
+Density  93
+High score: 21 / 93 mines dodged
+
+Basic agent attempt  406
+Density  94
+High score: 17 / 94 mines dodged
+
+Basic agent attempt  407
+Density  94
+High score: 24 / 94 mines dodged
+
+Basic agent attempt  408
+Density  94
+High score: 27 / 94 mines dodged
+
 Basic agent attempt  409
-Density  60
-High score: 31 / 60 mines dodged
+Density  94
+High score: 23 / 94 mines dodged
 
 Basic agent attempt  410
-Density  60
-High score: 13 / 60 mines dodged
+Density  94
+High score: 28 / 94 mines dodged
 
-scoresBasic:  [12, 11, 16, 16, 14, 14, 17, 17, 9, 14, 15, 11, 14, 13, 12, 10, 16, 17, 15, 16, 14, 18, 12, 16, 15, 12, 10, 11, 20, 12, 18, 22, 17, 18, 13, 18, 16, 19, 20, 15, 16, 13, 17, 14, 16, 15, 16, 9, 19, 16, 17, 17, 11, 17, 12, 13, 18, 14, 15, 9, 14, 13, 21, 15, 14, 15, 16, 22, 10, 23, 14, 7, 22, 15, 14, 18, 17, 21, 21, 12, 21, 21, 15, 20, 13, 11, 22, 22, 20, 20, 19, 20, 17, 22, 25, 15, 15, 19, 13, 18, 23, 13, 15, 16, 20, 19, 20, 22, 20, 17, 14, 23, 14, 14, 15, 17, 20, 18, 13, 11, 13, 16, 14, 17, 17, 17, 18, 13, 22, 14, 21, 24, 17, 15, 23, 20, 16, 16, 23, 23, 18, 17, 21, 16, 19, 16, 12, 20, 15, 12, 18, 21, 13, 24, 17, 21, 18, 17, 19, 20, 9, 17, 21, 21, 11, 18, 16, 22, 18, 22, 23, 17, 25, 16, 24, 20, 20, 22, 23, 16, 14, 14, 19, 28, 25, 20, 12, 16, 19, 13, 16, 18, 17, 10, 17, 18, 23, 24, 21, 24, 11, 15, 19, 25, 18, 20, 25, 21, 24, 18, 18, 18, 21, 18, 20, 23, 19, 27, 15, 26, 28, 17, 16, 25, 22, 26, 21, 23, 21, 18, 22, 19, 25, 27, 21, 23, 23, 14, 21, 20, 26, 22, 21, 16, 30, 24, 17, 13, 18, 12, 10, 21, 19, 27, 29, 21, 18, 16, 21, 23, 20, 20, 21, 18, 23, 20, 19, 12, 23, 22, 21, 31, 16, 22, 19, 16, 13, 22, 17, 13, 10, 22, 20, 28, 21, 12, 28, 24, 17, 24, 28, 24, 28, 18, 22, 17, 22, 22, 15, 15, 22, 12, 17, 16, 24, 20, 23, 23, 20, 18, 19, 19, 24, 19, 24, 22, 19, 22, 19, 24, 17, 24, 20, 13, 19, 23, 16, 26, 18, 22, 14, 20, 26, 14, 22, 19, 28, 26, 17, 20, 26, 22, 27, 23, 11, 24, 22, 36, 21, 18, 18, 24, 16, 15, 22, 22, 13, 15, 25, 20, 18, 19, 17, 24, 21, 17, 20, 13, 29, 21, 22, 15, 25, 28, 21, 23, 21, 28, 24, 17, 24, 22, 12, 26, 27, 20, 18, 13, 24, 32, 16, 17, 31, 30, 22, 16, 27, 22, 14, 21, 23, 23, 15, 21, 30, 16, 23, 25, 31, 13]
-xBasic =  [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 41, 41, 41, 41, 41, 41, 41, 41, 41, 41, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 51, 51, 51, 51, 51, 51, 51, 51, 51, 51, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 53, 53, 53, 53, 53, 53, 53, 53, 53, 53, 54, 54, 54, 54, 54, 54, 54, 54, 54, 54, 55, 55, 55, 55, 55, 55, 55, 55, 55, 55, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
-yBasic =  [0.6, 0.55, 0.8, 0.8, 0.7, 0.7, 0.85, 0.85, 0.45, 0.7, 0.7142857142857143, 0.5238095238095238, 0.6666666666666666, 0.6190476190476191, 0.5714285714285714, 0.47619047619047616, 0.7619047619047619, 0.8095238095238095, 0.7142857142857143, 0.7619047619047619, 0.6363636363636364, 0.8181818181818182, 0.5454545454545454, 0.7272727272727273, 0.6818181818181818, 0.5454545454545454, 0.45454545454545453, 0.5, 0.9090909090909091, 0.5454545454545454, 0.782608695652174, 0.9565217391304348, 0.7391304347826086, 0.782608695652174, 0.5652173913043478, 0.782608695652174, 0.6956521739130435, 0.8260869565217391, 0.8695652173913043, 0.6521739130434783, 0.6666666666666666, 0.5416666666666666, 0.7083333333333334, 0.5833333333333334, 0.6666666666666666, 0.625, 0.6666666666666666, 0.375, 0.7916666666666666, 0.6666666666666666, 0.68, 0.68, 0.44, 0.68, 0.48, 0.52, 0.72, 0.56, 0.6, 0.36, 0.5384615384615384, 0.5, 0.8076923076923077, 0.5769230769230769, 0.5384615384615384, 0.5769230769230769, 0.6153846153846154, 0.8461538461538461, 0.38461538461538464, 0.8846153846153846, 0.5185185185185185, 0.25925925925925924, 0.8148148148148148, 0.5555555555555556, 0.5185185185185185, 0.6666666666666666, 0.6296296296296297, 0.7777777777777778, 0.7777777777777778, 0.4444444444444444, 0.75, 0.75, 0.5357142857142857, 0.7142857142857143, 0.4642857142857143, 0.39285714285714285, 0.7857142857142857, 0.7857142857142857, 0.7142857142857143, 0.7142857142857143, 0.6551724137931034, 0.6896551724137931, 0.5862068965517241, 0.7586206896551724, 0.8620689655172413, 0.5172413793103449, 0.5172413793103449, 0.6551724137931034, 0.4482758620689655, 0.6206896551724138, 0.7666666666666667, 0.43333333333333335, 0.5, 0.5333333333333333, 0.6666666666666666, 0.6333333333333333, 0.6666666666666666, 0.7333333333333333, 0.6666666666666666, 0.5666666666666667, 0.45161290322580644, 0.7419354838709677, 0.45161290322580644, 0.45161290322580644, 0.4838709677419355, 0.5483870967741935, 0.6451612903225806, 0.5806451612903226, 0.41935483870967744, 0.3548387096774194, 0.40625, 0.5, 0.4375, 0.53125, 0.53125, 0.53125, 0.5625, 0.40625, 0.6875, 0.4375, 0.6363636363636364, 0.7272727272727273, 0.5151515151515151, 0.45454545454545453, 0.696969696969697, 0.6060606060606061, 0.48484848484848486, 0.48484848484848486, 0.696969696969697, 0.696969696969697, 0.5294117647058824, 0.5, 0.6176470588235294, 0.47058823529411764, 0.5588235294117647, 0.47058823529411764, 0.35294117647058826, 0.5882352941176471, 0.4411764705882353, 0.35294117647058826, 0.5142857142857142, 0.6, 0.37142857142857144, 0.6857142857142857, 0.4857142857142857, 0.6, 0.5142857142857142, 0.4857142857142857, 0.5428571428571428, 0.5714285714285714, 0.25, 0.4722222222222222, 0.5833333333333334, 0.5833333333333334, 0.3055555555555556, 0.5, 0.4444444444444444, 0.6111111111111112, 0.5, 0.6111111111111112, 0.6216216216216216, 0.4594594594594595, 0.6756756756756757, 0.43243243243243246, 0.6486486486486487, 0.5405405405405406, 0.5405405405405406, 0.5945945945945946, 0.6216216216216216, 0.43243243243243246, 0.3684210526315789, 0.3684210526315789, 0.5, 0.7368421052631579, 0.6578947368421053, 0.5263157894736842, 0.3157894736842105, 0.42105263157894735, 0.5, 0.34210526315789475, 0.41025641025641024, 0.46153846153846156, 0.4358974358974359, 0.2564102564102564, 0.4358974358974359, 0.46153846153846156, 0.5897435897435898, 0.6153846153846154, 0.5384615384615384, 0.6153846153846154, 0.275, 0.375, 0.475, 0.625, 0.45, 0.5, 0.625, 0.525, 0.6, 0.45, 0.43902439024390244, 0.43902439024390244, 0.5121951219512195, 0.43902439024390244, 0.4878048780487805, 0.5609756097560976, 0.4634146341463415, 0.6585365853658537, 0.36585365853658536, 0.6341463414634146, 0.6666666666666666, 0.40476190476190477, 0.38095238095238093, 0.5952380952380952, 0.5238095238095238, 0.6190476190476191, 0.5, 0.5476190476190477, 0.5, 0.42857142857142855, 0.5116279069767442, 0.4418604651162791, 0.5813953488372093, 0.627906976744186, 0.4883720930232558, 0.5348837209302325, 0.5348837209302325, 0.32558139534883723, 0.4883720930232558, 0.46511627906976744, 0.5909090909090909, 0.5, 0.4772727272727273, 0.36363636363636365, 0.6818181818181818, 0.5454545454545454, 0.38636363636363635, 0.29545454545454547, 0.4090909090909091, 0.2727272727272727, 0.2222222222222222, 0.4666666666666667, 0.4222222222222222, 0.6, 0.6444444444444445, 0.4666666666666667, 0.4, 0.35555555555555557, 0.4666666666666667, 0.5111111111111111, 0.43478260869565216, 0.43478260869565216, 0.45652173913043476, 0.391304347826087, 0.5, 0.43478260869565216, 0.41304347826086957, 0.2608695652173913, 0.5, 0.4782608695652174, 0.44680851063829785, 0.6595744680851063, 0.3404255319148936, 0.46808510638297873, 0.40425531914893614, 0.3404255319148936, 0.2765957446808511, 0.46808510638297873, 0.3617021276595745, 0.2765957446808511, 0.20833333333333334, 0.4583333333333333, 0.4166666666666667, 0.5833333333333334, 0.4375, 0.25, 0.5833333333333334, 0.5, 0.3541666666666667, 0.5, 0.5714285714285714, 0.4897959183673469, 0.5714285714285714, 0.3673469387755102, 0.4489795918367347, 0.3469387755102041, 0.4489795918367347, 0.4489795918367347, 0.30612244897959184, 0.30612244897959184, 0.44, 0.24, 0.34, 0.32, 0.48, 0.4, 0.46, 0.46, 0.4, 0.36, 0.37254901960784315, 0.37254901960784315, 0.47058823529411764, 0.37254901960784315, 0.47058823529411764, 0.43137254901960786, 0.37254901960784315, 0.43137254901960786, 0.37254901960784315, 0.47058823529411764, 0.3269230769230769, 0.46153846153846156, 0.38461538461538464, 0.25, 0.36538461538461536, 0.4423076923076923, 0.3076923076923077, 0.5, 0.34615384615384615, 0.4230769230769231, 0.2641509433962264, 0.37735849056603776, 0.49056603773584906, 0.2641509433962264, 0.41509433962264153, 0.3584905660377358, 0.5283018867924528, 0.49056603773584906, 0.32075471698113206, 0.37735849056603776, 0.48148148148148145, 0.4074074074074074, 0.5, 0.42592592592592593, 0.2037037037037037, 0.4444444444444444, 0.4074074074074074, 0.6666666666666666, 0.3888888888888889, 0.3333333333333333, 0.32727272727272727, 0.43636363636363634, 0.2909090909090909, 0.2727272727272727, 0.4, 0.4, 0.23636363636363636, 0.2727272727272727, 0.45454545454545453, 0.36363636363636365, 0.32142857142857145, 0.3392857142857143, 0.30357142857142855, 0.42857142857142855, 0.375, 0.30357142857142855, 0.35714285714285715, 0.23214285714285715, 0.5178571428571429, 0.375, 0.38596491228070173, 0.2631578947368421, 0.43859649122807015, 0.49122807017543857, 0.3684210526315789, 0.40350877192982454, 0.3684210526315789, 0.49122807017543857, 0.42105263157894735, 0.2982456140350877, 0.41379310344827586, 0.3793103448275862, 0.20689655172413793, 0.4482758620689655, 0.46551724137931033, 0.3448275862068966, 0.3103448275862069, 0.22413793103448276, 0.41379310344827586, 0.5517241379310345, 0.2711864406779661, 0.288135593220339, 0.5254237288135594, 0.5084745762711864, 0.3728813559322034, 0.2711864406779661, 0.4576271186440678, 0.3728813559322034, 0.23728813559322035, 0.3559322033898305, 0.38333333333333336, 0.38333333333333336, 0.25, 0.35, 0.5, 0.26666666666666666, 0.38333333333333336, 0.4166666666666667, 0.5166666666666667, 0.21666666666666667]
+Basic agent attempt  411
+Density  95
+High score: 23 / 95 mines dodged
+
+Basic agent attempt  412
+Density  95
+High score: 27 / 95 mines dodged
+
+Basic agent attempt  413
+Density  95
+High score: 27 / 95 mines dodged
+
+Basic agent attempt  414
+Density  95
+High score: 30 / 95 mines dodged
+
+Basic agent attempt  415
+Density  95
+High score: 14 / 95 mines dodged
+
+Basic agent attempt  416
+Density  96
+High score: 23 / 96 mines dodged
+
+Basic agent attempt  417
+Density  96
+High score: 17 / 96 mines dodged
+
+Basic agent attempt  418
+Density  96
+High score: 33 / 96 mines dodged
+
+Basic agent attempt  419
+Density  96
+High score: 31 / 96 mines dodged
+
+Basic agent attempt  420
+Density  96
+High score: 18 / 96 mines dodged
+
+Basic agent attempt  421
+Density  97
+High score: 23 / 97 mines dodged
+
+Basic agent attempt  422
+Density  97
+High score: 37 / 97 mines dodged
+
+Basic agent attempt  423
+Density  97
+High score: 34 / 97 mines dodged
+
+Basic agent attempt  424
+Density  97
+High score: 26 / 97 mines dodged
+
+Basic agent attempt  425
+Density  97
+High score: 27 / 97 mines dodged
+
+Basic agent attempt  426
+Density  98
+High score: 26 / 98 mines dodged
+
+Basic agent attempt  427
+Density  98
+High score: 23 / 98 mines dodged
+
+Basic agent attempt  428
+Density  98
+High score: 25 / 98 mines dodged
+
+Basic agent attempt  429
+Density  98
+High score: 20 / 98 mines dodged
+
+Basic agent attempt  430
+Density  98
+High score: 20 / 98 mines dodged
+
+Basic agent attempt  431
+Density  99
+High score: 28 / 99 mines dodged
+
+Basic agent attempt  432
+Density  99
+High score: 35 / 99 mines dodged
+
+Basic agent attempt  433
+Density  99
+High score: 36 / 99 mines dodged
+
+Basic agent attempt  434
+Density  99
+High score: 28 / 99 mines dodged
+
+Basic agent attempt  435
+Density  99
+High score: 27 / 99 mines dodged
+
+Basic agent attempt  436
+Density  100
+High score: 28 / 100 mines dodged
+
+Basic agent attempt  437
+Density  100
+High score: 30 / 100 mines dodged
+
+Basic agent attempt  438
+Density  100
+High score: 30 / 100 mines dodged
+
+Basic agent attempt  439
+Density  100
+High score: 17 / 100 mines dodged
+
+Basic agent attempt  440
+Density  100
+High score: 36 / 100 mines dodged
+
+Basic agent attempt  441
+Density  101
+High score: 31 / 101 mines dodged
+
+Basic agent attempt  442
+Density  101
+High score: 35 / 101 mines dodged
+
+Basic agent attempt  443
+Density  101
+High score: 22 / 101 mines dodged
+
+Basic agent attempt  444
+Density  101
+High score: 27 / 101 mines dodged
+
+Basic agent attempt  445
+Density  101
+High score: 30 / 101 mines dodged
+
+Basic agent attempt  446
+Density  102
+High score: 22 / 102 mines dodged
+
+Basic agent attempt  447
+Density  102
+High score: 32 / 102 mines dodged
+
+Basic agent attempt  448
+Density  102
+High score: 34 / 102 mines dodged
+
+Basic agent attempt  449
+Density  102
+High score: 29 / 102 mines dodged
+
+Basic agent attempt  450
+Density  102
+High score: 31 / 102 mines dodged
+
+Basic agent attempt  451
+Density  103
+High score: 29 / 103 mines dodged
+
+Basic agent attempt  452
+Density  103
+High score: 26 / 103 mines dodged
+
+Basic agent attempt  453
+Density  103
+High score: 38 / 103 mines dodged
+
+Basic agent attempt  454
+Density  103
+High score: 31 / 103 mines dodged
+
+Basic agent attempt  455
+Density  103
+High score: 26 / 103 mines dodged
+
+Basic agent attempt  456
+Density  104
+High score: 32 / 104 mines dodged
+
+Basic agent attempt  457
+Density  104
+High score: 24 / 104 mines dodged
+
+Basic agent attempt  458
+Density  104
+High score: 45 / 104 mines dodged
+
+Basic agent attempt  459
+Density  104
+High score: 27 / 104 mines dodged
+
+Basic agent attempt  460
+Density  104
+High score: 36 / 104 mines dodged
+
+Basic agent attempt  461
+Density  105
+High score: 25 / 105 mines dodged
+
+Basic agent attempt  462
+Density  105
+High score: 22 / 105 mines dodged
+
+Basic agent attempt  463
+Density  105
+High score: 35 / 105 mines dodged
+
+Basic agent attempt  464
+Density  105
+High score: 14 / 105 mines dodged
+
+Basic agent attempt  465
+Density  105
+High score: 37 / 105 mines dodged
+
+Basic agent attempt  466
+Density  106
+High score: 22 / 106 mines dodged
+
+Basic agent attempt  467
+Density  106
+High score: 23 / 106 mines dodged
+
+Basic agent attempt  468
+Density  106
+High score: 38 / 106 mines dodged
+
+Basic agent attempt  469
+Density  106
+High score: 26 / 106 mines dodged
+
+Basic agent attempt  470
+Density  106
+High score: 39 / 106 mines dodged
+
+Basic agent attempt  471
+Density  107
+High score: 25 / 107 mines dodged
+
+Basic agent attempt  472
+Density  107
+High score: 31 / 107 mines dodged
+
+Basic agent attempt  473
+Density  107
+High score: 24 / 107 mines dodged
+
+Basic agent attempt  474
+Density  107
+High score: 26 / 107 mines dodged
+
+Basic agent attempt  475
+Density  107
+High score: 23 / 107 mines dodged
+
+Basic agent attempt  476
+Density  108
+High score: 30 / 108 mines dodged
+
+Basic agent attempt  477
+Density  108
+High score: 39 / 108 mines dodged
+
+Basic agent attempt  478
+Density  108
+High score: 30 / 108 mines dodged
+
+Basic agent attempt  479
+Density  108
+High score: 31 / 108 mines dodged
+
+Basic agent attempt  480
+Density  108
+High score: 30 / 108 mines dodged
+
+Basic agent attempt  481
+Density  109
+High score: 39 / 109 mines dodged
+
+Basic agent attempt  482
+Density  109
+High score: 43 / 109 mines dodged
+
+Basic agent attempt  483
+Density  109
+High score: 37 / 109 mines dodged
+
+Basic agent attempt  484
+Density  109
+High score: 32 / 109 mines dodged
+
+Basic agent attempt  485
+Density  109
+High score: 27 / 109 mines dodged
+
+Basic agent attempt  486
+Density  110
+High score: 33 / 110 mines dodged
+
+Basic agent attempt  487
+Density  110
+High score: 30 / 110 mines dodged
+
+Basic agent attempt  488
+Density  110
+High score: 30 / 110 mines dodged
+
+Basic agent attempt  489
+Density  110
+High score: 25 / 110 mines dodged
+
+Basic agent attempt  490
+Density  110
+High score: 31 / 110 mines dodged
+
+Basic agent attempt  491
+Density  111
+High score: 34 / 111 mines dodged
+
+Basic agent attempt  492
+Density  111
+High score: 25 / 111 mines dodged
+
+Basic agent attempt  493
+Density  111
+High score: 19 / 111 mines dodged
+
+Basic agent attempt  494
+Density  111
+High score: 35 / 111 mines dodged
+
+Basic agent attempt  495
+Density  111
+High score: 35 / 111 mines dodged
+
+Basic agent attempt  496
+Density  112
+High score: 35 / 112 mines dodged
+
+Basic agent attempt  497
+Density  112
+High score: 25 / 112 mines dodged
+
+Basic agent attempt  498
+Density  112
+High score: 30 / 112 mines dodged
+
+Basic agent attempt  499
+Density  112
+High score: 29 / 112 mines dodged
+
+Basic agent attempt  500
+Density  112
+High score: 20 / 112 mines dodged
+
+Basic agent attempt  501
+Density  113
+High score: 28 / 113 mines dodged
+
+Basic agent attempt  502
+Density  113
+High score: 34 / 113 mines dodged
+
+Basic agent attempt  503
+Density  113
+High score: 25 / 113 mines dodged
+
+Basic agent attempt  504
+Density  113
+High score: 23 / 113 mines dodged
+
+Basic agent attempt  505
+Density  113
+High score: 44 / 113 mines dodged
+
+Basic agent attempt  506
+Density  114
+High score: 30 / 114 mines dodged
+
+Basic agent attempt  507
+Density  114
+High score: 29 / 114 mines dodged
+
+Basic agent attempt  508
+Density  114
+High score: 17 / 114 mines dodged
+
+Basic agent attempt  509
+Density  114
+High score: 39 / 114 mines dodged
+
+Basic agent attempt  510
+Density  114
+High score: 36 / 114 mines dodged
+
+Basic agent attempt  511
+Density  115
+High score: 26 / 115 mines dodged
+
+Basic agent attempt  512
+Density  115
+High score: 33 / 115 mines dodged
+
+Basic agent attempt  513
+Density  115
+High score: 40 / 115 mines dodged
+
+Basic agent attempt  514
+Density  115
+High score: 39 / 115 mines dodged
+
+Basic agent attempt  515
+Density  115
+High score: 37 / 115 mines dodged
+
+Basic agent attempt  516
+Density  116
+High score: 45 / 116 mines dodged
+
+Basic agent attempt  517
+Density  116
+High score: 39 / 116 mines dodged
+
+Basic agent attempt  518
+Density  116
+High score: 32 / 116 mines dodged
+
+Basic agent attempt  519
+Density  116
+High score: 24 / 116 mines dodged
+
+Basic agent attempt  520
+Density  116
+High score: 41 / 116 mines dodged
+
+Basic agent attempt  521
+Density  117
+High score: 38 / 117 mines dodged
+
+Basic agent attempt  522
+Density  117
+High score: 24 / 117 mines dodged
+
+Basic agent attempt  523
+Density  117
+High score: 22 / 117 mines dodged
+
+Basic agent attempt  524
+Density  117
+High score: 31 / 117 mines dodged
+
+Basic agent attempt  525
+Density  117
+High score: 24 / 117 mines dodged
+
+Basic agent attempt  526
+Density  118
+High score: 34 / 118 mines dodged
+
+Basic agent attempt  527
+Density  118
+High score: 37 / 118 mines dodged
+
+Basic agent attempt  528
+Density  118
+High score: 20 / 118 mines dodged
+
+Basic agent attempt  529
+Density  118
+High score: 38 / 118 mines dodged
+
+Basic agent attempt  530
+Density  118
+High score: 32 / 118 mines dodged
+
+Basic agent attempt  531
+Density  119
+High score: 23 / 119 mines dodged
+
+Basic agent attempt  532
+Density  119
+High score: 21 / 119 mines dodged
+
+Basic agent attempt  533
+Density  119
+High score: 44 / 119 mines dodged
+
+Basic agent attempt  534
+Density  119
+High score: 31 / 119 mines dodged
+
+Basic agent attempt  535
+Density  119
+High score: 37 / 119 mines dodged
+
+Basic agent attempt  536
+Density  120
+High score: 24 / 120 mines dodged
+
+Basic agent attempt  537
+Density  120
+High score: 38 / 120 mines dodged
+
+Basic agent attempt  538
+Density  120
+High score: 32 / 120 mines dodged
+
+Basic agent attempt  539
+Density  120
+High score: 41 / 120 mines dodged
+
+Basic agent attempt  540
+Density  120
+High score: 24 / 120 mines dodged
+
+Basic agent attempt  541
+Density  121
+High score: 43 / 121 mines dodged
+
+Basic agent attempt  542
+Density  121
+High score: 28 / 121 mines dodged
+
+Basic agent attempt  543
+Density  121
+High score: 28 / 121 mines dodged
+
+Basic agent attempt  544
+Density  121
+High score: 28 / 121 mines dodged
+
+Basic agent attempt  545
+Density  121
+High score: 25 / 121 mines dodged
+
+Basic agent attempt  546
+Density  122
+High score: 32 / 122 mines dodged
+
+Basic agent attempt  547
+Density  122
+High score: 36 / 122 mines dodged
+
+Basic agent attempt  548
+Density  122
+High score: 40 / 122 mines dodged
+
+Basic agent attempt  549
+Density  122
+High score: 35 / 122 mines dodged
+
+Basic agent attempt  550
+Density  122
+High score: 32 / 122 mines dodged
+
+Basic agent attempt  551
+Density  123
+High score: 44 / 123 mines dodged
+
+Basic agent attempt  552
+Density  123
+High score: 34 / 123 mines dodged
+
+Basic agent attempt  553
+Density  123
+High score: 31 / 123 mines dodged
+
+Basic agent attempt  554
+Density  123
+High score: 48 / 123 mines dodged
+
+Basic agent attempt  555
+Density  123
+High score: 39 / 123 mines dodged
+
+Basic agent attempt  556
+Density  124
+High score: 34 / 124 mines dodged
+
+Basic agent attempt  557
+Density  124
+High score: 31 / 124 mines dodged
+
+Basic agent attempt  558
+Density  124
+High score: 32 / 124 mines dodged
+
+Basic agent attempt  559
+Density  124
+High score: 27 / 124 mines dodged
+
+Basic agent attempt  560
+Density  124
+High score: 46 / 124 mines dodged
+
+Basic agent attempt  561
+Density  125
+High score: 47 / 125 mines dodged
+
+Basic agent attempt  562
+Density  125
+High score: 43 / 125 mines dodged
+
+Basic agent attempt  563
+Density  125
+High score: 46 / 125 mines dodged
+
+Basic agent attempt  564
+Density  125
+High score: 38 / 125 mines dodged
+
+Basic agent attempt  565
+Density  125
+High score: 34 / 125 mines dodged
+
+Basic agent attempt  566
+Density  126
+High score: 45 / 126 mines dodged
+
+Basic agent attempt  567
+Density  126
+High score: 30 / 126 mines dodged
+
+Basic agent attempt  568
+Density  126
+High score: 36 / 126 mines dodged
+
+Basic agent attempt  569
+Density  126
+High score: 25 / 126 mines dodged
+
+Basic agent attempt  570
+Density  126
+High score: 50 / 126 mines dodged
+
+Basic agent attempt  571
+Density  127
+High score: 33 / 127 mines dodged
+
+Basic agent attempt  572
+Density  127
+High score: 24 / 127 mines dodged
+
+Basic agent attempt  573
+Density  127
+High score: 33 / 127 mines dodged
+
+Basic agent attempt  574
+Density  127
+High score: 41 / 127 mines dodged
+
+Basic agent attempt  575
+Density  127
+High score: 36 / 127 mines dodged
+
+Basic agent attempt  576
+Density  128
+High score: 45 / 128 mines dodged
+
+Basic agent attempt  577
+Density  128
+High score: 41 / 128 mines dodged
+
+Basic agent attempt  578
+Density  128
+High score: 37 / 128 mines dodged
+
+Basic agent attempt  579
+Density  128
+High score: 29 / 128 mines dodged
+
+Basic agent attempt  580
+Density  128
+High score: 29 / 128 mines dodged
+
+scoresBasic:  [10, 6, 13, 11, 10, 8, 10, 10, 10, 10, 13, 12, 8, 13, 10, 13, 14, 13, 14, 14, 14, 9, 12, 10, 13, 12, 14, 12, 13, 16, 12, 12, 11, 18, 12, 14, 18, 11, 16, 19, 18, 13, 12, 19, 13, 18, 13, 19, 20, 13, 20, 13, 17, 17, 14, 15, 13, 15, 15, 18, 11, 14, 19, 21, 15, 14, 21, 17, 17, 17, 20, 18, 12, 18, 17, 20, 14, 18, 17, 16, 13, 28, 22, 14, 21, 20, 17, 17, 17, 12, 18, 16, 15, 18, 20, 20, 13, 13, 15, 20, 25, 16, 19, 17, 22, 19, 20, 21, 16, 23, 16, 27, 24, 22, 15, 17, 21, 23, 22, 13, 15, 22, 13, 18, 15, 19, 19, 26, 17, 22, 19, 14, 23, 21, 17, 19, 17, 11, 22, 18, 19, 21, 22, 20, 19, 19, 24, 17, 22, 17, 17, 26, 20, 20, 19, 23, 30, 19, 25, 14, 18, 17, 16, 17, 17, 22, 16, 30, 17, 19, 21, 17, 15, 22, 25, 17, 28, 22, 19, 25, 17, 23, 26, 23, 24, 23, 18, 17, 18, 25, 18, 26, 25, 24, 33, 26, 17, 24, 24, 9, 23, 27, 19, 15, 28, 14, 21, 20, 17, 18, 17, 29, 22, 18, 17, 18, 30, 22, 16, 24, 41, 17, 24, 22, 29, 29, 19, 17, 25, 31, 18, 24, 18, 31, 23, 22, 14, 23, 28, 25, 23, 16, 29, 20, 15, 18, 11, 13, 21, 28, 36, 28, 28, 20, 19, 25, 17, 26, 24, 16, 18, 33, 34, 17, 16, 37, 22, 27, 24, 30, 20, 27, 25, 15, 25, 25, 25, 29, 22, 11, 27, 26, 28, 22, 22, 23, 32, 33, 14, 18, 30, 28, 19, 19, 19, 22, 24, 24, 17, 28, 27, 21, 22, 24, 22, 21, 22, 26, 16, 20, 29, 25, 22, 22, 28, 20, 18, 30, 18, 26, 19, 13, 26, 19, 21, 18, 14, 13, 37, 23, 22, 34, 16, 22, 34, 24, 16, 19, 29, 23, 18, 17, 22, 29, 25, 20, 34, 29, 29, 31, 24, 25, 20, 23, 31, 20, 19, 18, 26, 29, 22, 22, 20, 28, 26, 24, 17, 19, 19, 26, 24, 16, 34, 18, 21, 22, 33, 27, 32, 31, 24, 33, 29, 23, 24, 40, 28, 25, 27, 22, 12, 26, 32, 17, 27, 26, 23, 24, 25, 25, 26, 23, 28, 22, 21, 17, 24, 27, 23, 28, 23, 27, 27, 30, 14, 23, 17, 33, 31, 18, 23, 37, 34, 26, 27, 26, 23, 25, 20, 20, 28, 35, 36, 28, 27, 28, 30, 30, 17, 36, 31, 35, 22, 27, 30, 22, 32, 34, 29, 31, 29, 26, 38, 31, 26, 32, 24, 45, 27, 36, 25, 22, 35, 14, 37, 22, 23, 38, 26, 39, 25, 31, 24, 26, 23, 30, 39, 30, 31, 30, 39, 43, 37, 32, 27, 33, 30, 30, 25, 31, 34, 25, 19, 35, 35, 35, 25, 30, 29, 20, 28, 34, 25, 23, 44, 30, 29, 17, 39, 36, 26, 33, 40, 39, 37, 45, 39, 32, 24, 41, 38, 24, 22, 31, 24, 34, 37, 20, 38, 32, 23, 21, 44, 31, 37, 24, 38, 32, 41, 24, 43, 28, 28, 28, 25, 32, 36, 40, 35, 32, 44, 34, 31, 48, 39, 34, 31, 32, 27, 46, 47, 43, 46, 38, 34, 45, 30, 36, 25, 50, 33, 24, 33, 41, 36, 45, 41, 37, 29, 29]
+xBasic =  [13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 16, 16, 16, 16, 16, 17, 17, 17, 17, 17, 18, 18, 18, 18, 18, 19, 19, 19, 19, 19, 20, 20, 20, 20, 20, 21, 21, 21, 21, 21, 22, 22, 22, 22, 22, 23, 23, 23, 23, 23, 24, 24, 24, 24, 24, 25, 25, 25, 25, 25, 26, 26, 26, 26, 26, 27, 27, 27, 27, 27, 28, 28, 28, 28, 28, 29, 29, 29, 29, 29, 30, 30, 30, 30, 30, 31, 31, 31, 31, 31, 32, 32, 32, 32, 32, 33, 33, 33, 33, 33, 34, 34, 34, 34, 34, 35, 35, 35, 35, 35, 36, 36, 36, 36, 36, 37, 37, 37, 37, 37, 38, 38, 38, 38, 38, 39, 39, 39, 39, 39, 40, 40, 40, 40, 40, 41, 41, 41, 41, 41, 42, 42, 42, 42, 42, 43, 43, 43, 43, 43, 44, 44, 44, 44, 44, 45, 45, 45, 45, 45, 46, 46, 46, 46, 46, 47, 47, 47, 47, 47, 48, 48, 48, 48, 48, 49, 49, 49, 49, 49, 50, 50, 50, 50, 50, 51, 51, 51, 51, 51, 52, 52, 52, 52, 52, 53, 53, 53, 53, 53, 54, 54, 54, 54, 54, 55, 55, 55, 55, 55, 56, 56, 56, 56, 56, 57, 57, 57, 57, 57, 58, 58, 58, 58, 58, 59, 59, 59, 59, 59, 60, 60, 60, 60, 60, 61, 61, 61, 61, 61, 62, 62, 62, 62, 62, 63, 63, 63, 63, 63, 64, 64, 64, 64, 64, 65, 65, 65, 65, 65, 66, 66, 66, 66, 66, 67, 67, 67, 67, 67, 68, 68, 68, 68, 68, 69, 69, 69, 69, 69, 70, 70, 70, 70, 70, 71, 71, 71, 71, 71, 72, 72, 72, 72, 72, 73, 73, 73, 73, 73, 74, 74, 74, 74, 74, 75, 75, 75, 75, 75, 76, 76, 76, 76, 76, 77, 77, 77, 77, 77, 78, 78, 78, 78, 78, 79, 79, 79, 79, 79, 80, 80, 80, 80, 80, 81, 81, 81, 81, 81, 82, 82, 82, 82, 82, 83, 83, 83, 83, 83, 84, 84, 84, 84, 84, 85, 85, 85, 85, 85, 86, 86, 86, 86, 86, 87, 87, 87, 87, 87, 88, 88, 88, 88, 88, 89, 89, 89, 89, 89, 90, 90, 90, 90, 90, 91, 91, 91, 91, 91, 92, 92, 92, 92, 92, 93, 93, 93, 93, 93, 94, 94, 94, 94, 94, 95, 95, 95, 95, 95, 96, 96, 96, 96, 96, 97, 97, 97, 97, 97, 98, 98, 98, 98, 98, 99, 99, 99, 99, 99, 100, 100, 100, 100, 100, 101, 101, 101, 101, 101, 102, 102, 102, 102, 102, 103, 103, 103, 103, 103, 104, 104, 104, 104, 104, 105, 105, 105, 105, 105, 106, 106, 106, 106, 106, 107, 107, 107, 107, 107, 108, 108, 108, 108, 108, 109, 109, 109, 109, 109, 110, 110, 110, 110, 110, 111, 111, 111, 111, 111, 112, 112, 112, 112, 112, 113, 113, 113, 113, 113, 114, 114, 114, 114, 114, 115, 115, 115, 115, 115, 116, 116, 116, 116, 116, 117, 117, 117, 117, 117, 118, 118, 118, 118, 118, 119, 119, 119, 119, 119, 120, 120, 120, 120, 120, 121, 121, 121, 121, 121, 122, 122, 122, 122, 122, 123, 123, 123, 123, 123, 124, 124, 124, 124, 124, 125, 125, 125, 125, 125, 126, 126, 126, 126, 126, 127, 127, 127, 127, 127, 128, 128, 128, 128, 128]
+yBasic =  [0.7692307692307693, 0.46153846153846156, 1.0, 0.8461538461538461, 0.7692307692307693, 0.5714285714285714, 0.7142857142857143, 0.7142857142857143, 0.7142857142857143, 0.7142857142857143, 0.8666666666666667, 0.8, 0.5333333333333333, 0.8666666666666667, 0.6666666666666666, 0.8125, 0.875, 0.8125, 0.875, 0.875, 0.8235294117647058, 0.5294117647058824, 0.7058823529411765, 0.5882352941176471, 0.7647058823529411, 0.6666666666666666, 0.7777777777777778, 0.6666666666666666, 0.7222222222222222, 0.8888888888888888, 0.631578947368421, 0.631578947368421, 0.5789473684210527, 0.9473684210526315, 0.631578947368421, 0.7, 0.9, 0.55, 0.8, 0.95, 0.8571428571428571, 0.6190476190476191, 0.5714285714285714, 0.9047619047619048, 0.6190476190476191, 0.8181818181818182, 0.5909090909090909, 0.8636363636363636, 0.9090909090909091, 0.5909090909090909, 0.8695652173913043, 0.5652173913043478, 0.7391304347826086, 0.7391304347826086, 0.6086956521739131, 0.625, 0.5416666666666666, 0.625, 0.625, 0.75, 0.44, 0.56, 0.76, 0.84, 0.6, 0.5384615384615384, 0.8076923076923077, 0.6538461538461539, 0.6538461538461539, 0.6538461538461539, 0.7407407407407407, 0.6666666666666666, 0.4444444444444444, 0.6666666666666666, 0.6296296296296297, 0.7142857142857143, 0.5, 0.6428571428571429, 0.6071428571428571, 0.5714285714285714, 0.4482758620689655, 0.9655172413793104, 0.7586206896551724, 0.4827586206896552, 0.7241379310344828, 0.6666666666666666, 0.5666666666666667, 0.5666666666666667, 0.5666666666666667, 0.4, 0.5806451612903226, 0.5161290322580645, 0.4838709677419355, 0.5806451612903226, 0.6451612903225806, 0.625, 0.40625, 0.40625, 0.46875, 0.625, 0.7575757575757576, 0.48484848484848486, 0.5757575757575758, 0.5151515151515151, 0.6666666666666666, 0.5588235294117647, 0.5882352941176471, 0.6176470588235294, 0.47058823529411764, 0.6764705882352942, 0.45714285714285713, 0.7714285714285715, 0.6857142857142857, 0.6285714285714286, 0.42857142857142855, 0.4722222222222222, 0.5833333333333334, 0.6388888888888888, 0.6111111111111112, 0.3611111111111111, 0.40540540540540543, 0.5945945945945946, 0.35135135135135137, 0.4864864864864865, 0.40540540540540543, 0.5, 0.5, 0.6842105263157895, 0.4473684210526316, 0.5789473684210527, 0.48717948717948717, 0.358974358974359, 0.5897435897435898, 0.5384615384615384, 0.4358974358974359, 0.475, 0.425, 0.275, 0.55, 0.45, 0.4634146341463415, 0.5121951219512195, 0.5365853658536586, 0.4878048780487805, 0.4634146341463415, 0.4523809523809524, 0.5714285714285714, 0.40476190476190477, 0.5238095238095238, 0.40476190476190477, 0.3953488372093023, 0.6046511627906976, 0.46511627906976744, 0.46511627906976744, 0.4418604651162791, 0.5227272727272727, 0.6818181818181818, 0.4318181818181818, 0.5681818181818182, 0.3181818181818182, 0.4, 0.37777777777777777, 0.35555555555555557, 0.37777777777777777, 0.37777777777777777, 0.4782608695652174, 0.34782608695652173, 0.6521739130434783, 0.3695652173913043, 0.41304347826086957, 0.44680851063829785, 0.3617021276595745, 0.3191489361702128, 0.46808510638297873, 0.5319148936170213, 0.3541666666666667, 0.5833333333333334, 0.4583333333333333, 0.3958333333333333, 0.5208333333333334, 0.3469387755102041, 0.46938775510204084, 0.5306122448979592, 0.46938775510204084, 0.4897959183673469, 0.46, 0.36, 0.34, 0.36, 0.5, 0.35294117647058826, 0.5098039215686274, 0.49019607843137253, 0.47058823529411764, 0.6470588235294118, 0.5, 0.3269230769230769, 0.46153846153846156, 0.46153846153846156, 0.17307692307692307, 0.4339622641509434, 0.5094339622641509, 0.3584905660377358, 0.2830188679245283, 0.5283018867924528, 0.25925925925925924, 0.3888888888888889, 0.37037037037037035, 0.3148148148148148, 0.3333333333333333, 0.3090909090909091, 0.5272727272727272, 0.4, 0.32727272727272727, 0.3090909090909091, 0.32142857142857145, 0.5357142857142857, 0.39285714285714285, 0.2857142857142857, 0.42857142857142855, 0.7192982456140351, 0.2982456140350877, 0.42105263157894735, 0.38596491228070173, 0.5087719298245614, 0.5, 0.3275862068965517, 0.29310344827586204, 0.43103448275862066, 0.5344827586206896, 0.3050847457627119, 0.4067796610169492, 0.3050847457627119, 0.5254237288135594, 0.3898305084745763, 0.36666666666666664, 0.23333333333333334, 0.38333333333333336, 0.4666666666666667, 0.4166666666666667, 0.3770491803278688, 0.26229508196721313, 0.47540983606557374, 0.32786885245901637, 0.2459016393442623, 0.2903225806451613, 0.1774193548387097, 0.20967741935483872, 0.3387096774193548, 0.45161290322580644, 0.5714285714285714, 0.4444444444444444, 0.4444444444444444, 0.31746031746031744, 0.30158730158730157, 0.390625, 0.265625, 0.40625, 0.375, 0.25, 0.27692307692307694, 0.5076923076923077, 0.5230769230769231, 0.26153846153846155, 0.24615384615384617, 0.5606060606060606, 0.3333333333333333, 0.4090909090909091, 0.36363636363636365, 0.45454545454545453, 0.29850746268656714, 0.40298507462686567, 0.373134328358209, 0.22388059701492538, 0.373134328358209, 0.36764705882352944, 0.36764705882352944, 0.4264705882352941, 0.3235294117647059, 0.16176470588235295, 0.391304347826087, 0.37681159420289856, 0.4057971014492754, 0.3188405797101449, 0.3188405797101449, 0.32857142857142857, 0.45714285714285713, 0.4714285714285714, 0.2, 0.2571428571428571, 0.4225352112676056, 0.39436619718309857, 0.2676056338028169, 0.2676056338028169, 0.2676056338028169, 0.3055555555555556, 0.3333333333333333, 0.3333333333333333, 0.2361111111111111, 0.3888888888888889, 0.3698630136986301, 0.2876712328767123, 0.3013698630136986, 0.3287671232876712, 0.3013698630136986, 0.28378378378378377, 0.2972972972972973, 0.35135135135135137, 0.21621621621621623, 0.2702702702702703, 0.38666666666666666, 0.3333333333333333, 0.29333333333333333, 0.29333333333333333, 0.37333333333333335, 0.2631578947368421, 0.23684210526315788, 0.39473684210526316, 0.23684210526315788, 0.34210526315789475, 0.24675324675324675, 0.16883116883116883, 0.33766233766233766, 0.24675324675324675, 0.2727272727272727, 0.23076923076923078, 0.1794871794871795, 0.16666666666666666, 0.47435897435897434, 0.2948717948717949, 0.27848101265822783, 0.43037974683544306, 0.20253164556962025, 0.27848101265822783, 0.43037974683544306, 0.3, 0.2, 0.2375, 0.3625, 0.2875, 0.2222222222222222, 0.20987654320987653, 0.2716049382716049, 0.35802469135802467, 0.30864197530864196, 0.24390243902439024, 0.4146341463414634, 0.35365853658536583, 0.35365853658536583, 0.3780487804878049, 0.2891566265060241, 0.30120481927710846, 0.24096385542168675, 0.27710843373493976, 0.37349397590361444, 0.23809523809523808, 0.2261904761904762, 0.21428571428571427, 0.30952380952380953, 0.34523809523809523, 0.25882352941176473, 0.25882352941176473, 0.23529411764705882, 0.32941176470588235, 0.3058823529411765, 0.27906976744186046, 0.19767441860465115, 0.22093023255813954, 0.22093023255813954, 0.3023255813953488, 0.27586206896551724, 0.1839080459770115, 0.39080459770114945, 0.20689655172413793, 0.2413793103448276, 0.25, 0.375, 0.3068181818181818, 0.36363636363636365, 0.3522727272727273, 0.2696629213483146, 0.3707865168539326, 0.3258426966292135, 0.25842696629213485, 0.2696629213483146, 0.4444444444444444, 0.3111111111111111, 0.2777777777777778, 0.3, 0.24444444444444444, 0.13186813186813187, 0.2857142857142857, 0.3516483516483517, 0.18681318681318682, 0.2967032967032967, 0.2826086956521739, 0.25, 0.2608695652173913, 0.2717391304347826, 0.2717391304347826, 0.27956989247311825, 0.24731182795698925, 0.3010752688172043, 0.23655913978494625, 0.22580645161290322, 0.18085106382978725, 0.2553191489361702, 0.2872340425531915, 0.24468085106382978, 0.2978723404255319, 0.24210526315789474, 0.28421052631578947, 0.28421052631578947, 0.3157894736842105, 0.14736842105263157, 0.23958333333333334, 0.17708333333333334, 0.34375, 0.3229166666666667, 0.1875, 0.23711340206185566, 0.38144329896907214, 0.35051546391752575, 0.26804123711340205, 0.27835051546391754, 0.2653061224489796, 0.23469387755102042, 0.25510204081632654, 0.20408163265306123, 0.20408163265306123, 0.2828282828282828, 0.35353535353535354, 0.36363636363636365, 0.2828282828282828, 0.2727272727272727, 0.28, 0.3, 0.3, 0.17, 0.36, 0.3069306930693069, 0.3465346534653465, 0.21782178217821782, 0.26732673267326734, 0.297029702970297, 0.21568627450980393, 0.3137254901960784, 0.3333333333333333, 0.28431372549019607, 0.30392156862745096, 0.2815533980582524, 0.2524271844660194, 0.36893203883495146, 0.30097087378640774, 0.2524271844660194, 0.3076923076923077, 0.23076923076923078, 0.4326923076923077, 0.25961538461538464, 0.34615384615384615, 0.23809523809523808, 0.20952380952380953, 0.3333333333333333, 0.13333333333333333, 0.3523809523809524, 0.20754716981132076, 0.2169811320754717, 0.3584905660377358, 0.24528301886792453, 0.36792452830188677, 0.2336448598130841, 0.2897196261682243, 0.22429906542056074, 0.24299065420560748, 0.21495327102803738, 0.2777777777777778, 0.3611111111111111, 0.2777777777777778, 0.28703703703703703, 0.2777777777777778, 0.3577981651376147, 0.3944954128440367, 0.3394495412844037, 0.29357798165137616, 0.24770642201834864, 0.3, 0.2727272727272727, 0.2727272727272727, 0.22727272727272727, 0.2818181818181818, 0.3063063063063063, 0.22522522522522523, 0.17117117117117117, 0.3153153153153153, 0.3153153153153153, 0.3125, 0.22321428571428573, 0.26785714285714285, 0.25892857142857145, 0.17857142857142858, 0.24778761061946902, 0.3008849557522124, 0.22123893805309736, 0.20353982300884957, 0.3893805309734513, 0.2631578947368421, 0.2543859649122807, 0.14912280701754385, 0.34210526315789475, 0.3157894736842105, 0.22608695652173913, 0.28695652173913044, 0.34782608695652173, 0.3391304347826087, 0.3217391304347826, 0.3879310344827586, 0.33620689655172414, 0.27586206896551724, 0.20689655172413793, 0.35344827586206895, 0.3247863247863248, 0.20512820512820512, 0.18803418803418803, 0.26495726495726496, 0.20512820512820512, 0.288135593220339, 0.3135593220338983, 0.1694915254237288, 0.3220338983050847, 0.2711864406779661, 0.19327731092436976, 0.17647058823529413, 0.3697478991596639, 0.2605042016806723, 0.31092436974789917, 0.2, 0.31666666666666665, 0.26666666666666666, 0.3416666666666667, 0.2, 0.35537190082644626, 0.23140495867768596, 0.23140495867768596, 0.23140495867768596, 0.2066115702479339, 0.26229508196721313, 0.29508196721311475, 0.32786885245901637, 0.28688524590163933, 0.26229508196721313, 0.35772357723577236, 0.2764227642276423, 0.25203252032520324, 0.3902439024390244, 0.3170731707317073, 0.27419354838709675, 0.25, 0.25806451612903225, 0.21774193548387097, 0.3709677419354839, 0.376, 0.344, 0.368, 0.304, 0.272, 0.35714285714285715, 0.23809523809523808, 0.2857142857142857, 0.1984126984126984, 0.3968253968253968, 0.25984251968503935, 0.1889763779527559, 0.25984251968503935, 0.3228346456692913, 0.28346456692913385, 0.3515625, 0.3203125, 0.2890625, 0.2265625, 0.2265625]
 
 
 End of raw data
-Most mines dodged for basic agent:  36
-This happened at density  54
+Most mines dodged for basic agent:  50
+This happened at density  126
