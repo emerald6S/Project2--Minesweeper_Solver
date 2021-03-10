@@ -16,32 +16,7 @@ from display_array import *
 from copy import *
 
 
-class RunWithTimeout(object):  # Run the agent with a time limit
-    def __init__(self, function, args):
-        self.function = function
-        self.args = args
-        self.answer = None
-
-    def worker(self):
-        self.answer = self.function(*self.args)
-
-    def run(self, timeout):
-        thread = threading.Thread(target=self.worker)
-        thread.start()
-        thread.join(timeout)
-        return self.answer
-
-
 def adv_agent(board, kb, dim, n, p=False):
-    if not p:
-        x = RunWithTimeout(do_adv_agent, (board, kb, dim, n, p))
-        x.run(1)  # time limit of 1 second
-    else:
-        do_adv_agent(board, kb, dim, n, p)
-    return getSolution(kb, n)
-
-
-def do_adv_agent(board, kb, dim, n, p=False):
     """
             Automatically solve Minesweeper using the more advanced agent.
 
@@ -53,7 +28,6 @@ def do_adv_agent(board, kb, dim, n, p=False):
             :return: A tuple of the format (number unrevealed mines, number total mines)
             """
     # It's necessary to generate random coords the first time around
-    time.sleep(1)
     row = randint(0, dim - 1)
     col = randint(0, dim - 1)
     kb = reveal_space(kb, board, row, col, dim, False, True)
@@ -180,7 +154,7 @@ def do_adv_agent(board, kb, dim, n, p=False):
         display_array(kb, dim, row, col)
     sol = getSolution(kb, n)
     gc.collect()
-    return kb
+    return sol
 
 
 #################################################
