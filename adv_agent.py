@@ -142,6 +142,7 @@ def do_adv_agent(board, kb, dim, n, p=False):
                                     print("-----------------")
                                     print("Element (" + str(leastKeys[0][0]) + ", " + str(
                                         leastKeys[0][1]) + ") has lowest chance of being a mine")
+                                    print("Contents are actually: " + board[row][col])
                                 mark_safe(kb, leastKeys[0][0], leastKeys[0][1], dim)
                                 cleanFringe(check, frag, kb, board, leastKeys[0][0], leastKeys[0][1], dim)
                                 cleanCheck(check, kb, dim)
@@ -153,7 +154,7 @@ def do_adv_agent(board, kb, dim, n, p=False):
                                 if p:
                                     print("-----------------")
                                     print("Probability, chose: (" + str(row) + ", " + str(col) + ")")
-                                    print("Contents are actually: " + kb[row][col])
+                                    print("Contents are actually: " + board[row][col])
                         break
                 revealAllSafe(kb, board, dim, fringe, check, True)
 
