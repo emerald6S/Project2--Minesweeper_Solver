@@ -324,11 +324,14 @@ def generateMineFromPermutation(kb, dim, check, fringe, permutation, fringeCopie
         kbClone[key[0]][key[1]] = fringeClone[key]
 
     kbClone = updateMineNeighbors(kbClone, dim)
-
+    isEqual = True
     for key in list(check):
         checkClone[key] = kbClone[key[0]][key[1]]
+        if check[key] != checkClone[key]:  # Backtracking to see if this permutation is allowed
+            isEqual = False
+            break
 
-    if check == checkClone: # If checkClone is wrong, throw it away
+    if isEqual:
         fringeCopies.append(fringeClone)
     del kbClone
     return fringeCopies
