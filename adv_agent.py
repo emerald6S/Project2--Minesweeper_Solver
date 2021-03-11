@@ -199,18 +199,14 @@ def proofByContradiction(kb, dim, check: dict, k):
             elif numNeighbors - neighborMineCount - count_safe_revealed_neighbors(kbClone, dim, row,
                                                                                   col) == numUnrevealedNeighbors:
                 markAllNeighborsSafe(kbClone, dim, row, col)
-            kbClone = updateMineNeighbors(kbClone, dim)
-            # The backtracking approach:
-            for k in list(check):
-                if check[k] != kbClone[k[0]][k[1]]:
-                    del kbClone
-                    return True
+            if hasUpdatedMineNeighbors(kbClone, dim):
+                return True
 
     # Below was the naive approach, which wasted a bit of time
     # By a bit of time, I meant about a few seconds, which is actually pretty significant when I run 1000+ cases
     # kbClone = updateMineNeighbors(kbClone, dim)
     # for key in list(check):
-        # checkClone[key] = kbClone[key[0]][key[1]]
+    # checkClone[key] = kbClone[key[0]][key[1]]
     # del kbClone
     # if check == checkClone:
     #    return False
@@ -220,32 +216,32 @@ def proofByContradiction(kb, dim, check: dict, k):
     return False
 
 
-def updateMineNeighbors(kb, dim):
+def hasUpdatedMineNeighbors(kb, dim):
     """
     Update mine neighbors based on what has been revealed. If a neighbor is hidden, do not change what has been revealed
 
     :param kb:
     :param dim:
-    :return: the updated kb
+    :return: False if it hasn't changed, and True if it has
     """
     for row in range(dim):
         for col in range(dim):
             if kb[row][col] != "?" and kb[row][col] != 'D' and kb[row][col] != 'M' and kb[row][col] != 'S':
                 neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
                 mineCount = 0
-                hasChanged = True
+                hasUnknownNeighbor = False
                 for i in range(len(neighbors)):
                     if isValid(kb, dim, row + neighbors[i][0], col + neighbors[i][1]):
                         if kb[row + neighbors[i][0]][col + neighbors[i][1]] == '?':
-                            hasChanged = False
+                            hasUnknownNeighbor = True
                             break
-                        elif kb[row + neighbors[i][0]][col + neighbors[i][1]] == 'M' or kb[row + neighbors[i][0]][
-                            col + neighbors[i][1]] == 'D':
+                        elif kb[row + neighbors[i][0]][col + neighbors[i][1]] == 'M' or kb[row + neighbors[i][0]][col + neighbors[i][1]] == 'D':
                             mineCount = mineCount + 1
-                if hasChanged:
-                    kb[row][col] = str(mineCount)
+                if not hasUnknownNeighbor:  # Backtracking in case the mine neighbors have changed
+                    if kb[row][col] != str(mineCount):
+                        return True
 
-    return kb
+    return False
 
 
 def splitFringe(fringe: dict):
@@ -316,18 +312,16 @@ def generateMineFromPermutation(kb, dim, check, fringe, permutation, fringeCopie
     checkClone = {}
     fringeClone = {}
     i = 0
+    isEqual = True
+
     for key in fringe:
         if permutation[i] == '1':
             fringeClone[key] = 'D'
         else:
             fringeClone[key] = 'S'
         kbClone[key[0]][key[1]] = fringeClone[key]
-
-    kbClone = updateMineNeighbors(kbClone, dim)
-    isEqual = True
-    for key in list(check):
-        checkClone[key] = kbClone[key[0]][key[1]]
-        if check[key] != checkClone[key]:  # Backtracking to see if this permutation is allowed
+        # Backtracking to see if this permutation is allowed
+        if hasUpdatedMineNeighbors(kbClone, dim):
             isEqual = False
             break
 
@@ -379,4 +373,4 @@ def getSolution(kb, n):
             if i == 'M':
                 mines_tripped = mines_tripped + 1
 
-    return n-mines_tripped, n
+    return n - mines_tripped, n
