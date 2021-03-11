@@ -204,7 +204,7 @@ def proofByContradiction(kb, dim, check: dict, k):
             for k in list(check):
                 if check[k] != kbClone[k[0]][k[1]]:
                     del kbClone
-                    return False
+                    return True
 
     # Below was the naive approach, which wasted a bit of time
     # By a bit of time, I meant about a few seconds, which is actually pretty significant when I run 1000+ cases
@@ -217,7 +217,7 @@ def proofByContradiction(kb, dim, check: dict, k):
     # else:
     #    return True
     del kbClone
-    return True
+    return False
 
 
 def updateMineNeighbors(kb, dim):
