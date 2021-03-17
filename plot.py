@@ -26,16 +26,16 @@ if difficulty == "E" or difficulty == 'e' or difficulty == 'easy':
 	plt.scatter(xAdvEasy, yAdvEasy, label="density_vs_highScore", color='green', alpha=0.5)
 	plt.xlabel("Mine density")
 	plt.ylabel("Fraction of dodged mines")
-	plt.title("Mine density vs Fraction of Dodged mines -- Easy Difficulty (9 x 9 board)")
+	plt.title("Mine density vs Fraction of Dodged mines -- 9 x 9 board")
 	plt.legend(["Basic agent", "Advanced agent"], loc = "best")
 	plt.show()
 
 elif difficulty == "M" or difficulty == 'm' or difficulty == 'medium':
-	plt.scatter(xBasicHard, yBasicHard, label="density_vs_highScore", color='red', alpha=0.5)
-	plt.scatter(xAdvHard, yAdvHard, label="density_vs_highScore", color='green', alpha=0.5)
+	plt.scatter(xBasicMedium, yBasicMedium, label="density_vs_highScore", color='red', alpha=0.5)
+	plt.scatter(xAdvMedium, yAdvMedium, label="density_vs_highScore", color='green', alpha=0.5)
 	plt.xlabel("Mine density")
 	plt.ylabel("Fraction of dodged mines")
-	plt.title("Mine density vs Fraction of Dodged mines -- Medium Difficulty (16 x 16 board)")
+	plt.title("Mine density vs Fraction of Dodged mines -- 16 x 16 Board")
 	plt.legend(["Basic agent", "Advanced agent"], loc = "best")
 	plt.show()
 
@@ -44,6 +44,6 @@ elif difficulty == "H" or difficulty == 'h' or difficulty == 'hard':
 	plt.scatter(xAdvHard, yAdvHard, label="density_vs_highScore", color='green', alpha=0.5)
 	plt.xlabel("Mine density")
 	plt.ylabel("Fraction of dodged mines")
-	plt.title("Mine density vs Fraction of Dodged mines -- Hard/Expert Difficulty (21 x 21 board)")
+	plt.title("Mine density vs Fraction of Dodged mines -- 21 x 21 Board")
 	plt.legend(["Basic agent", "Advanced agent"], loc = "best")
 	plt.show()
